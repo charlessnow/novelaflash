@@ -1,17 +1,12 @@
+import React from "react";
+import { ComingSoon } from "@/components/ui/ComingSoon";
 import type { Metadata } from "next";
-import { NewsletterPageClient } from "./NewsletterPageClient";
 
 export const metadata: Metadata = {
-  title: "Subscribe to NovelaFlash Newsletter",
-  description:
-    "Subscribe to the NovelaFlash newsletter for weekly short drama industry updates, platform analysis, and market insights delivered straight to your inbox.",
-  openGraph: {
-    title: "Subscribe to NovelaFlash Newsletter",
-    description:
-      "Subscribe to the NovelaFlash newsletter for weekly short drama industry updates, platform analysis, and market insights delivered straight to your inbox.",
-  },
+  title: "Boletín Informativo — NovelaFlash",
+  description: "Suscríbete a nuestro boletín para recibir las últimas noticias de la industria.",
 };
 
 export default function NewsletterPage() {
-  return <NewsletterPageClient />;
+  return <ComingSoon title="Boletín Informativo" />;
 }

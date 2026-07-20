@@ -20,29 +20,29 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://novelaflash.com'),
-  title: "NovelaFlash — Your Pulse on the Short Drama Revolution",
+  title: "NovelaFlash — Tu Pulso en la Revolución del Microdrama",
   description:
-    "Industry intelligence for the $26B micro-drama market. Platform reviews, rankings, creator guides, and breaking news on ReelShort, DramaBox, and the global short drama ecosystem.",
+    "Inteligencia de la industria para el mercado de microdramas de $26B. Reseñas de plataformas, rankings, guías para creadores y noticias de última hora sobre ReelShort, DramaBox y el ecosistema global de dramas cortos.",
   keywords: [
-    "short drama",
-    "micro drama",
+    "microdrama",
+    "dramas cortos",
     "ReelShort",
     "DramaBox",
-    "short drama apps",
-    "short drama news",
+    "aplicaciones de miniseries",
+    "noticias de microdramas",
   ],
   openGraph: {
-    title: "NovelaFlash — Short Drama Industry Intelligence",
+    title: "NovelaFlash — Inteligencia de la Industria del Microdrama",
     description:
-      "Your pulse on the $26B micro-drama revolution. Reviews, rankings, and breaking industry news.",
+      "Tu pulso en la revolución del microdrama de $26B. Reseñas, rankings y noticias de última hora de la industria.",
     type: "website",
-    locale: "en_US",
-    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'NovelaFlash — Your Pulse on the Short Drama Revolution' }],
+    locale: "es_ES",
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'NovelaFlash — Tu Pulso en la Revolución del Microdrama' }],
   },
   twitter: {
     card: "summary_large_image",
     title: "NovelaFlash",
-    description: "Your pulse on the short drama revolution.",
+    description: "Tu pulso en la revolución del microdrama.",
     images: ['/og.jpg'],
   },
 };
@@ -60,7 +60,7 @@ export default function RootLayout({
         name: "NovelaFlash",
         url: SITE_URL,
         description:
-          "NovelaFlash delivers short drama industry intelligence with platform reviews, rankings, creator guides, and market analysis across the global micro-drama ecosystem.",
+          "NovelaFlash ofrece inteligencia de la industria de dramas cortos con reseñas de plataformas, rankings, guías para creadores y análisis de mercado en todo el ecosistema global de microdramas.",
       },
       {
         "@type": "WebSite",
@@ -72,7 +72,7 @@ export default function RootLayout({
 
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${inter.variable} ${barlowCondensed.variable} h-full antialiased`}
     >
       <body className="noise min-h-full flex flex-col">

@@ -59,6 +59,7 @@ export const Footer = () => {
               <li><Link href="/contact" className="hover:text-rp-coral transition-colors">Contacto</Link></li>
               <li><Link href="/privacy" className="hover:text-rp-coral transition-colors">Privacidad</Link></li>
               <li><a href="https://duanjuhao.com" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">中文 · 短剧好</a></li>
+              <li><a href="https://reelpulse.com" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">English · ReelPulse</a></li>
             </ul>
           </div>
         </div>
@@ -76,7 +77,7 @@ export const Footer = () => {
             </Link>
           </div>
           <p className="text-rp-text-muted text-xs">
-            © {new Date().getFullYear()} NovelaFlash. All rights reserved.
+            © {new Date().getFullYear()} NovelaFlash. Todos los derechos reservados.
           </p>
         </div>
       </div>

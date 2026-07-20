@@ -22,7 +22,7 @@ export default function Home() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "NovelaFlash — Short Drama Industry Intelligence",
+    name: "NovelaFlash — Inteligencia de la Industria del Microdrama",
     description: metadata.description,
     url: SITE_URL,
     isPartOf: {
@@ -32,7 +32,7 @@ export default function Home() {
     },
     about: {
       "@type": "Thing",
-      name: "Short drama industry intelligence",
+      name: "Inteligencia de la industria de dramas cortos",
     },
   };
 

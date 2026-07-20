@@ -20,17 +20,17 @@ export default function NotFound() {
 
         <div className="relative z-10 text-center max-w-2xl">
           <h1 className="font-display font-black text-6xl md:text-8xl text-white uppercase italic tracking-wide mb-4">
-            PAGE NOT FOUND
+            PÁGINA NO ENCONTRADA
           </h1>
           <p className="text-rp-text-secondary text-lg md:text-xl mb-12 max-w-md mx-auto">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved.
+            La página que buscas no existe o ha sido movida.
           </p>
           
           <Link 
             href="/" 
             className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full glass border border-white/20 text-white font-bold tracking-widest uppercase transition-all hover:bg-white/10"
           >
-            <span className="relative z-10">Back to Home</span>
+            <span className="relative z-10">Volver al Inicio</span>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               width="18" 
