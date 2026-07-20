@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function Rankings() {
-  const filterPills = ["All", "Premium", "Growth", "Emerging"];
+  const filterPills = ["Todas", "Premium", "Crecimiento", "Emergentes"];
   const criteria = [
     { title: "Content Quality", desc: "Depth of original library, localization quality, and storytelling consistency." },
     { title: "User Experience", desc: "App performance, billing transparency, and monetization balance." },
@@ -55,10 +55,10 @@ export default function Rankings() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
-              Platform Rankings
+              Rankings de Plataformas
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mb-12">
-              The definitive guide to short drama apps, ranked by our editorial team based on content quality, UX, and value.
+              La guía definitiva de apps de miniseries, clasificada por nuestro equipo basada en calidad de contenido, UX y valor.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-16">
@@ -102,11 +102,11 @@ export default function Rankings() {
                       </p>
                       <div className="flex items-center gap-6 mt-4">
                         <div className="flex flex-col">
-                          <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest">Downloads</span>
+                          <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest">Descargas</span>
                           <span className="text-sm font-bold text-white">{platform.downloads}</span>
                         </div>
                         <div className="flex flex-col">
-                          <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest">Revenue</span>
+                          <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest">Ingresos</span>
                           <span className="text-sm font-bold text-white">{platform.revenue}</span>
                         </div>
                       </div>
@@ -122,7 +122,7 @@ export default function Rankings() {
                       <div className="score-bar-fill" style={{ width: `${platform.score * 10}%` }} />
                     </div>
                     <Link href={`/platforms/${platform.slug}`} className="mt-4 block py-3 text-center bg-white/5 border border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:bg-rp-coral transition-all rounded-lg">
-                      Read Review <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                      Leer Reseña <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                     </Link>
                   </div>
                 </div>
@@ -136,9 +136,9 @@ export default function Rankings() {
           
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <ScrollReveal direction="up" className="text-center mb-20">
-              <h2 className="font-display font-black text-5xl md:text-6xl uppercase tracking-tight text-white mb-6">Our Methodology</h2>
+              <h2 className="font-display font-black text-5xl md:text-6xl uppercase tracking-tight text-white mb-6">Nuestra Metodología</h2>
               <p className="text-rp-text-secondary text-lg max-w-2xl mx-auto">
-                How we evaluate the platforms shaping the future of micro-drama. Our scores are recalculated monthly.
+                Cómo evaluamos las plataformas que moldean el futuro del microdrama. Nuestras puntuaciones se recalculan mensualmente.
               </p>
             </ScrollReveal>
 

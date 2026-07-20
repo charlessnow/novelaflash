@@ -34,7 +34,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Rankings</h4>
             <ul className="space-y-4 text-sm text-rp-text-muted">
-              <li><Link href="/rankings/top-100" className="hover:text-rp-coral transition-colors">Top 100 Apps</Link></li>
+              <li><Link href="/rankings/top-100" className="hover:text-rp-coral transition-colors">Las Mejores 100 Apps</Link></li>
               <li><Link href="/rankings/revenue" className="hover:text-rp-coral transition-colors">Líderes de Ingresos</Link></li>
               <li><Link href="/rankings/studios" className="hover:text-rp-coral transition-colors">Estudios</Link></li>
               <li><Link href="/rankings/growth" className="hover:text-rp-coral transition-colors">Crecimiento</Link></li>

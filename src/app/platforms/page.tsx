@@ -23,7 +23,7 @@ export default function PlatformsPage() {
               Platforms
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mb-16">
-              Every major short drama app, reviewed and ranked by our editorial team.
+              Todas las principales apps de miniseries, analizadas y clasificadas por nuestro equipo editorial.
             </p>
           </ScrollReveal>
 
@@ -69,21 +69,21 @@ export default function PlatformsPage() {
                     
                     <div className="grid grid-cols-2 gap-4 my-2">
                       <div className="flex flex-col">
-                        <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest mb-1">Downloads</span>
+                        <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest mb-1">Descargas</span>
                         <span className="text-base font-bold text-white">{platform.downloads}</span>
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest mb-1">Est. Revenue</span>
+                        <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest mb-1">Ingresos Est.</span>
                         <span className="text-base font-bold text-white">{platform.revenue}</span>
                       </div>
                     </div>
 
                     <div className="flex flex-col gap-3 mt-2">
                       <a href={`/go/${platform.slug}`} target="_blank" rel="noopener noreferrer" className="block py-4 text-center bg-rp-coral text-white text-xs font-black uppercase tracking-[0.2em] hover:bg-white hover:text-rp-bg-primary transition-all rounded-xl shadow-[0_0_20px_rgba(255,87,87,0.3)] hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                        Watch Now <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1 -mt-0.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                        Ver Ahora <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1 -mt-0.5"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                       </a>
                       <Link href={`/platforms/${platform.slug}`} className="block py-3 text-center bg-white/5 border border-white/10 text-white text-[10px] font-black uppercase tracking-[0.2em] hover:bg-white/10 transition-all rounded-xl">
-                        Read Full Review
+                        Leer Reseña Completa
                       </Link>
                     </div>
 

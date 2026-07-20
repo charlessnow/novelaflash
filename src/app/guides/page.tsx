@@ -3,155 +3,201 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 import { NewsletterCTA } from "@/components/home/NewsletterCTA";
-import { latestArticles } from "@/lib/data";
 import Link from "@/components/ui/InternalLink";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Guías y Recursos de Miniseries — NovelaFlash",
-  description: "Guías expertas para navegar el ecosistema de los dramas cortos. Evaluaciones de seguridad, guías de precios, recursos para creadores y comparaciones de plataformas.",
+  title: "Guías Prácticas y Consejos para Miniseries — NovelaFlash",
+  description: "Descubre cómo conseguir monedas gratis, comparar precios y aprender sobre la seguridad de las mejores plataformas de miniseries.",
 };
 
-export default function GuidesPage() {
-  const safetyGuide = {
-    slug: "guia-de-seguridad-apps-miniseries",
-    title: "¿Son Seguras las Apps de Miniseries?",
-    excerpt: "Una revisión práctica de seguridad sobre la privacidad de DramaBox, legitimidad en las tiendas de apps, suscripciones y riesgos de facturación.",
-  };
+const guides = [
+  {
+    slug: "mejores-apps-de-miniseries-bl",
+    badge: "Clasificación BL",
+    title: "Las Mejores Apps de Miniseries BL en 2026",
+    description: "Descubre dónde ver los mejores dramas cortos BL (Boys' Love), comparando catálogos de Tailandia, Corea y producciones originales exclusivas."
+  },
+  {
+    slug: "mejores-miniseries-chinas",
+    badge: "Recomendaciones",
+    title: "Las Mejores Miniseries Chinas que Debes Ver",
+    description: "Desde venganzas de multimillonarios hasta dramas históricos, estas son las producciones chinas que están dominando el formato vertical."
+  },
+  {
+    slug: "mejores-series-dramabox",
+    badge: "Guía de Plataforma",
+    title: "Las 10 Mejores Series en DramaBox",
+    description: "No desperdicies tus monedas. Hemos seleccionado las series mejor calificadas en DramaBox con las tramas más atrapantes."
+  },
+  {
+    slug: "mejores-series-reelshort",
+    badge: "Guía de Plataforma",
+    title: "Las Mejores Miniseries de ReelShort (2026)",
+    description: "El catálogo de ReelShort es enorme. Aquí tienes las producciones originales más costosas e impresionantes que valen tu tiempo."
+  },
+  {
+    slug: "mejores-novelas-hombres-lobo",
+    badge: "Género de Fantasía",
+    title: "Las Mejores Miniseries de Hombres Lobo y Alfas",
+    description: "Rechazos, parejas predestinadas y conflictos de manadas. Las mejores series de hombres lobo en formato vertical."
+  },
+  {
+    slug: "como-cancelar-dramabox",
+    badge: "Guía de Facturación",
+    title: "¿Cómo Cancelar la Suscripción de DramaBox?",
+    description: "Guía paso a paso para cancelar tu suscripción VIP de DramaBox en iOS, Android y evitar cobros automáticos sorpresa."
+  },
+  {
+    slug: "como-cancelar-reelshort",
+    badge: "Guía de Facturación",
+    title: "¿Cómo Cancelar tu Suscripción a ReelShort?",
+    description: "Evita cargos no deseados. Aprende a cancelar tu suscripción de ReelShort a través de Apple App Store o Google Play."
+  },
+  {
+    slug: "actores-de-miniseries-chinas",
+    badge: "Cultura Pop",
+    title: "Estrellas Emergentes: Actores de Miniseries Chinas",
+    description: "Conoce a los actores y actrices que se han convertido en reyes y reinas de la industria de las miniseries verticales en 2026."
+  },
+  {
+    slug: "alternativas-a-dramabox",
+    badge: "Comparación",
+    title: "Las Mejores Alternativas a DramaBox",
+    description: "Si DramaBox te parece muy caro, aquí tienes las mejores alternativas gratuitas y económicas para ver miniseries."
+  },
+  {
+    slug: "conseguir-monedas-dramabox",
+    badge: "Guía de Monedas",
+    title: "Cómo Conseguir Monedas Gratis en DramaBox",
+    description: "Todos los trucos legales, tareas diarias y códigos promocionales para ver series en DramaBox sin gastar dinero real."
+  },
+  {
+    slug: "precios-de-dramabox",
+    badge: "Guía de Precios",
+    title: "¿Cuánto Cuesta Realmente DramaBox?",
+    description: "Analizamos el costo de las monedas, las suscripciones VIP y el precio real de terminar una serie completa de 80 episodios."
+  },
+  {
+    slug: "apps-miniseries-gratis",
+    badge: "Lista Gratuita",
+    title: "Mejores Apps para Ver Miniseries Gratis",
+    description: "No todas las apps requieren suscripción. Clasificamos las plataformas que ofrecen la mayor cantidad de contenido gratuito mediante anuncios."
+  },
+  {
+    slug: "es-seguro-dramabox",
+    badge: "Seguridad",
+    title: "¿Es Seguro Usar DramaBox?",
+    description: "Revisión de seguridad de DramaBox en 2026: privacidad de datos, facturación, anuncios y la legitimidad de la aplicación en la tienda."
+  },
+  {
+    slug: "es-seguro-reelshort",
+    badge: "Seguridad",
+    title: "¿Es Seguro ReelShort? Revisión de Privacidad",
+    description: "Análisis completo de la seguridad de ReelShort. Descubre qué datos recopila y cómo proteger tus métodos de pago."
+  },
+  {
+    slug: "es-seguro-shortmax",
+    badge: "Seguridad",
+    title: "¿Es Seguro Descargar ShortMax?",
+    description: "Nuestra auditoría de seguridad sobre ShortMax. Evaluamos sus políticas de privacidad, permisos de la aplicación y pasarelas de pago."
+  },
+  {
+    slug: "conseguir-monedas-reelshort",
+    badge: "Guía de Monedas",
+    title: "Trucos para Monedas Gratis en ReelShort",
+    description: "Aprende a maximizar tus bonos diarios, ver anuncios de manera eficiente y usar códigos promocionales en ReelShort."
+  },
+  {
+    slug: "precios-de-reelshort",
+    badge: "Guía de Precios",
+    title: "Análisis de Precios: ¿Vale la pena ReelShort?",
+    description: "Desglosamos la economía de ReelShort. ¿Deberías comprar paquetes de monedas o suscribirte a su plan VIP mensual?"
+  },
+  {
+    slug: "ingresos-mercado-miniseries-2026",
+    badge: "Reporte de Industria",
+    title: "Proyecciones de Ingresos del Mercado de Miniseries 2026",
+    description: "Análisis financiero detallado de cómo el formato vertical alcanzará los $26 mil millones a nivel global."
+  },
+  {
+    slug: "miniseries-coreanas",
+    badge: "Exploración de Género",
+    title: "Las Mejores Miniseries Coreanas Verticales",
+    description: "K-Dramas adaptados para la pantalla móvil. Descubre la calidad cinematográfica y el romance de combustión lenta de Corea."
+  },
+  {
+    slug: "guia-de-precios-shortmax",
+    badge: "Guía de Precios",
+    title: "Guía de Precios de ShortMax",
+    description: "Todo lo que necesitas saber sobre las monedas de ShortMax, sus planes VIP y cómo obtener el mejor valor por tu dinero."
+  },
+  {
+    slug: "ver-series-bl-gratis",
+    badge: "Guía Gratuita",
+    title: "Cómo Ver Series BL Gratis",
+    description: "Las mejores tácticas y plataformas legales para ver los dramas BL más candentes sin pagar suscripciones costosas."
+  },
+  {
+    slug: "como-ver-dramabox-gratis",
+    badge: "Guía General",
+    title: "Cómo Ver Miniseries Completamente Gratis",
+    description: "Una guía definitiva aplicable a DramaBox, ReelShort y FlexTV para desbloquear episodios gratuitamente todos los días."
+  }
+];
 
-  const additionalGuides = [
-    {
-      title: "Mejores Apps de Miniseries 2026",
-      category: "Reseñas de Apps",
-      description: "Nuestro ranking definitivo de las mejores aplicaciones por calidad, valor y experiencia de usuario este año.",
-      readTime: "15 min",
-      gradient: "from-amber-500/20 to-orange-900/40",
-      href: "/articles/mejores-apps-de-miniseries-2026"
-    },
-    {
-      title: "Cómo Ganar Dinero con Miniseries",
-      category: "Economía de Creadores",
-      description: "Desde la escritura de guiones hasta la producción: una guía sobre oportunidades de monetización en el cine vertical.",
-      readTime: "12 min",
-      gradient: "from-pink-500/20 to-rose-900/40",
-      href: "/articles/como-ganar-dinero-con-miniseries"
-    },
-    {
-      title: "DramaBox vs ReelShort",
-      href: "/articles/dramabox-vs-reelshort-es",
-      category: "Comparación",
-      description: "Una comparación cara a cara de los dos mayores rivales de la industria: contenido, precios y experiencia de usuario.",
-      readTime: "8 min",
-      gradient: "from-violet-500/20 to-purple-900/40"
-    },
-    {
-      title: "Guía de Precios de ShortMax",
-      href: "/articles/guia-de-precios-shortmax",
-      category: "Análisis de Valor",
-      description: "Monedas de ShortMax, planes VIP, episodios gratis y cómo controlar los costos de los maratones.",
-      readTime: "10 min",
-      gradient: "from-cyan-500/20 to-blue-900/40"
-    },
-    {
-      title: "¿Es Seguro ReelShort?",
-      href: "/articles/es-seguro-reelshort",
-      category: "Seguridad y Confianza",
-      description: "Revisamos la legitimidad de ReelShort, privacidad, suscripciones, compra de monedas y hábitos de visualización seguros.",
-      readTime: "9 min",
-      gradient: "from-fuchsia-500/20 to-pink-900/40"
-    },
-    {
-      title: "Cómo Subir Contenido a las Plataformas",
-      category: "Guía para Creadores",
-      description: "Un tutorial paso a paso para estudios y creadores independientes que buscan distribuir su trabajo.",
-      readTime: "7 min",
-      gradient: "from-emerald-500/20 to-green-900/40",
-      href: "/articles/como-subir-contenido-a-plataformas"
-    }
-  ];
+export default function GuidesPage() {
+  const breadcrumbSchema = createBreadcrumbList([
+    { name: "Inicio", item: SITE_URL },
+    { name: "Guías", item: `${SITE_URL}/guides` },
+  ]);
 
   return (
     <div className="flex flex-col min-h-screen bg-rp-bg-primary">
+      <JsonLd data={breadcrumbSchema} />
       <Nav />
-
       <main className="flex-grow pt-32">
-        {/* Header */}
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
               Guías
             </h1>
-            <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Recursos expertos para navegar el ecosistema de los microdramas — ya seas espectador, creador o inversor.
+            <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mb-16">
+              Consejos prácticos, guías de precios y trucos para maximizar tu experiencia de visualización.
             </p>
           </ScrollReveal>
-        </section>
 
-        {/* Featured Guide */}
-        {safetyGuide && (
-          <section className="max-w-7xl mx-auto px-6 mb-32">
-            <ScrollReveal direction="up">
-              <div className="group card-glow rounded-3xl overflow-hidden">
-                <div className="relative p-12 md:p-20 bg-rp-bg-card border border-white/10 overflow-hidden">
-                  <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-rp-coral/10 blur-[150px] -translate-y-1/2 translate-x-1/4" />
-                  
-                  <div className="relative z-10 max-w-3xl">
-                    <div className="badge badge-coral mb-6 px-4 py-1.5 text-xs">Guía Destacada</div>
-                    <h2 className="text-4xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-6 leading-[1.1]">
-                      {safetyGuide.title}
-                    </h2>
-                    <p className="text-rp-text-secondary text-xl font-medium mb-10 leading-relaxed">
-                      {safetyGuide.excerpt}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {guides.map((guide, index) => (
+              <ScrollReveal key={guide.slug} direction="up" delay={index * 0.05}>
+                <Link href={`/guides/${guide.slug}`}>
+                  <div className="group card p-8 h-full flex flex-col hover:-translate-y-1 transition-transform border border-white/5 hover:border-rp-coral/30">
+                    <div className="mb-4">
+                      <div className="badge badge-coral text-xs py-1 px-3 mb-4 inline-block">{guide.badge}</div>
+                      <h2 className="font-display font-bold text-2xl text-white group-hover:text-rp-coral transition-colors mb-3 leading-tight">
+                        {guide.title}
+                      </h2>
+                    </div>
+                    <p className="text-rp-text-secondary text-sm leading-relaxed mb-6 flex-grow">
+                      {guide.description}
                     </p>
-                    <Link href={`/articles/${safetyGuide.slug}`} className="inline-flex items-center gap-4 bg-white text-rp-bg-primary px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-xs hover:bg-rp-coral hover:text-white transition-all shadow-2xl">
-                      Leer Guía <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
-                    </Link>
-                  </div>
-
-                  <div className="absolute bottom-10 right-10 hidden lg:block opacity-10">
-                    <span className="font-display font-black text-[13rem] leading-none select-none tracking-tight uppercase italic">SEGURIDAD</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </section>
-        )}
-
-        {/* All Guides Grid */}
-        <section className="max-w-7xl mx-auto px-6 mb-32">
-          <ScrollReveal direction="up">
-            <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-10 italic">
-              Todos los Recursos
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {additionalGuides.map((guide, i) => (
-                <ScrollReveal key={guide.title} direction="up" delay={i * 0.05}>
-                  <div className="group card card-glow p-8 h-full flex flex-col border-white/5 relative overflow-hidden">
-                    <div className={`absolute top-0 right-0 w-40 h-40 blur-3xl opacity-20 -translate-y-1/2 translate-x-1/4 rounded-full bg-gradient-to-br ${guide.gradient}`} />
-                    
-                    <div className="mb-6">
-                      <div className="badge badge-coral bg-white/5 border-white/10 text-white/60 mb-4">{guide.category}</div>
-                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-rp-coral transition-colors leading-tight">{guide.title}</h3>
-                      <p className="text-rp-text-secondary text-sm leading-relaxed mb-8">{guide.description}</p>
-                    </div>
-
-                    <div className="mt-auto pt-6 border-t border-white/5 flex items-center justify-between">
-                      <span className="text-[10px] font-black uppercase tracking-widest text-rp-text-muted italic">{guide.readTime} lect.</span>
-                      <Link href={guide.href ?? "#"} className="font-display font-black text-white uppercase tracking-widest text-[10px] hover:text-rp-coral transition-colors">
-                        Ver <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
-                      </Link>
+                    <div className="flex items-center text-xs font-black uppercase tracking-[0.2em] text-rp-coral mt-auto">
+                      Leer Guía <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2 group-hover:translate-x-1 transition-transform"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                     </div>
                   </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </ScrollReveal>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
         </section>
 
         <section className="max-w-4xl mx-auto px-6 py-32">
-          <NewsletterCTA />
+          <ScrollReveal direction="up">
+            <NewsletterCTA />
+          </ScrollReveal>
         </section>
       </main>
-
       <Footer />
     </div>
   );

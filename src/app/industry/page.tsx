@@ -27,19 +27,19 @@ export default function IndustryPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
-              Industry
+              Industria
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Data, analysis, and intelligence from the $26B micro-drama market.
+              Datos, análisis e inteligencia del mercado de microdramas de $26B.
             </p>
           </ScrollReveal>
         </section>
 
-        {/* Market Overview */}
+        {/* Resumen del Mercado */}
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up" delay={0.1}>
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-10 italic">
-              Market Overview
+              Resumen del Mercado
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {stats.map((stat, i) => (
@@ -62,31 +62,31 @@ export default function IndustryPage() {
           <ScrollReveal direction="up" delay={0.2}>
             <div className="glass p-10 rounded-3xl border-l-4 border-l-rp-coral bg-gradient-to-r from-rp-coral/5 to-transparent">
               <div className="flex items-center gap-4 mb-4">
-                <span className="bg-rp-coral text-white text-[10px] font-black tracking-widest px-3 py-1 rounded-full uppercase">Mid-2026 Update</span>
-                <h2 className="font-display font-black text-2xl text-white uppercase tracking-wider">Q3 2026 Industry Forecast</h2>
+                <span className="bg-rp-coral text-white text-[10px] font-black tracking-widest px-3 py-1 rounded-full uppercase">Actualización Mediados 2026</span>
+                <h2 className="font-display font-black text-2xl text-white uppercase tracking-wider">Pronóstico de la Industria T3 2026</h2>
               </div>
               <p className="text-rp-text-secondary text-base leading-relaxed max-w-4xl">
-                As we move into Q3 2026, NovelaFlash analysts predict a massive surge in localized production outside of China. Look for intense competition in the <span className="text-white font-bold">Southeast Asian BL market</span> and a rapid integration of <span className="text-white font-bold">AI dubbing technologies</span>, drastically reducing localization costs for top platforms like ReelShort and DramaBox.
+                A medida que avanzamos hacia el tercer trimestre de 2026, los analistas de NovelaFlash predicen un aumento masivo de la producción localizada fuera de China. Esté atento a la intensa competencia en el <span className="text-white font-bold">mercado asiático de BL</span> y la rápida integración de <span className="text-white font-bold">tecnologías de doblaje con IA</span>, reduciendo drásticamente los costos de localización para las principales plataformas.
               </p>
             </div>
           </ScrollReveal>
         </section>
 
-        {/* Latest Analysis */}
+        {/* Último Análisis */}
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-10 italic">
-              Latest Analysis
+              Último Análisis
             </h2>
             <IndustryArticleList articles={allAnalysis} />
           </ScrollReveal>
         </section>
 
-        {/* Industry Spotlights */}
+        {/* Destacados de la Industria */}
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-10 italic">
-              Industry Spotlights
+              Destacados de la Industria
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {industrySpotlights.map((spotlight, i) => (
@@ -111,7 +111,7 @@ export default function IndustryPage() {
                     </p>
                     <div className="mt-auto">
                       <Link href={`/industry/${spotlight.slug}`} className="group/link inline-flex items-center gap-3 font-display font-bold text-white uppercase tracking-widest text-xs">
-                        View Insight <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover/link:border-rp-coral group-hover/link:bg-rp-coral transition-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
+                        Ver Análisis <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover/link:border-rp-coral group-hover/link:bg-rp-coral transition-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
                       </Link>
                     </div>
                   </div>

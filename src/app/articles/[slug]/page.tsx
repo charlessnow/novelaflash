@@ -445,12 +445,12 @@ export default async function ArticlePage({
           )}
         </section>
 
-        {/* Related Articles */}
+        {/* Artículos Relacionados */}
         <section className="bg-rp-bg-secondary py-20 border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6">
             <ScrollReveal direction="up" className="mb-16">
               <h2 className="font-display font-black text-4xl md:text-5xl uppercase tracking-tight text-white">
-                Related Articles
+                Artículos Relacionados
               </h2>
             </ScrollReveal>
 

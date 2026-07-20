@@ -73,7 +73,7 @@ export function ConversionGuidePage({ guide }: { guide: ConversionGuide }) {
           </h1>
           <p className="max-w-3xl text-xl font-medium leading-relaxed text-rp-text-secondary">{guide.dek}</p>
           <p className="mt-6 text-xs font-black uppercase tracking-[0.25em] text-rp-text-muted">
-            Last updated {guide.updated}
+            Última actualización {guide.updated}
           </p>
         </section>
 
@@ -116,7 +116,7 @@ export function ConversionGuidePage({ guide }: { guide: ConversionGuide }) {
           </div>
 
           <section className="mt-16 border-t border-white/10 pt-12">
-            <h2 className="mb-8 font-display text-3xl font-black uppercase tracking-tight text-white">FAQ</h2>
+            <h2 className="mb-8 font-display text-3xl font-black uppercase tracking-tight text-white">PREGUNTAS FRECUENTES</h2>
             <div className="space-y-4">
               {guide.faqs.map((faq) => (
                 <details key={faq.question} className="glass group rounded-2xl border-white/10 p-6">
@@ -131,11 +131,11 @@ export function ConversionGuidePage({ guide }: { guide: ConversionGuide }) {
           </section>
 
           <section className="mt-16 border-t border-white/10 pt-12">
-            <h2 className="mb-8 font-display text-3xl font-black uppercase tracking-tight text-white">Related Guides</h2>
+            <h2 className="mb-8 font-display text-3xl font-black uppercase tracking-tight text-white">Guías Relacionadas</h2>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
               {guide.relatedGuides.map((item) => (
                 <Link key={item.href} href={item.href} className="glass group rounded-2xl border-white/10 p-6 transition-colors hover:bg-white/[0.04]">
-                  <p className="mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-rp-text-muted">Guide</p>
+                  <p className="mb-3 text-[10px] font-black uppercase tracking-[0.25em] text-rp-text-muted">Guía</p>
                   <h3 className="mb-3 font-display text-lg font-black uppercase text-white group-hover:text-rp-coral">{item.label}</h3>
                   <p className="text-sm leading-relaxed text-rp-text-secondary">{item.description}</p>
                 </Link>
