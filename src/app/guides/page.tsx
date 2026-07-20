@@ -7,66 +7,65 @@ import { latestArticles } from "@/lib/data";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Guides & Resources — NovelaFlash",
-  description: "Expert guides for navigating the short drama ecosystem. App safety reviews, pricing guides, creator resources, and platform comparisons.",
+  title: "Guías y Recursos de Miniseries — NovelaFlash",
+  description: "Guías expertas para navegar el ecosistema de los dramas cortos. Evaluaciones de seguridad, guías de precios, recursos para creadores y comparaciones de plataformas.",
 };
 
 export default function GuidesPage() {
-  const safetyGuide = latestArticles.find(a => a.slug === "short-drama-app-safety-guide");
+  const safetyGuide = {
+    slug: "guia-de-seguridad-apps-miniseries",
+    title: "¿Son Seguras las Apps de Miniseries?",
+    excerpt: "Una revisión práctica de seguridad sobre la privacidad de DramaBox, legitimidad en las tiendas de apps, suscripciones y riesgos de facturación.",
+  };
 
   const additionalGuides = [
     {
-      title: "Are Short Drama Apps Safe?",
-      href: "/guides/is-dramabox-safe",
-      category: "Safety & Trust",
-      description: "A practical safety review of DramaBox privacy, app-store legitimacy, subscriptions, and billing risk.",
-      readTime: "10 min",
-      gradient: "from-rose-500/20 to-red-900/40"
-    },
-    {
-      title: "Best Short Drama Apps 2026",
-      category: "App Reviews",
-      description: "Our definitive ranking of the top apps for quality, value, and user experience this year.",
+      title: "Mejores Apps de Miniseries 2026",
+      category: "Reseñas de Apps",
+      description: "Nuestro ranking definitivo de las mejores aplicaciones por calidad, valor y experiencia de usuario este año.",
       readTime: "15 min",
-      gradient: "from-amber-500/20 to-orange-900/40"
+      gradient: "from-amber-500/20 to-orange-900/40",
+      href: "/articles/mejores-apps-de-miniseries-2026"
     },
     {
-      title: "How to Make Money with Short Dramas",
-      category: "Creator Economy",
-      description: "From script writing to production — a guide to monetization opportunities in the vertical cinema space.",
+      title: "Cómo Ganar Dinero con Miniseries",
+      category: "Economía de Creadores",
+      description: "Desde la escritura de guiones hasta la producción: una guía sobre oportunidades de monetización en el cine vertical.",
       readTime: "12 min",
-      gradient: "from-pink-500/20 to-rose-900/40"
+      gradient: "from-pink-500/20 to-rose-900/40",
+      href: "/articles/como-ganar-dinero-con-miniseries"
     },
     {
       title: "DramaBox vs ReelShort",
-      href: "/articles/dramabox-vs-reelshort-2026",
-      category: "Comparison",
-      description: "An head-to-head comparison of the industry's two biggest rivals: content, pricing, and UX.",
+      href: "/articles/dramabox-vs-reelshort-es",
+      category: "Comparación",
+      description: "Una comparación cara a cara de los dos mayores rivales de la industria: contenido, precios y experiencia de usuario.",
       readTime: "8 min",
       gradient: "from-violet-500/20 to-purple-900/40"
     },
     {
-      title: "Short Drama Pricing Guide",
-      href: "/guides/shortmax-pricing",
-      category: "Value Analysis",
-      description: "ShortMax coins, VIP plans, free episodes, and how to control binge-watch costs.",
+      title: "Guía de Precios de ShortMax",
+      href: "/articles/guia-de-precios-shortmax",
+      category: "Análisis de Valor",
+      description: "Monedas de ShortMax, planes VIP, episodios gratis y cómo controlar los costos de los maratones.",
       readTime: "10 min",
       gradient: "from-cyan-500/20 to-blue-900/40"
     },
     {
-      title: "Is ReelShort Safe?",
-      href: "/guides/is-reelshort-safe",
-      category: "Safety & Trust",
-      description: "Review ReelShort legitimacy, privacy, subscriptions, coin purchases, and safer viewing habits.",
+      title: "¿Es Seguro ReelShort?",
+      href: "/articles/es-seguro-reelshort",
+      category: "Seguridad y Confianza",
+      description: "Revisamos la legitimidad de ReelShort, privacidad, suscripciones, compra de monedas y hábitos de visualización seguros.",
       readTime: "9 min",
       gradient: "from-fuchsia-500/20 to-pink-900/40"
     },
     {
-      title: "How to Submit Content to Short Drama Platforms",
-      category: "Creator Guide",
-      description: "A step-by-step walkthrough for studios and independent creators looking to distribute their work.",
+      title: "Cómo Subir Contenido a las Plataformas",
+      category: "Guía para Creadores",
+      description: "Un tutorial paso a paso para estudios y creadores independientes que buscan distribuir su trabajo.",
       readTime: "7 min",
-      gradient: "from-emerald-500/20 to-green-900/40"
+      gradient: "from-emerald-500/20 to-green-900/40",
+      href: "/articles/como-subir-contenido-a-plataformas"
     }
   ];
 
@@ -79,10 +78,10 @@ export default function GuidesPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
-              Guides
+              Guías
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Expert resources for navigating the short drama ecosystem — whether you&apos;re a viewer, creator, or investor.
+              Recursos expertos para navegar el ecosistema de los microdramas — ya seas espectador, creador o inversor.
             </p>
           </ScrollReveal>
         </section>
@@ -96,7 +95,7 @@ export default function GuidesPage() {
                   <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-rp-coral/10 blur-[150px] -translate-y-1/2 translate-x-1/4" />
                   
                   <div className="relative z-10 max-w-3xl">
-                    <div className="badge badge-coral mb-6 px-4 py-1.5 text-xs">Featured Guide</div>
+                    <div className="badge badge-coral mb-6 px-4 py-1.5 text-xs">Guía Destacada</div>
                     <h2 className="text-4xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-6 leading-[1.1]">
                       {safetyGuide.title}
                     </h2>
@@ -104,12 +103,12 @@ export default function GuidesPage() {
                       {safetyGuide.excerpt}
                     </p>
                     <Link href={`/articles/${safetyGuide.slug}`} className="inline-flex items-center gap-4 bg-white text-rp-bg-primary px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-xs hover:bg-rp-coral hover:text-white transition-all shadow-2xl">
-                      Read Guide <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                      Leer Guía <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                     </Link>
                   </div>
 
                   <div className="absolute bottom-10 right-10 hidden lg:block opacity-10">
-                    <span className="font-display font-black text-[15rem] leading-none select-none tracking-tight uppercase italic">SAFETY</span>
+                    <span className="font-display font-black text-[13rem] leading-none select-none tracking-tight uppercase italic">SEGURIDAD</span>
                   </div>
                 </div>
               </div>
@@ -121,7 +120,7 @@ export default function GuidesPage() {
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-10 italic">
-              All Resources
+              Todos los Recursos
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {additionalGuides.map((guide, i) => (
@@ -136,9 +135,9 @@ export default function GuidesPage() {
                     </div>
 
                     <div className="mt-auto pt-6 border-t border-white/5 flex items-center justify-between">
-                      <span className="text-[10px] font-black uppercase tracking-widest text-rp-text-muted italic">{guide.readTime} read</span>
+                      <span className="text-[10px] font-black uppercase tracking-widest text-rp-text-muted italic">{guide.readTime} lect.</span>
                       <Link href={guide.href ?? "#"} className="font-display font-black text-white uppercase tracking-widest text-[10px] hover:text-rp-coral transition-colors">
-                        View <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                        Ver <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                       </Link>
                     </div>
                   </div>

@@ -19,7 +19,7 @@ export const Nav = () => {
 
   const navLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Top Series", href: "/platforms" },
+    { name: "Plataformas", href: "/platforms" },
     { name: "Rankings", href: "/rankings" },
     { name: "Chismes", href: "/industry" },
     { name: "Guías", href: "/guides" },
