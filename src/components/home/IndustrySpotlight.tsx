@@ -8,7 +8,7 @@ export const IndustrySpotlight = () => {
         <div className="lg:col-span-5">
           <div className="flex items-center gap-4 mb-8">
             <h2 className="font-display font-black text-4xl text-white uppercase tracking-wider italic">
-              Deep Dives
+              Análisis Profundo
             </h2>
             <div className="flex gap-2">
               <div className="w-12 h-0.5 bg-rp-coral" />
@@ -17,9 +17,9 @@ export const IndustrySpotlight = () => {
           </div>
           
           <p className="text-rp-text-secondary text-lg leading-relaxed max-w-md">
-            Unpacking the micro-drama phenomenon through data-driven analysis, 
-            cultural insights, and industry-first reporting. We go beyond the 
-            surface to understand the forces shaping the future of mobile entertainment.
+            Desentrañando el fenómeno del microdrama a través de análisis de datos, 
+            perspectivas culturales y reportes exclusivos de la industria. Vamos más allá de la 
+            superficie para entender las fuerzas que moldean el futuro del entretenimiento móvil.
           </p>
         </div>
 

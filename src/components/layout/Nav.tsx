@@ -18,11 +18,11 @@ export const Nav = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Platforms", href: "/platforms" },
+    { name: "Inicio", href: "/" },
+    { name: "Plataformas", href: "/platforms" },
     { name: "Rankings", href: "/rankings" },
-    { name: "Industry", href: "/industry" },
-    { name: "Guides", href: "/guides" },
+    { name: "Industria", href: "/industry" },
+    { name: "Guías", href: "/guides" },
   ];
 
   const isLinkActive = (href: string) => {
@@ -40,7 +40,7 @@ export const Nav = () => {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="relative z-10 group">
           <span className="font-display font-black text-2xl tracking-tight text-white uppercase italic">
-            REELPULSE
+            NOVELAFLASH
           </span>
           <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-rp-coral transition-all duration-300 group-hover:w-full" />
         </Link>
@@ -71,7 +71,7 @@ export const Nav = () => {
 
         <div className="hidden md:flex items-center gap-4 relative z-10">
           <Link href="/newsletter" className="px-6 py-2 rounded-full border border-white/20 bg-transparent text-white text-[11px] font-bold tracking-[0.1em] uppercase hover:bg-white/10 transition-all flex items-center gap-2">
-            Subscribe
+            Suscribirse
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -128,7 +128,7 @@ export const Nav = () => {
             );
           })}
           <Link href="/newsletter" className="mt-4 px-10 py-4 rounded-full border border-white/20 bg-transparent text-white font-bold uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
-            Subscribe
+            Suscribirse
           </Link>
         </div>
       </div>

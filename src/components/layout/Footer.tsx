@@ -11,18 +11,18 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <span className="font-display font-black text-2xl tracking-tight text-white uppercase italic">
-                REELPULSE
+                NOVELAFLASH
               </span>
               <div className="w-2 h-2 rounded-full bg-rp-coral animate-pulse" />
             </Link>
             <p className="text-rp-text-secondary max-w-xs text-sm leading-relaxed">
-              Your pulse on the short drama revolution. Industry intelligence, rankings, and deep dives into the $26 billion micro-entertainment industry.
+              Tu pulso en la revolución del microdrama. Inteligencia de la industria, rankings y las mejores recomendaciones de contenido mundial.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Platforms</h4>
+            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Plataformas</h4>
             <ul className="space-y-4 text-sm text-rp-text-muted">
               <li><Link href="/platforms/reelshort" className="hover:text-rp-coral transition-colors">ReelShort</Link></li>
               <li><Link href="/platforms/dramabox" className="hover:text-rp-coral transition-colors">DramaBox</Link></li>
@@ -35,29 +35,29 @@ export const Footer = () => {
             <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Rankings</h4>
             <ul className="space-y-4 text-sm text-rp-text-muted">
               <li><Link href="/rankings/top-100" className="hover:text-rp-coral transition-colors">Top 100 Apps</Link></li>
-              <li><Link href="/rankings/revenue" className="hover:text-rp-coral transition-colors">Revenue Leaders</Link></li>
-              <li><Link href="/rankings/studios" className="hover:text-rp-coral transition-colors">Content Studios</Link></li>
-              <li><Link href="/rankings/growth" className="hover:text-rp-coral transition-colors">Growth Metrics</Link></li>
+              <li><Link href="/rankings/revenue" className="hover:text-rp-coral transition-colors">Líderes de Ingresos</Link></li>
+              <li><Link href="/rankings/studios" className="hover:text-rp-coral transition-colors">Estudios</Link></li>
+              <li><Link href="/rankings/growth" className="hover:text-rp-coral transition-colors">Crecimiento</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Industry</h4>
+            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Industria</h4>
             <ul className="space-y-4 text-sm text-rp-text-muted">
-              <li><Link href="/industry/market-reports" className="hover:text-rp-coral transition-colors">Market Reports</Link></li>
-              <li><Link href="/industry/tech-ai" className="hover:text-rp-coral transition-colors">Tech & AI</Link></li>
-              <li><Link href="/industry/global-markets" className="hover:text-rp-coral transition-colors">Global Markets</Link></li>
-              <li><Link href="/industry/creator-economy" className="hover:text-rp-coral transition-colors">Creator Economy</Link></li>
+              <li><Link href="/industry/market-reports" className="hover:text-rp-coral transition-colors">Reportes de Mercado</Link></li>
+              <li><Link href="/industry/tech-ai" className="hover:text-rp-coral transition-colors">Tecnología e IA</Link></li>
+              <li><Link href="/industry/global-markets" className="hover:text-rp-coral transition-colors">Mercados Globales</Link></li>
+              <li><Link href="/industry/creator-economy" className="hover:text-rp-coral transition-colors">Economía de Creadores</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Resources</h4>
+            <h4 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-6">Recursos</h4>
             <ul className="space-y-4 text-sm text-rp-text-muted">
-              <li><Link href="/about" className="hover:text-rp-coral transition-colors">About Us</Link></li>
-              <li><Link href="/newsletter" className="hover:text-rp-coral transition-colors">Newsletter</Link></li>
-              <li><Link href="/contact" className="hover:text-rp-coral transition-colors">Contact</Link></li>
-              <li><Link href="/privacy" className="hover:text-rp-coral transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/about" className="hover:text-rp-coral transition-colors">Sobre Nosotros</Link></li>
+              <li><Link href="/newsletter" className="hover:text-rp-coral transition-colors">Boletín</Link></li>
+              <li><Link href="/contact" className="hover:text-rp-coral transition-colors">Contacto</Link></li>
+              <li><Link href="/privacy" className="hover:text-rp-coral transition-colors">Privacidad</Link></li>
               <li><a href="https://duanjuhao.com" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">中文 · 短剧好</a></li>
             </ul>
           </div>

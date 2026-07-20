@@ -14,8 +14,8 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "NovelaFlash — Short Drama Industry Intelligence",
-  description: "Your pulse on the $26B micro-drama revolution. Platform rankings, industry analysis, creator guides, and breaking news on ReelShort, DramaBox, and more.",
+  title: "NovelaFlash — El portal N°1 de Microdramas",
+  description: "Tu pulso en la revolución del microdrama. Rankings de plataformas, reseñas y las mejores recomendaciones para ver series gratis como DramaBox, ReelShort y más.",
 };
 
 export default function Home() {

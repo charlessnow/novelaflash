@@ -5,7 +5,7 @@ import { MouseGlow } from "@/components/effects/MouseGlow";
 
 const SCENES = [
   {
-    name: "Revenge Drama",
+    name: "Drama de Venganza",
     video: "/videos/hero/scene-0.mp4",
     thumbImage: "/videos/hero/thumb-0.jpg",
     blobs: [
@@ -15,7 +15,7 @@ const SCENES = [
     thumbnail: "from-rose-500 to-red-800",
   },
   {
-    name: "CEO Romance",
+    name: "Romance de CEO",
     video: "/videos/hero/scene-1.mp4",
     thumbImage: "/videos/hero/thumb-1.jpg",
     blobs: [
@@ -25,7 +25,7 @@ const SCENES = [
     thumbnail: "from-amber-400 to-yellow-700",
   },
   {
-    name: "Fantasy Epic",
+    name: "Fantasía Épica",
     video: "/videos/hero/scene-2.mp4",
     thumbImage: "/videos/hero/thumb-2.jpg",
     blobs: [
@@ -35,7 +35,7 @@ const SCENES = [
     thumbnail: "from-emerald-500 to-teal-800",
   },
   {
-    name: "Sweet Revenge",
+    name: "Dulce Venganza",
     video: "/videos/hero/scene-3.mp4",
     thumbImage: "/videos/hero/thumb-3.jpg",
     blobs: [
@@ -45,7 +45,7 @@ const SCENES = [
     thumbnail: "from-rose-400 to-pink-700",
   },
   {
-    name: "Thriller",
+    name: "Suspenso",
     video: "/videos/hero/scene-4.mp4",
     thumbImage: "/videos/hero/thumb-4.jpg",
     blobs: [
@@ -55,7 +55,7 @@ const SCENES = [
     thumbnail: "from-red-500 to-rose-800",
   },
   {
-    name: "Dark Noir",
+    name: "Cine Negro",
     video: "/videos/hero/scene-5.mp4",
     thumbImage: "/videos/hero/thumb-5.jpg",
     blobs: [
@@ -110,20 +110,20 @@ export const Hero = () => {
       <div className="relative z-10 w-full px-6 md:px-12 flex flex-col items-center xl:items-start">
         <div className="w-full flex flex-col items-center xl:items-start max-w-[1800px] xl:max-w-[60vw] xl:pl-12">
           <h1 className="flex flex-col font-display font-black leading-[0.8] text-white uppercase tracking-tight text-center xl:text-left">
-            <span className="text-[14vw] sm:text-[12vw] xl:text-[10vw] whitespace-nowrap">THE PULSE OF</span>
-            <span className="text-[14vw] sm:text-[12vw] xl:text-[10vw] whitespace-nowrap">SHORT DRAMA</span>
+            <span className="text-[14vw] sm:text-[12vw] xl:text-[10vw] whitespace-nowrap">EL LATIDO DEL</span>
+            <span className="text-[14vw] sm:text-[12vw] xl:text-[10vw] whitespace-nowrap">MICRODRAMA</span>
           </h1>
 
           <div className="mt-10 xl:mt-6 max-w-2xl text-center xl:text-left">
             <p className="text-stone-400/70 text-lg md:text-xl font-medium leading-relaxed">
-              Industry intelligence for the $26 billion micro-drama revolution.
-              The most comprehensive data-driven analysis of the global short-form entertainment market.
+              Inteligencia de la industria para la revolución de los microdramas de $26 mil millones.
+              El análisis de datos más completo del mercado mundial.
             </p>
 
             <div className="mt-12 flex flex-wrap items-center justify-center xl:justify-start gap-5">
               <a href="/rankings" className="group flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm hover:bg-white/[0.08] transition-all duration-300">
                 <span className="pl-8 pr-5 py-3.5 text-white text-[11px] font-bold tracking-[0.2em] uppercase">
-                  Explore Rankings
+                  Explorar Rankings
                 </span>
                 <span className="mr-1.5 w-9 h-9 rounded-full bg-white/[0.08] flex items-center justify-center group-hover:bg-white/[0.15] transition-colors">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -134,7 +134,7 @@ export const Hero = () => {
               </a>
               <a href="/industry" className="group flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm hover:bg-white/[0.08] transition-all duration-300">
                 <span className="pl-8 pr-5 py-3.5 text-white text-[11px] font-bold tracking-[0.2em] uppercase">
-                  Read Latest
+                  Leer Novedades
                 </span>
                 <span className="mr-1.5 w-9 h-9 rounded-full bg-white/[0.08] flex items-center justify-center group-hover:bg-white/[0.15] transition-colors">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
@@ -180,7 +180,7 @@ export const Hero = () => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-        <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-white/30">Scroll to explore</span>
+        <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-white/30">Deslizar para explorar</span>
         <div className="w-[1px] h-16 bg-gradient-to-b from-white/40 to-transparent" />
       </div>
     </section>

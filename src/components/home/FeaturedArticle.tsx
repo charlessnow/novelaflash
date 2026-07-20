@@ -25,7 +25,7 @@ export const FeaturedArticle = () => {
               playing={isHovered}
               className="w-full h-full min-h-[300px] group-hover:scale-105 transition-transform duration-[2s] ease-out"
               fallbackGradient="from-stone-800 to-stone-900"
-              fallbackText="FEATURED"
+              fallbackText="DESTACADO"
             />
             <div className="absolute bottom-8 left-8 z-20">
               <div className="badge badge-coral mb-4">{featuredArticle.category}</div>

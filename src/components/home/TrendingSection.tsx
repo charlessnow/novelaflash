@@ -10,7 +10,7 @@ export const TrendingSection = () => {
     <section className="max-w-7xl mx-auto px-6 py-12">
       <div className="flex items-center justify-between mb-10">
         <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider flex items-center gap-3">
-          Trending <span className="animate-bounce">🔥</span>
+          Tendencias <span className="animate-bounce">🔥</span>
         </h2>
         <Link href="/articles" className="text-sm font-bold uppercase tracking-wider text-rp-text-muted hover:text-rp-coral transition-colors">
           View All <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>

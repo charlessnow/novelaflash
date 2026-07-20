@@ -6,7 +6,7 @@ export const PlatformRankings = () => {
   return (
     <div className="bg-rp-bg-card border border-white/5 rounded-2xl p-8 mb-8">
       <h2 className="font-display font-black text-2xl text-white uppercase tracking-wider mb-8 flex items-center gap-2">
-        Top Platforms <span className="w-1.5 h-1.5 rounded-full bg-rp-coral animate-pulse-glow" />
+        Top Plataformas <span className="w-1.5 h-1.5 rounded-full bg-rp-coral animate-pulse-glow" />
       </h2>
 
       <div className="flex flex-col gap-6">
@@ -52,7 +52,7 @@ export const PlatformRankings = () => {
       </div>
 
       <Link href="/rankings" className="mt-8 block py-3 text-center border border-white/5 bg-white/[0.02] text-[11px] font-bold uppercase tracking-[0.2em] text-rp-text-secondary hover:bg-white/[0.05] hover:text-white transition-all rounded-lg">
-        See Full Leaderboard
+        Ver Ranking Completo
       </Link>
     </div>
   );
