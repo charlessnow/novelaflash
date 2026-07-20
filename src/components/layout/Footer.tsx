@@ -76,7 +76,7 @@ export const Footer = () => {
             </Link>
           </div>
           <p className="text-rp-text-muted text-xs">
-            © {new Date().getFullYear()} ReelPulse. All rights reserved.
+            © {new Date().getFullYear()} NovelaFlash. All rights reserved.
           </p>
         </div>
       </div>

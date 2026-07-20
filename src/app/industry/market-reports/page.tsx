@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Market Reports — ReelPulse",
+  title: "Short Drama Market Reports — NovelaFlash",
   description: "Quarterly market reports on the short drama industry. Revenue data, user metrics, and growth projections for the $26B micro-drama market.",
 };
 
@@ -17,7 +17,7 @@ export default function MarketReportsPage() {
   const collectionPageSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Short Drama Market Reports — ReelPulse",
+    name: "Short Drama Market Reports — NovelaFlash",
     description:
       "Quarterly market reports on the short drama industry. Revenue data, user metrics, and growth projections for the $26B micro-drama market.",
     url: `${SITE_URL}/industry/market-reports`,

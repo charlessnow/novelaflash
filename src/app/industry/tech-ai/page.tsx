@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "AI in Short Dramas — Technology Trends — ReelPulse",
+  title: "AI in Short Dramas — Technology Trends — NovelaFlash",
   description: "How AI is transforming short drama production. From AI-generated scripts to automated video, explore the technology reshaping micro-entertainment.",
 };
 
@@ -15,7 +15,7 @@ export default function TechAIPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "AI in Short Dramas — Technology Trends — ReelPulse",
+    name: "AI in Short Dramas — Technology Trends — NovelaFlash",
     description:
       "How AI is transforming short drama production. From AI-generated scripts to automated video, explore the technology reshaping micro-entertainment.",
     url: `${SITE_URL}/industry/tech-ai`,

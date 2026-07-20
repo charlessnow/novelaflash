@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/effects/ScrollReveal";
 import { platforms } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Short Drama Revenue Leaders 2026 — ReelPulse",
+  title: "Short Drama Revenue Leaders 2026 — NovelaFlash",
   description: "Which short drama apps generate the most revenue? Data-driven analysis of ReelShort, DramaBox, and the top-earning micro-drama platforms.",
 };
 

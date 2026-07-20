@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Creator Economy — ReelPulse",
+  title: "Short Drama Creator Economy — NovelaFlash",
   description: "How to earn money in the short drama industry. Script writing, directing, voice acting — earning potential and how to get started.",
 };
 
@@ -16,7 +16,7 @@ export default function CreatorEconomyPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Short Drama Creator Economy — ReelPulse",
+    name: "Short Drama Creator Economy — NovelaFlash",
     description:
       "How to earn money in the short drama industry. Script writing, directing, voice acting — earning potential and how to get started.",
     url: `${SITE_URL}/industry/creator-economy`,

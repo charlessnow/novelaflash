@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Short Drama Growth Metrics 2026 — ReelPulse",
+  title: "Short Drama Growth Metrics 2026 — NovelaFlash",
   description: "Key growth metrics for the $26B short drama industry. Market size, revenue trends, user growth, and funding data updated quarterly.",
 };
 

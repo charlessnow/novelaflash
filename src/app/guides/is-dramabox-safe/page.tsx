@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConversionGuidePage, type ConversionGuide } from "../ConversionGuidePage";
 
 export const metadata: Metadata = {
-  title: "Is DramaBox Safe? Privacy, Billing & App Review 2026 — ReelPulse",
+  title: "Is DramaBox Safe? Privacy, Billing & App Review 2026 — NovelaFlash",
   description:
     "Is DramaBox safe to use? A practical 2026 review of DramaBox privacy, payments, subscriptions, ads, app store legitimacy, and safer viewing tips.",
   alternates: { canonical: "/guides/is-dramabox-safe" },

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { featuredArticle, latestArticles, platforms, trendingArticles } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://reelpulse.net";
+  const baseUrl = "https://novelaflash.com";
   const siteUpdatedAt = new Date("2026-07-08T00:00:00.000Z");
   const marketReportSlugs = [
     "q1-2026-revenue",

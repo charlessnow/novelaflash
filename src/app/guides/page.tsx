@@ -7,7 +7,7 @@ import { latestArticles } from "@/lib/data";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Guides & Resources — ReelPulse",
+  title: "Short Drama Guides & Resources — NovelaFlash",
   description: "Expert guides for navigating the short drama ecosystem. App safety reviews, pricing guides, creator resources, and platform comparisons.",
 };
 

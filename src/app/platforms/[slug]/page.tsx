@@ -166,7 +166,7 @@ export async function generateMetadata({
     notFound();
   }
 
-  const title = `${platform.name} Review 2026 — ReelPulse`;
+  const title = `${platform.name} Review 2026 — NovelaFlash`;
   const description = `${platform.name} review with a ${platform.score.toFixed(1)}/10 score, ${platform.downloads} downloads, and key insights on pricing, content, and value. Compare top apps now.`;
   const canonical = `/platforms/${platform.slug}`;
 
@@ -200,7 +200,7 @@ export default async function PlatformReview({ params }: { params: Promise<{ slu
     url: platformUrl,
     author: {
       "@type": "Organization",
-      name: "ReelPulse",
+      name: "NovelaFlash",
     },
     reviewRating: {
       "@type": "Rating",

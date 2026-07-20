@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "ReelShort Pricing Guide 2026 — ReelPulse",
+  title: "ReelShort Pricing Guide 2026 — NovelaFlash",
   description: "Complete breakdown of ReelShort pricing: free vs paid, coin costs, VIP tiers, and how much it costs to watch a full series. Compare with DramaBox.",
 };
 

@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Best Werewolf Short Dramas 2026: Top 10 Ranked — ReelPulse",
+  title: "Best Werewolf Short Dramas 2026: Top 10 Ranked — NovelaFlash",
   description: "Discover the best werewolf short drama series in 2026. Rankings of popular Lycan, Alpha, and Fated Mate dramas on ReelShort and DramaBox.",
   openGraph: {
     images: [{ url: "/images/guides/werewolf-dramas-og.jpg" }],

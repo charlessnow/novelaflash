@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConversionGuidePage, type ConversionGuide } from "../ConversionGuidePage";
 
 export const metadata: Metadata = {
-  title: "ShortMax Pricing Guide 2026: Coins, VIP & Free Episodes — ReelPulse",
+  title: "ShortMax Pricing Guide 2026: Coins, VIP & Free Episodes — NovelaFlash",
   description:
     "ShortMax pricing explained: free episodes, coins, VIP subscriptions, binge-watch costs, and when ShortMax is cheaper than ReelShort or DramaBox.",
   alternates: { canonical: "/guides/shortmax-pricing" },

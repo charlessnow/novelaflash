@@ -37,7 +37,7 @@ const IndustryArticleCard = ({ article }: { article: Article }) => {
           article.categoryColor === "cyan" ? "from-cyan-600/40 to-blue-900" :
           "from-emerald-600/40 to-green-900"
         }
-        fallbackText="ReelPulse"
+        fallbackText="NovelaFlash"
       />
       <div className="flex flex-col flex-grow">
         <div className="flex items-center gap-3 mb-3">

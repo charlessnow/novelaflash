@@ -9,7 +9,7 @@ import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Best Short Drama Apps 2026 — Top Platforms Ranked | ReelPulse",
+  title: "Best Short Drama Apps 2026 — Top Platforms Ranked | NovelaFlash",
   description: "The best short drama apps of 2026, ranked by content quality, user experience, and value. Compare ReelShort, DramaBox, ShortMax & more. Updated monthly.",
 };
 

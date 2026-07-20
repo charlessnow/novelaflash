@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================
-   ReelPulse Design System
+   NovelaFlash Design System
    Inspired by Secret Level — cinematic, bold, dark
    ============================================ */
 
@@ -14,11 +14,11 @@
   --rp-bg-elevated: #292524;
 
   /* Brand colors */
-  --rp-coral: #F43F5E;
-  --rp-coral-light: #FB7185;
-  --rp-coral-dark: #BE123C;
-  --rp-amber: #F59E0B;
-  --rp-orange: #FB923C;
+  --rp-coral: #E11D48; /* Deep Rose / Telenovela Red */
+  --rp-coral-light: #F43F5E;
+  --rp-coral-dark: #9F1239;
+  --rp-amber: #D946EF; /* Dramatic Purple instead of Amber */
+  --rp-orange: #C026D3;
   --rp-green: #10B981;
   --rp-pink: #EC4899;
 

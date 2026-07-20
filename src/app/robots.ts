@@ -21,6 +21,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://reelpulse.net/sitemap.xml',
+    sitemap: 'https://novelaflash.com/sitemap.xml',
   };
 }

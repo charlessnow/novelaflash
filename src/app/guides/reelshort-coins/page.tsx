@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "ReelShort Coins: Free Methods & Pricing 2026 — ReelPulse",
+  title: "ReelShort Coins: Free Methods & Pricing 2026 — NovelaFlash",
   description: "Complete guide to ReelShort coins: how to get free coins, promo codes, coin pricing tiers, and tips to maximize value.",
 };
 

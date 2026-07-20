@@ -6,9 +6,9 @@ import { ScrollReveal } from "@/components/effects/ScrollReveal";
 
 export function ContactPageClient() {
   const contactMethods = [
-    { method: "Email", value: "hello@reelpulse.net", label: "General Inquiries" },
-    { method: "X/Twitter", value: "@ReelPulse", label: "Follow the pulse" },
-    { method: "LinkedIn", value: "ReelPulse Industry", label: "Industry Network" },
+    { method: "Email", value: "hello@novelaflash.com", label: "General Inquiries" },
+    { method: "X/Twitter", value: "@NovelaFlash", label: "Follow the pulse" },
+    { method: "LinkedIn", value: "NovelaFlash Industry", label: "Industry Network" },
   ];
 
   return (

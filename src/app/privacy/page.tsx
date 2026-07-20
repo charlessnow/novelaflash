@@ -4,13 +4,13 @@ import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — ReelPulse",
+  title: "Privacy Policy — NovelaFlash",
   description:
-    "Review the ReelPulse privacy policy to understand how we collect, use, and protect your data when you read industry coverage, subscribe, or contact us.",
+    "Review the NovelaFlash privacy policy to understand how we collect, use, and protect your data when you read industry coverage, subscribe, or contact us.",
   openGraph: {
-    title: "Privacy Policy — ReelPulse",
+    title: "Privacy Policy — NovelaFlash",
     description:
-      "Review the ReelPulse privacy policy to understand how we collect, use, and protect your data when you read industry coverage, subscribe, or contact us.",
+      "Review the NovelaFlash privacy policy to understand how we collect, use, and protect your data when you read industry coverage, subscribe, or contact us.",
   },
 };
 
@@ -30,11 +30,11 @@ export default function PrivacyPage() {
     },
     {
       title: "Third-Party Services",
-      content: "Our services may contain links to third-party websites or services that are not owned or controlled by ReelPulse. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.",
+      content: "Our services may contain links to third-party websites or services that are not owned or controlled by NovelaFlash. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.",
     },
     {
       title: "Contact Us",
-      content: "If you have any questions about this Privacy Policy, please contact us at privacy@reelpulse.net.",
+      content: "If you have any questions about this Privacy Policy, please contact us at privacy@novelaflash.com.",
     },
   ];
 

@@ -19,8 +19,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://reelpulse.net'),
-  title: "ReelPulse — Your Pulse on the Short Drama Revolution",
+  metadataBase: new URL('https://novelaflash.com'),
+  title: "NovelaFlash — Your Pulse on the Short Drama Revolution",
   description:
     "Industry intelligence for the $26B micro-drama market. Platform reviews, rankings, creator guides, and breaking news on ReelShort, DramaBox, and the global short drama ecosystem.",
   keywords: [
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     "short drama news",
   ],
   openGraph: {
-    title: "ReelPulse — Short Drama Industry Intelligence",
+    title: "NovelaFlash — Short Drama Industry Intelligence",
     description:
       "Your pulse on the $26B micro-drama revolution. Reviews, rankings, and breaking industry news.",
     type: "website",
     locale: "en_US",
-    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'ReelPulse — Your Pulse on the Short Drama Revolution' }],
+    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'NovelaFlash — Your Pulse on the Short Drama Revolution' }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ReelPulse",
+    title: "NovelaFlash",
     description: "Your pulse on the short drama revolution.",
     images: ['/og.jpg'],
   },
@@ -57,14 +57,14 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        name: "ReelPulse",
+        name: "NovelaFlash",
         url: SITE_URL,
         description:
-          "ReelPulse delivers short drama industry intelligence with platform reviews, rankings, creator guides, and market analysis across the global micro-drama ecosystem.",
+          "NovelaFlash delivers short drama industry intelligence with platform reviews, rankings, creator guides, and market analysis across the global micro-drama ecosystem.",
       },
       {
         "@type": "WebSite",
-        name: "ReelPulse",
+        name: "NovelaFlash",
         url: SITE_URL,
       },
     ],

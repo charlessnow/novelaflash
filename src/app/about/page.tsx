@@ -7,17 +7,17 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "About ReelPulse — Short Drama Industry Intelligence",
-  description: "ReelPulse is the definitive source for short drama industry intelligence. Platform reviews, market analysis, and creator resources.",
+  title: "About NovelaFlash — Short Drama Industry Intelligence",
+  description: "NovelaFlash is the definitive source for short drama industry intelligence. Platform reviews, market analysis, and creator resources.",
 };
 
 export default function AboutPage() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "ReelPulse",
+    name: "NovelaFlash",
     description:
-      "ReelPulse is the definitive source for short drama industry intelligence. Platform reviews, market analysis, and creator resources.",
+      "NovelaFlash is the definitive source for short drama industry intelligence. Platform reviews, market analysis, and creator resources.",
     url: `${SITE_URL}/about`,
   };
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
               About
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mx-auto italic uppercase tracking-[0.2em] text-rp-coral">
-              ReelPulse
+              NovelaFlash
             </p>
           </ScrollReveal>
         </section>
@@ -48,7 +48,7 @@ export default function AboutPage() {
         <section className="max-w-4xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <p className="text-white text-3xl md:text-5xl font-display font-black uppercase tracking-tight leading-[1.1] mb-12">
-              ReelPulse is the definitive source for short drama industry intelligence, tracking the evolution of the $26B micro-entertainment economy.
+              NovelaFlash is the definitive source for short drama industry intelligence, tracking the evolution of the $26B micro-entertainment economy.
             </p>
             <p className="text-rp-text-secondary text-xl leading-relaxed mb-10">
               We provide the data, analysis, and deep dives required to understand how vertical cinema is reshaping the global media landscape. From the studios in Beijing to the growing audiences in North America, we are the pulse of this revolution.
@@ -81,7 +81,7 @@ export default function AboutPage() {
               Our Team
             </h2>
             <p className="text-rp-text-secondary text-xl leading-relaxed max-w-2xl mx-auto">
-              ReelPulse is an independent editorial team covering the $26B micro-drama industry.
+              NovelaFlash is an independent editorial team covering the $26B micro-drama industry.
             </p>
           </ScrollReveal>
         </section>

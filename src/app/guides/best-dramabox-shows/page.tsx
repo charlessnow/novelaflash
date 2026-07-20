@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Top 20 Most Popular DramaBox Shows 2026 — ReelPulse",
+  title: "Top 20 Most Popular DramaBox Shows 2026 — NovelaFlash",
   description: "The best DramaBox shows ranked for 2026. Discover Return of His Majesty, Divorced at the Wedding Day, Miss You After Goodbye, and 17 more viral dramas. Complete guide with ratings.",
 };
 

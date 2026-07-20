@@ -14,7 +14,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "ReelPulse — Short Drama Industry Intelligence",
+  title: "NovelaFlash — Short Drama Industry Intelligence",
   description: "Your pulse on the $26B micro-drama revolution. Platform rankings, industry analysis, creator guides, and breaking news on ReelShort, DramaBox, and more.",
 };
 
@@ -22,12 +22,12 @@ export default function Home() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "ReelPulse — Short Drama Industry Intelligence",
+    name: "NovelaFlash — Short Drama Industry Intelligence",
     description: metadata.description,
     url: SITE_URL,
     isPartOf: {
       "@type": "WebSite",
-      name: "ReelPulse",
+      name: "NovelaFlash",
       url: SITE_URL,
     },
     about: {

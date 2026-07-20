@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/effects/ScrollReveal";
 import { platforms } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Top 100 Short Drama Apps 2026 — ReelPulse",
+  title: "Top 100 Short Drama Apps 2026 — NovelaFlash",
   description: "The most comprehensive ranking of short drama apps worldwide. Discover the best platforms for micro-dramas, scored across content, UX, and value.",
 };
 

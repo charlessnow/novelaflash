@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Best Short Korean Dramas 2026 — ReelPulse",
+  title: "Best Short Korean Dramas 2026 — NovelaFlash",
   description: "Best short Korean dramas of 2026, with top K-drama mini series, where to watch them, and a quick comparison with Chinese short dramas.",
 };
 

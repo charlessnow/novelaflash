@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Market Revenue 2026: Q1 Data & Platform Rankings — ReelPulse",
+  title: "Short Drama Market Revenue 2026: Q1 Data & Platform Rankings — NovelaFlash",
   description: "Explore the 2026 short drama market revenue data. Platform rankings, quarterly growth, and financial analysis of ReelShort, DramaBox, and ShortMax.",
   openGraph: {
     images: [{ url: "/images/guides/market-revenue-2026-og.jpg" }],

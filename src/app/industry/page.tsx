@@ -9,7 +9,7 @@ import { stats, latestArticles, trendingArticles, industrySpotlights } from "@/l
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Industry Analysis — ReelPulse",
+  title: "Short Drama Industry Analysis — NovelaFlash",
   description: "Data-driven analysis of the global micro-drama market. Market reports, AI trends, global expansion, and creator economy insights.",
 };
 
@@ -66,7 +66,7 @@ export default function IndustryPage() {
                 <h2 className="font-display font-black text-2xl text-white uppercase tracking-wider">Q3 2026 Industry Forecast</h2>
               </div>
               <p className="text-rp-text-secondary text-base leading-relaxed max-w-4xl">
-                As we move into Q3 2026, ReelPulse analysts predict a massive surge in localized production outside of China. Look for intense competition in the <span className="text-white font-bold">Southeast Asian BL market</span> and a rapid integration of <span className="text-white font-bold">AI dubbing technologies</span>, drastically reducing localization costs for top platforms like ReelShort and DramaBox.
+                As we move into Q3 2026, NovelaFlash analysts predict a massive surge in localized production outside of China. Look for intense competition in the <span className="text-white font-bold">Southeast Asian BL market</span> and a rapid integration of <span className="text-white font-bold">AI dubbing technologies</span>, drastically reducing localization costs for top platforms like ReelShort and DramaBox.
               </p>
             </div>
           </ScrollReveal>

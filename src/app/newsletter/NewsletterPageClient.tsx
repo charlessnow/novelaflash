@@ -25,7 +25,7 @@ export function NewsletterPageClient() {
 
       if (res.ok) {
         setStatus("success");
-        setMessage("You're in! Welcome to the ReelPulse community.");
+        setMessage("You're in! Welcome to the NovelaFlash community.");
         setEmail("");
       } else {
         setStatus("error");

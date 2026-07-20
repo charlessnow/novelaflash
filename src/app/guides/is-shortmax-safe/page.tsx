@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConversionGuidePage, type ConversionGuide } from "../ConversionGuidePage";
 
 export const metadata: Metadata = {
-  title: "Is ShortMax Safe? App Legitimacy, Payments & Privacy 2026 — ReelPulse",
+  title: "Is ShortMax Safe? App Legitimacy, Payments & Privacy 2026 — NovelaFlash",
   description:
     "Is ShortMax safe and legit? Review ShortMax privacy, subscriptions, coin purchases, app-store safety, and safer viewing tips for 2026.",
   alternates: { canonical: "/guides/is-shortmax-safe" },

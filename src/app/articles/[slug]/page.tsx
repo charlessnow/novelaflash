@@ -330,7 +330,7 @@ const ARTICLE_CONTENT: Record<string, ArticleContent> = {
       },
       {
         heading: "Step-by-Step Guide to Launching Your Campaign",
-        body: "Starting your short drama affiliate journey requires a simple, highly targeted workflow. First, establish a professional digital presence—whether it is a specialized review website like ReelPulse, a dedicated TikTok recap channel, or a YouTube Shorts review hub. Second, apply to DramaCPS or RS Boost using your custom domain email and be sure to provide your active Telegram handle, as industry affiliate managers negotiate and communicate almost exclusively via Telegram.\n\nOnce approved, embed your custom tracking links naturally within high-conversion content types: 'Top 10 App Rankings,' show reviews, or guides on earning free bonus coins. As your audience clicks through and purchases coin bundles to unlock dramatic cliffhangers, your dashboard will capture real-time CPS commissions, turning your passion for short dramas into a dependable digital enterprise.",
+        body: "Starting your short drama affiliate journey requires a simple, highly targeted workflow. First, establish a professional digital presence—whether it is a specialized review website like NovelaFlash, a dedicated TikTok recap channel, or a YouTube Shorts review hub. Second, apply to DramaCPS or RS Boost using your custom domain email and be sure to provide your active Telegram handle, as industry affiliate managers negotiate and communicate almost exclusively via Telegram.\n\nOnce approved, embed your custom tracking links naturally within high-conversion content types: 'Top 10 App Rankings,' show reviews, or guides on earning free bonus coins. As your audience clicks through and purchases coin bundles to unlock dramatic cliffhangers, your dashboard will capture real-time CPS commissions, turning your passion for short dramas into a dependable digital enterprise.",
       },
     ],
   },
@@ -359,11 +359,11 @@ export async function generateMetadata({
   const canonical = `/articles/${article.slug}`;
 
   return {
-    title: article.metaTitle ?? `${article.title} — ReelPulse`,
+    title: article.metaTitle ?? `${article.title} — NovelaFlash`,
     description: article.metaDescription ?? article.excerpt,
     alternates: { canonical },
     openGraph: {
-      title: article.metaTitle ?? `${article.title} — ReelPulse`,
+      title: article.metaTitle ?? `${article.title} — NovelaFlash`,
       description: article.metaDescription ?? article.excerpt,
       url: canonical,
       type: "article",
@@ -415,7 +415,7 @@ export default async function ArticlePage({
     },
     publisher: {
       "@type": "Organization",
-      name: "ReelPulse",
+      name: "NovelaFlash",
       url: SITE_URL,
       logo: toAbsoluteUrl("/og.jpg"),
     },

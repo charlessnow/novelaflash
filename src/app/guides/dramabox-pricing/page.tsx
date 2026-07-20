@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "How Much Does DramaBox Cost? Pricing Guide 2026 — ReelPulse",
+  title: "How Much Does DramaBox Cost? Pricing Guide 2026 — NovelaFlash",
   description: "Complete breakdown of DramaBox pricing: free tier, coin costs, subscription options, and comparison with ReelShort. Find the best value.",
 };
 

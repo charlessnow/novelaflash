@@ -11,4 +11,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://reelpulse.net/sitemap.xml
+Sitemap: https://novelaflash.com/sitemap.xml

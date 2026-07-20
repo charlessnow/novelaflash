@@ -157,11 +157,11 @@ export async function generateMetadata({
   const canonical = `/industry/market-reports/${report.slug}`;
 
   return {
-    title: `${report.title} — ReelPulse`,
+    title: `${report.title} — NovelaFlash`,
     description: report.summary,
     alternates: { canonical },
     openGraph: {
-      title: `${report.title} — ReelPulse`,
+      title: `${report.title} — NovelaFlash`,
       description: report.summary,
       url: canonical,
       type: "article",

@@ -7,7 +7,7 @@ import { platforms } from "@/lib/data";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Platforms Directory 2026 — ReelPulse",
+  title: "Short Drama Platforms Directory 2026 — NovelaFlash",
   description: "Every major short drama app reviewed and ranked. Compare ReelShort, DramaBox, ShortMax, FlexTV, and MoboReels with expert editorial scores.",
 };
 

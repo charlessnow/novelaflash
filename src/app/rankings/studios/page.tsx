@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Short Drama Content Studios — ReelPulse",
+  title: "Short Drama Content Studios — NovelaFlash",
   description: "Meet the studios powering the short drama revolution. From Crazy Maple Studio to StoReel, profiles of the companies creating micro-drama content.",
 };
 

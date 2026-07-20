@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "10 Best Free Short Drama Apps 2026 — ReelPulse",
+  title: "10 Best Free Short Drama Apps 2026 — NovelaFlash",
   description: "Discover the 10 best free short drama apps in 2026. Compare MoboReels, DramaBox, ReelShort, and more with detailed reviews of free tier features.",
 };
 

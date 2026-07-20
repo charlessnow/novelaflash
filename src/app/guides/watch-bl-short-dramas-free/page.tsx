@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Watch BL Short Dramas Free 2026: Best Apps & Methods — ReelPulse",
+  title: "Watch BL Short Dramas Free 2026: Best Apps & Methods — NovelaFlash",
   description: "Learn how to watch BL short dramas for free in 2026. Discover the best free BL drama apps, official YouTube channels, and tips to unlock premium episodes.",
   openGraph: {
     images: [{ url: "/images/guides/watch-bl-free-og.jpg" }],

@@ -6,13 +6,13 @@ import { featuredArticle, trendingArticles, latestArticles, Article } from "@/li
 import { ArticlesClient } from "./ArticlesClient";
 
 export const metadata: Metadata = {
-  title: "Industry News & Analysis — ReelPulse",
+  title: "Industry News & Analysis — NovelaFlash",
   description:
-    "Read short drama industry news, platform deep dives, and market analysis from ReelPulse to track trends, growth, and the biggest stories shaping 2026.",
+    "Read short drama industry news, platform deep dives, and market analysis from NovelaFlash to track trends, growth, and the biggest stories shaping 2026.",
   openGraph: {
-    title: "Industry News & Analysis — ReelPulse",
+    title: "Industry News & Analysis — NovelaFlash",
     description:
-      "Read short drama industry news, platform deep dives, and market analysis from ReelPulse to track trends, growth, and the biggest stories shaping 2026.",
+      "Read short drama industry news, platform deep dives, and market analysis from NovelaFlash to track trends, growth, and the biggest stories shaping 2026.",
   },
 };
 

@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "DramaBox Free Coins: Codes, Tips & Tricks 2026 — ReelPulse",
+  title: "DramaBox Free Coins: Codes, Tips & Tricks 2026 — NovelaFlash",
   description: "Complete guide to earning free DramaBox coins. Discover daily rewards, gift codes, events, and strategies to maximize your coin value in 2026.",
 };
 

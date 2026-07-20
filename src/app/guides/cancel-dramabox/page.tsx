@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "How to Cancel DramaBox Subscription (2026 Guide) — ReelPulse",
+  title: "How to Cancel DramaBox Subscription (2026 Guide) — NovelaFlash",
   description: "Step-by-step guide to cancel your DramaBox subscription on iOS, Android, and web. Learn about refund policies and what happens after cancellation.",
 };
 

@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Apps Like DramaBox: 8 Best Alternatives 2026 — ReelPulse",
+  title: "Apps Like DramaBox: 8 Best Alternatives 2026 — NovelaFlash",
   description: "Looking for apps like DramaBox? Here are the 8 best apps like DramaBox in 2026. Compare ReelShort, ShortMax, FlexTV, MoboReels, and more with detailed reviews and ratings.",
 };
 

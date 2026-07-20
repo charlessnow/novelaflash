@@ -1,4 +1,4 @@
-export const SITE_URL = "https://reelpulse.net";
+export const SITE_URL = "https://novelaflash.com";
 
 export type JsonLdData = Record<string, unknown>;
 
@@ -130,7 +130,7 @@ export const ARTICLE_FAQ_SCHEMA: Record<string, JsonLdData> = {
         name: "Is ReelShort safe to use?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. ReelShort ranked among the safest short drama apps in ReelPulse's 2026 testing, with strong data encryption, a transparent privacy policy, and effective content moderation.",
+          text: "Yes. ReelShort ranked among the safest short drama apps in NovelaFlash's 2026 testing, with strong data encryption, a transparent privacy policy, and effective content moderation.",
         },
       },
       {
@@ -138,7 +138,7 @@ export const ARTICLE_FAQ_SCHEMA: Record<string, JsonLdData> = {
         name: "Is DramaBox a safe app?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. DramaBox is considered safe, with good security practices, clear billing disclosures, and responsive customer support. It ranked second safest in ReelPulse's 12-app test.",
+          text: "Yes. DramaBox is considered safe, with good security practices, clear billing disclosures, and responsive customer support. It ranked second safest in NovelaFlash's 12-app test.",
         },
       },
       {
@@ -146,7 +146,7 @@ export const ARTICLE_FAQ_SCHEMA: Record<string, JsonLdData> = {
         name: "What short drama apps are safe?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The safest short drama apps in 2026 based on ReelPulse's testing are: ReelShort, DramaBox, ShortMax, FlexTV, and MoboReels. All implement industry-standard encryption, secure payments, and active content moderation.",
+          text: "The safest short drama apps in 2026 based on NovelaFlash's testing are: ReelShort, DramaBox, ShortMax, FlexTV, and MoboReels. All implement industry-standard encryption, secure payments, and active content moderation.",
         },
       },
     ],
@@ -468,7 +468,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
       name: "ShortMax App Safety Review 2026",
       reviewAspect: ["Security", "Privacy", "Billing", "Legitimacy"],
       reviewRating: { "@type": "Rating", ratingValue: "4.5", bestRating: "5" },
-      author: { "@type": "Organization", name: "ReelPulse Editorial" },
+      author: { "@type": "Organization", name: "NovelaFlash Editorial" },
     },
   },
   "watch-bl-short-dramas-free": {
@@ -601,7 +601,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best free short drama apps in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse highlights MoboReels, DramaBox, ReelShort, ShortMax, and FlexTV among the strongest free short drama app options based on free tier access, content variety, and user experience.",
+            text: "NovelaFlash highlights MoboReels, DramaBox, ReelShort, ShortMax, and FlexTV among the strongest free short drama app options based on free tier access, content variety, and user experience.",
           },
         },
         {
@@ -634,7 +634,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best alternatives to DramaBox?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse recommends ReelShort, ShortMax, FlexTV, MoboReels, GoodShort, and other competing short drama platforms as leading alternatives to DramaBox.",
+            text: "NovelaFlash recommends ReelShort, ShortMax, FlexTV, MoboReels, GoodShort, and other competing short drama platforms as leading alternatives to DramaBox.",
           },
         },
         {
@@ -650,7 +650,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "Which DramaBox alternative is best overall?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "This ReelPulse guide ranks ReelShort as the top overall DramaBox alternative because of its content depth, scale, and mobile-first viewing experience.",
+            text: "This NovelaFlash guide ranks ReelShort as the top overall DramaBox alternative because of its content depth, scale, and mobile-first viewing experience.",
           },
         },
       ],
@@ -675,7 +675,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "Which apps are best for BL short drama content?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse highlights ReelShort, DramaBox, MoboReels, and WeTV as strong platforms for BL short drama viewers because of their catalog depth and regional coverage.",
+            text: "NovelaFlash highlights ReelShort, DramaBox, MoboReels, and WeTV as strong platforms for BL short drama viewers because of their catalog depth and regional coverage.",
           },
         },
         {
@@ -720,7 +720,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "Who are the top Chinese short drama actors in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse highlights performers such as Chen Hao, Liu Yang, Zhang Wei, Li Na, Wang Xin, and Zhang Jing among the leading Chinese short drama stars in 2026.",
+            text: "NovelaFlash highlights performers such as Chen Hao, Liu Yang, Zhang Wei, Li Na, Wang Xin, and Zhang Jing among the leading Chinese short drama stars in 2026.",
           },
         },
         {
@@ -736,7 +736,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "Where can viewers identify Chinese short drama actors?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse notes that major actors appear repeatedly across ReelShort, DramaBox, YouTube, and Douyin, making cross-platform recognition easier for fans.",
+            text: "NovelaFlash notes that major actors appear repeatedly across ReelShort, DramaBox, YouTube, and Douyin, making cross-platform recognition easier for fans.",
           },
         },
       ],
@@ -753,7 +753,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best short Korean dramas in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse ranks titles such as First Marriage Then Love, Hometown's Embrace, Midnight Confessions, and Seoul Nights among the best short Korean dramas in 2026.",
+            text: "NovelaFlash ranks titles such as First Marriage Then Love, Hometown's Embrace, Midnight Confessions, and Seoul Nights among the best short Korean dramas in 2026.",
           },
         },
         {
@@ -786,7 +786,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "How much does DramaBox cost?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "According to ReelPulse, DramaBox offers a free tier, coin-based episode purchases, and weekly, monthly, and annual premium subscription plans.",
+            text: "According to NovelaFlash, DramaBox offers a free tier, coin-based episode purchases, and weekly, monthly, and annual premium subscription plans.",
           },
         },
         {
@@ -819,7 +819,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best Chinese short dramas in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse ranks No Return, Mute Girl Who Sings, The Past Drowned in Moonlight, Boxing Champion, and Love Never Ends among the leading Chinese short dramas of 2026.",
+            text: "NovelaFlash ranks No Return, Mute Girl Who Sings, The Past Drowned in Moonlight, Boxing Champion, and Love Never Ends among the leading Chinese short dramas of 2026.",
           },
         },
         {
@@ -871,7 +871,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best DramaBox shows in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse ranks Divorced at the Wedding Day, Return of His Majesty, Miss You After Goodbye, Forever Was a Lie, and Mafia Lover among the top DramaBox shows in 2026.",
+            text: "NovelaFlash ranks Divorced at the Wedding Day, Return of His Majesty, Miss You After Goodbye, Forever Was a Lie, and Mafia Lover among the top DramaBox shows in 2026.",
           },
         },
         {
@@ -887,7 +887,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "How were the top DramaBox shows selected?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "This ReelPulse ranking considers viewer engagement, production quality, narrative strength, and cultural impact when scoring the most popular DramaBox shows.",
+            text: "This NovelaFlash ranking considers viewer engagement, production quality, narrative strength, and cultural impact when scoring the most popular DramaBox shows.",
           },
         },
       ],
@@ -912,7 +912,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "How much does a ReelShort series cost to watch?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The total cost depends on series length and whether a viewer uses the free tier, buys coins, or subscribes to VIP, with ReelPulse breaking down each option in this guide.",
+            text: "The total cost depends on series length and whether a viewer uses the free tier, buys coins, or subscribes to VIP, with NovelaFlash breaking down each option in this guide.",
           },
         },
         {
@@ -920,7 +920,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "Should viewers buy coins or subscribe to VIP?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse recommends coins for lighter, occasional viewing and VIP subscriptions for frequent viewers who want unlimited episodes and ad-free playback.",
+            text: "NovelaFlash recommends coins for lighter, occasional viewing and VIP subscriptions for frequent viewers who want unlimited episodes and ad-free playback.",
           },
         },
       ],
@@ -937,7 +937,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
           name: "What are the best ReelShort shows in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ReelPulse ranks The Senator's Son, Kingsley, King or Clown, Money Guns and Merry Christmas, and I Had a Baby Without You among the top ReelShort shows in 2026.",
+            text: "NovelaFlash ranks The Senator's Son, Kingsley, King or Clown, Money Guns and Merry Christmas, and I Had a Baby Without You among the top ReelShort shows in 2026.",
           },
         },
         {
@@ -950,7 +950,7 @@ export const GUIDE_STRUCTURED_DATA: Record<string, GuideSchemaEntry> = {
         },
         {
           "@type": "Question",
-          name: "How does ReelPulse rank ReelShort shows?",
+          name: "How does NovelaFlash rank ReelShort shows?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "The ranking weighs engagement, critical reception, production quality, and cultural impact across ReelShort's catalog.",

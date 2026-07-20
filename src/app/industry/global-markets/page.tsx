@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Global Short Drama Markets — ReelPulse",
+  title: "Global Short Drama Markets — NovelaFlash",
   description: "Geographic analysis of the short drama market. North America, Southeast Asia, India, and Japan — where micro-dramas are growing fastest.",
 };
 
@@ -15,7 +15,7 @@ export default function GlobalMarketsPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Global Short Drama Markets — ReelPulse",
+    name: "Global Short Drama Markets — NovelaFlash",
     description:
       "Geographic analysis of the short drama market. North America, Southeast Asia, India, and Japan — where micro-dramas are growing fastest.",
     url: `${SITE_URL}/industry/global-markets`,

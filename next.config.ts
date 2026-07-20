@@ -35,8 +35,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        has: [{ type: 'host', value: 'www.reelpulse.net' }],
-        destination: 'https://reelpulse.net/:path*',
+        has: [{ type: 'host', value: 'www.novelaflash.com' }],
+        destination: 'https://novelaflash.com/:path*',
         permanent: true,
       },
     ];

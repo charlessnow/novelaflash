@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "7 Best Free BL Short Drama Apps & Series 2026 — ReelPulse",
+  title: "7 Best Free BL Short Drama Apps & Series 2026 — NovelaFlash",
   description: "Discover the best free BL short drama apps and series in 2026. Explore Korean, Thai, and Chinese BL content with top-rated free platforms and exclusive recommendations.",
 };
 

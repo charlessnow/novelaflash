@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Chinese Short Drama Actors: Complete Guide 2026 — ReelPulse",
+  title: "Chinese Short Drama Actors: Complete Guide 2026 — NovelaFlash",
   description: "Discover the top Chinese short drama actors and actresses of 2026. Learn about rising stars, their notable shows, salaries, and how to identify them across platforms.",
 };
 

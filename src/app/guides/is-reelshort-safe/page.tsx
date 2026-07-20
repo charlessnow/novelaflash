@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ConversionGuidePage, type ConversionGuide } from "../ConversionGuidePage";
 
 export const metadata: Metadata = {
-  title: "Is ReelShort Safe? App Legitimacy, Payments & Privacy 2026 — ReelPulse",
+  title: "Is ReelShort Safe? App Legitimacy, Payments & Privacy 2026 — NovelaFlash",
   description:
     "Is ReelShort safe and legit? Review ReelShort privacy, subscriptions, coin purchases, app-store safety, content quality, and safer viewing tips for 2026.",
   alternates: { canonical: "/guides/is-reelshort-safe" },

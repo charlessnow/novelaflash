@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "15 Best Chinese Short Dramas to Watch in 2026 (Ranked) — ReelPulse",
+  title: "15 Best Chinese Short Dramas to Watch in 2026 (Ranked) — NovelaFlash",
   description: "The 15 best Chinese short dramas of 2026, ranked by genre and viewer ratings. Covers where to watch on ReelShort and DramaBox, episode counts, and what makes each series worth binging.",
 };
 

@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
           email,
           reactivate_existing: true,
           send_welcome_email: true,
-          utm_source: "reelpulse.net",
+          utm_source: "novelaflash.com",
         }),
       }
     );

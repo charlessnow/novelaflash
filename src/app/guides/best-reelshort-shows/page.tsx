@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Top 20 Most Popular ReelShort Shows 2026 — ReelPulse",
+  title: "Top 20 Most Popular ReelShort Shows 2026 — NovelaFlash",
   description: "Best ReelShort shows ranked for 2026, including The Senator's Son, Kingsley, King or Clown, Harper Reeves, and more viral hits.",
 };
 

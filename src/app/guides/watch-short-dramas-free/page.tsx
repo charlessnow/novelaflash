@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { createBreadcrumbList, GUIDE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "How to Watch Short Dramas for Free in 2026 — ReelPulse",
+  title: "How to Watch Short Dramas for Free in 2026 — NovelaFlash",
   description: "8 proven methods to watch short dramas for free in 2026. Learn about free tiers, ad-supported platforms, trials, and rewards programs.",
 };
 
