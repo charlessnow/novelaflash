@@ -52,7 +52,7 @@ export const FeaturedArticle = () => {
             </div>
 
             <Link href={`/articles/${featuredArticle.slug}`} className="flex items-center gap-3 font-display font-bold text-white uppercase tracking-wider group w-fit transition-colors hover:text-rp-coral">
-              Read Full Article 
+              Leer Artículo Completo 
               <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-rp-coral transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
               </span>

@@ -280,7 +280,8 @@ export const featuredArticle: Article = {
   excerpt: "Descubre los mejores trucos legales para conseguir monedas gratis en DramaBox y disfrutar de tus miniseries favoritas sin gastar un centavo.",
   category: "Guía",
   categoryColor: "violet",
-  image: "/images/articles/featured-hero.jpg",
+  image: "/images/articles/free_coins_guide_cover.jpg",
+  video: "/videos/hero/featured-video.mp4",
   author: {
     name: "NovelaFlash Equipo",
     avatar: "/images/avatar-editorial.png",
