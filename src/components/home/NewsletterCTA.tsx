@@ -22,15 +22,15 @@ export const NewsletterCTA = () => {
 
       if (res.ok) {
         setStatus("success");
-        setMessage("You're in!");
+        setMessage("¡Ya estás suscrito!");
         setEmail("");
       } else {
         setStatus("error");
-        setMessage(data.error || "Please try again.");
+        setMessage(data.error || "Por favor, inténtalo de nuevo.");
       }
     } catch {
       setStatus("error");
-      setMessage("Please try again.");
+      setMessage("Por favor, inténtalo de nuevo.");
     }
   };
 
@@ -40,11 +40,11 @@ export const NewsletterCTA = () => {
       
       <div className="relative p-8 z-10">
         <h2 className="font-display font-black text-2xl text-white uppercase tracking-tight mb-4 leading-tight">
-          Stay Ahead <br/>of the Curve
+          Mantente a la <br/>Vanguardia
         </h2>
         
         <p className="text-rp-text-secondary text-sm font-medium mb-8">
-          Weekly insights on the $26B micro-drama industry. Join the community.
+          Información semanal sobre la industria de miniseries de $26B. Únete a la comunidad.
         </p>
 
         {status === "success" ? (
@@ -59,7 +59,7 @@ export const NewsletterCTA = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="Email address" 
+              placeholder="Correo electrónico" 
               className="w-full px-4 py-3 rounded-lg bg-rp-bg-primary border border-white/5 text-sm text-white focus:outline-none focus:border-rp-coral transition-colors placeholder:text-rp-text-muted"
             />
             <button
@@ -67,7 +67,7 @@ export const NewsletterCTA = () => {
               disabled={status === "loading"}
               className="w-full py-3 rounded-lg bg-gradient-to-r from-rose-600 to-orange-600 text-white font-bold uppercase tracking-wider text-xs hover:shadow-[0_0_15px_rgba(244,63,94,0.3)] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {status === "loading" ? "Subscribing..." : "Subscribe"}
+              {status === "loading" ? "Suscribiendo..." : "Suscribirse"}
             </button>
           </form>
         )}
@@ -77,7 +77,7 @@ export const NewsletterCTA = () => {
         )}
         
         <p className="mt-6 text-[10px] text-rp-text-muted text-center italic">
-          Free forever. No spam. Unsubscribe anytime.
+          Gratis para siempre. Sin spam. Cancela cuando quieras.
         </p>
       </div>
     </div>
