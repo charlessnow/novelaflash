@@ -19,7 +19,7 @@ export const LatestNews = () => {
     <div className="flex flex-col">
       <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-4">
         <h2 className="font-display font-black text-2xl text-white uppercase tracking-wider">
-          Últimas Noticias
+          Novedades y Chismes
         </h2>
         <Link href="/articles" className="text-[10px] font-bold uppercase tracking-[0.2em] text-rp-text-muted hover:text-white transition-colors">
           Ver Todo el Archivo
@@ -38,7 +38,7 @@ export const LatestNews = () => {
           onClick={handleLoadMore}
           className="mt-8 py-4 border border-white/5 bg-white/[0.02] text-sm font-bold uppercase tracking-wider text-rp-text-secondary hover:bg-white/[0.05] hover:text-white transition-all rounded-lg cursor-pointer"
         >
-          Cargar Más Noticias
+          Cargar Más Chismes
         </button>
       )}
     </div>

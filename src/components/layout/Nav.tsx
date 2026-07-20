@@ -19,9 +19,9 @@ export const Nav = () => {
 
   const navLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Plataformas", href: "/platforms" },
+    { name: "Top Series", href: "/platforms" },
     { name: "Rankings", href: "/rankings" },
-    { name: "Industria", href: "/industry" },
+    { name: "Chismes", href: "/industry" },
     { name: "Guías", href: "/guides" },
   ];
 
