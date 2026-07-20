@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   description: "Data-driven analysis of the global micro-drama market. Market reports, AI trends, global expansion, and creator economy insights.",
 };
 
+const getSpotlightLink = (slug: string) => {
+  if (slug === 'guias-gratis') return '/guides/apps-miniseries-gratis';
+  if (slug === 'recomendaciones') return '/guides/mejores-series-reelshort';
+  if (slug === 'ultimos-estrenos') return '/rankings';
+  return `/industry/${slug}`;
+};
+
 export default function IndustryPage() {
   const allAnalysis = [...latestArticles, ...trendingArticles].filter(
     (a) => a.category === "Industry Analysis" || a.category === "Global Markets" || a.category === "Funding" || a.category === "AI & Tech" || a.category === "Platform News"
@@ -110,7 +117,7 @@ export default function IndustryPage() {
                       {spotlight.description}
                     </p>
                     <div className="mt-auto">
-                      <Link href={`/industry/${spotlight.slug}`} className="group/link inline-flex items-center gap-3 font-display font-bold text-white uppercase tracking-widest text-xs">
+                      <Link href={getSpotlightLink(spotlight.slug)} className="group/link inline-flex items-center gap-3 font-display font-bold text-white uppercase tracking-widest text-xs">
                         Ver Análisis <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover/link:border-rp-coral group-hover/link:bg-rp-coral transition-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
                       </Link>
                     </div>
