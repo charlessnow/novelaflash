@@ -7,7 +7,7 @@ const SCENES = [
   {
     name: "Drama de Venganza",
     video: "/videos/hero/scene-0.mp4",
-    thumbImage: "/videos/hero/thumb-0.jpg",
+    thumbImage: "/videos/hero/thumb-0.jpg?v=2",
     blobs: [
       { color: "bg-rose-900/40", pos: "top-[-10%] left-[-10%]", size: "w-[60vw] h-[60vw]", delay: "0s" },
       { color: "bg-red-800/30", pos: "bottom-[-10%] right-[-10%]", size: "w-[50vw] h-[50vw]", delay: "5s" },
@@ -17,7 +17,7 @@ const SCENES = [
   {
     name: "Romance de CEO",
     video: "/videos/hero/scene-1.mp4",
-    thumbImage: "/videos/hero/thumb-1.jpg",
+    thumbImage: "/videos/hero/thumb-1.jpg?v=2",
     blobs: [
       { color: "bg-amber-700/30", pos: "top-[-5%] right-[-5%]", size: "w-[55vw] h-[55vw]", delay: "1s" },
       { color: "bg-yellow-600/20", pos: "bottom-[10%] left-[5%]", size: "w-[45vw] h-[45vw]", delay: "4s" },
@@ -27,7 +27,7 @@ const SCENES = [
   {
     name: "Fantasía Épica",
     video: "/videos/hero/scene-2.mp4",
-    thumbImage: "/videos/hero/thumb-2.jpg",
+    thumbImage: "/videos/hero/thumb-2.jpg?v=2",
     blobs: [
       { color: "bg-emerald-900/30", pos: "top-[-10%] left-[10%]", size: "w-[60vw] h-[60vw]", delay: "0s" },
       { color: "bg-teal-900/30", pos: "bottom-[-5%] right-[5%]", size: "w-[50vw] h-[50vw]", delay: "6s" },
@@ -37,7 +37,7 @@ const SCENES = [
   {
     name: "Dulce Venganza",
     video: "/videos/hero/scene-3.mp4",
-    thumbImage: "/videos/hero/thumb-3.jpg",
+    thumbImage: "/videos/hero/thumb-3.jpg?v=2",
     blobs: [
       { color: "bg-rose-600/30", pos: "top-[10%] right-[10%]", size: "w-[50vw] h-[50vw]", delay: "0s" },
       { color: "bg-pink-900/30", pos: "bottom-[-10%] left-[-5%]", size: "w-[60vw] h-[60vw]", delay: "4s" },
@@ -47,7 +47,7 @@ const SCENES = [
   {
     name: "Suspenso",
     video: "/videos/hero/scene-4.mp4",
-    thumbImage: "/videos/hero/thumb-4.jpg",
+    thumbImage: "/videos/hero/thumb-4.jpg?v=2",
     blobs: [
       { color: "bg-red-800/35", pos: "top-[-15%] left-[5%]", size: "w-[65vw] h-[65vw]", delay: "2s" },
       { color: "bg-rose-900/30", pos: "bottom-[5%] right-[-5%]", size: "w-[55vw] h-[55vw]", delay: "0s" },
@@ -57,7 +57,7 @@ const SCENES = [
   {
     name: "Cine Negro",
     video: "/videos/hero/scene-5.mp4",
-    thumbImage: "/videos/hero/thumb-5.jpg",
+    thumbImage: "/videos/hero/thumb-5.jpg?v=2",
     blobs: [
       { color: "bg-stone-700/30", pos: "top-[5%] right-[5%]", size: "w-[50vw] h-[50vw]", delay: "1s" },
       { color: "bg-orange-900/20", pos: "bottom-[20%] left-[-10%]", size: "w-[60vw] h-[60vw]", delay: "3s" },
