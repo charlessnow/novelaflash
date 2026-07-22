@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Trucos para Monedas Gratis en ReelShort — NovelaFlash",
   description: "Aprende a maximizar tus bonos diarios, ver anuncios de manera eficiente y usar códigos promocionales en ReelShort.",
-  alternates: { canonical: "/guides/conseguir-monedas-reelshort" },
+  alternates: {
+    canonical: "/guides/conseguir-monedas-reelshort",
+    languages: {
+      "en": "https://reelpulse.net/guides/reelshort-coins",
+      "es-419": "https://novelaflash.com/guides/conseguir-monedas-reelshort",
+    },
+  },
   openGraph: {
     title: "Trucos para Monedas Gratis en ReelShort",
     description: "Aprende a maximizar tus bonos diarios, ver anuncios de manera eficiente y usar códigos promocionales en ReelShort.",
@@ -26,34 +32,57 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "Cómo Funcionan las Monedas de ReelShort",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
+        "Las monedas de ReelShort son la moneda dentro de la app para desbloquear episodios más allá de tu límite diario gratuito. Funcionan como un sistema de pago por episodio que te da libertad para ver a tu ritmo."
       ],
       bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "Cada episodio suele costar entre 1 y 3 monedas.",
+        "Puedes comprarlas con dinero real o ganarlas gratis.",
+        "Las monedas no caducan, quedan en tu cuenta indefinidamente.",
+        "Los suscriptores VIP reciben monedas de bono y descuentos.",
+        "Las monedas están vinculadas a tu cuenta y no se pueden transferir."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "Cómo Conseguir Monedas Gratis",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "No hace falta pagar para conseguir monedas. Estas son formas legítimas de ganarlas:"
+      ],
+      bullets: [
+        "Recompensa de inicio de sesión diario: entrar cada día da monedas; entre más larga la racha, mejor la recompensa.",
+        "Ver anuncios: ReelShort ofrece monedas por ver anuncios cortos, revisa la sección de recompensas con frecuencia.",
+        "Programa de referidos: cuando un amigo se registra y hace su primera compra, ambos reciben monedas de bono.",
+        "Eventos de temporada: aniversarios y festividades suelen traer regalos de monedas por tiempo limitado.",
+        "Monedas de bono VIP: al suscribirte recibes monedas extra automáticamente cada período.",
+        "Concursos en redes sociales: seguir a ReelShort en redes te da acceso a sorteos y giveaways de monedas."
+      ]
+    },
+    {
+      title: "Cómo Canjear Códigos Promocionales",
+      paragraphs: [
+        "ReelShort publica códigos promocionales de forma periódica que dan monedas o descuentos gratis. Para canjearlos:"
+      ],
+      bullets: [
+        "Abre la app de ReelShort.",
+        "Ve al menú de Configuración o Cuenta.",
+        "Busca la opción \"Canjear Código\" o \"Código Promocional\".",
+        "Escribe el código exactamente como aparece.",
+        "Las monedas se agregan al instante a tu cuenta."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Es mejor comprar monedas o suscribirme a VIP?", answer: "Si ves ReelShort ocasionalmente (una o dos series al mes), las monedas te dan flexibilidad. Si ves contenido con frecuencia (5 o más episodios por semana), VIP suele salir más barato porque incluye episodios ilimitados y sin publicidad." },
+    { question: "¿Las monedas de ReelShort caducan?", answer: "No, las monedas permanecen en tu cuenta indefinidamente hasta que las uses." },
+    { question: "¿Dónde consigo códigos promocionales vigentes?", answer: "Revisa las redes sociales oficiales de ReelShort, las notificaciones dentro de la app y foros de la comunidad, ya que los códigos cambian con frecuencia." },
+    { question: "¿Cuántas monedas puedo ganar gratis por día?", answer: "Combinando inicio de sesión diario y anuncios, un usuario activo puede acumular varias decenas de monedas al día sin gastar dinero." },
+    { question: "¿Puedo combinar mis episodios gratis diarios con monedas?", answer: "Sí. La estrategia más eficiente es usar primero tus episodios gratis del día y luego gastar monedas solo en el contenido adicional que quieras ver." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/precios-de-reelshort", label: "Precios de ReelShort", description: "Compara paquetes de monedas contra la suscripción VIP." },
+    { href: "/guides/como-cancelar-reelshort", label: "Cancelar ReelShort", description: "Cómo cancelar una prueba o suscripción antes de la renovación." },
+    { href: "/guides/es-seguro-reelshort", label: "¿Es Seguro ReelShort?", description: "Revisión de privacidad, cobros y legitimidad de la app." }
   ]
 };
 

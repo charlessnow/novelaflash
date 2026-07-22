@@ -25,23 +25,23 @@ export function NewsletterPageClient() {
 
       if (res.ok) {
         setStatus("success");
-        setMessage("You're in! Welcome to the NovelaFlash community.");
+        setMessage("¡Listo! Bienvenido a la comunidad de NovelaFlash.");
         setEmail("");
       } else {
         setStatus("error");
-        setMessage(data.error || "Something went wrong. Please try again.");
+        setMessage(data.error || "Algo salió mal. Por favor, intenta de nuevo.");
       }
     } catch {
       setStatus("error");
-      setMessage("Something went wrong. Please try again.");
+      setMessage("Algo salió mal. Por favor, intenta de nuevo.");
     }
   };
 
   const benefits = [
-    "Weekly insights on industry trends",
-    "Analysis of top-performing content",
-    "Early access to market reports",
-    "Global market expansion tracking",
+    "Análisis semanal de tendencias de la industria",
+    "Análisis del contenido con mejor desempeño",
+    "Acceso anticipado a informes de mercado",
+    "Seguimiento de la expansión del mercado global",
   ];
 
   return (
@@ -55,7 +55,7 @@ export function NewsletterPageClient() {
               Newsletter
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mx-auto uppercase tracking-[0.2em] text-rp-coral italic">
-              Stay Ahead of the Curve
+              Adelántate a la Industria
             </p>
           </ScrollReveal>
         </section>
@@ -68,11 +68,11 @@ export function NewsletterPageClient() {
 
                 <div className="relative z-10">
                   <h2 className="text-4xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-8 leading-[1.1]">
-                    The Pulse of <br />
-                    <span className="text-rp-coral italic">Short Drama.</span>
+                    El Pulso de las <br />
+                    <span className="text-rp-coral italic">Miniseries.</span>
                   </h2>
                   <p className="text-rp-text-secondary text-xl font-medium mb-12 leading-relaxed max-w-xl">
-                    Weekly insights into the people, platforms, and technology reshaping global entertainment.
+                    Análisis semanal sobre la gente, las plataformas y la tecnología que están transformando el entretenimiento global.
                   </p>
 
                   {status === "success" ? (
@@ -87,7 +87,7 @@ export function NewsletterPageClient() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        placeholder="ENTER YOUR EMAIL"
+                        placeholder="INGRESA TU CORREO"
                         className="flex-grow bg-white/5 border border-white/10 rounded-xl px-6 py-5 text-white placeholder:text-rp-text-muted focus:outline-none focus:border-rp-coral font-display font-bold text-lg uppercase tracking-widest transition-all"
                       />
                       <button
@@ -95,7 +95,7 @@ export function NewsletterPageClient() {
                         disabled={status === "loading"}
                         className="bg-rp-coral text-white font-display font-black uppercase tracking-[0.2em] px-12 py-5 rounded-xl hover:bg-rp-coral-dark transition-all transform active:scale-95 shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed"
                       >
-                        {status === "loading" ? "Subscribing..." : "Subscribe"}
+                        {status === "loading" ? "Suscribiendo..." : "Suscribirse"}
                       </button>
                     </form>
                   )}
@@ -105,7 +105,7 @@ export function NewsletterPageClient() {
                   )}
 
                   <div className="space-y-6 mb-12 mt-8">
-                    <h3 className="text-rp-text-muted font-display font-black uppercase tracking-widest text-xs italic">What you&apos;ll get</h3>
+                    <h3 className="text-rp-text-muted font-display font-black uppercase tracking-widest text-xs italic">Qué vas a recibir</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {benefits.map((benefit) => (
                         <div key={benefit} className="flex items-center gap-3">
@@ -117,7 +117,7 @@ export function NewsletterPageClient() {
                   </div>
 
                   <p className="text-rp-text-muted text-xs font-bold uppercase tracking-widest italic pt-8 border-t border-white/5">
-                    Free forever. No spam. Unsubscribe anytime.
+                    Gratis para siempre. Sin spam. Cancela cuando quieras.
                   </p>
                 </div>
               </div>

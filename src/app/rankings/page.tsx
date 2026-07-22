@@ -9,22 +9,22 @@ import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Best Short Drama Apps 2026 — Top Platforms Ranked | NovelaFlash",
-  description: "The best short drama apps of 2026, ranked by content quality, user experience, and value. Compare ReelShort, DramaBox, ShortMax & more. Updated monthly.",
+  title: "Mejores Apps de Miniseries 2026 — Plataformas Top Rankeadas | NovelaFlash",
+  description: "Las mejores apps de miniseries de 2026, rankeadas por calidad de contenido, experiencia de usuario y valor. Compara ReelShort, DramaBox, ShortMax y más. Actualizado mensualmente.",
 };
 
 export default function Rankings() {
   const filterPills = ["Todas", "Premium", "Crecimiento", "Emergentes"];
   const criteria = [
-    { title: "Content Quality", desc: "Depth of original library, localization quality, and storytelling consistency." },
-    { title: "User Experience", desc: "App performance, billing transparency, and monetization balance." },
-    { title: "Value for Money", desc: "Coin economy efficiency, ad-reward balance, and subscription offerings." },
-    { title: "Innovation", desc: "Vertical cinema techniques, AI integration, and interactive features." }
+    { title: "Calidad de Contenido", desc: "Profundidad de la biblioteca original, calidad de la localización y consistencia narrativa." },
+    { title: "Experiencia de Usuario", desc: "Rendimiento de la app, transparencia en la facturación y equilibrio de la monetización." },
+    { title: "Relación Precio-Valor", desc: "Eficiencia de la economía de monedas, balance de recompensas por anuncios y opciones de suscripción." },
+    { title: "Innovación", desc: "Técnicas de cine vertical, integración de IA y funciones interactivas." }
   ];
   const rankingsSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Best Short Drama Apps 2026",
+    name: "Mejores Apps de Miniseries 2026",
     description: metadata.description,
     url: `${SITE_URL}/rankings`,
     itemListOrder: "https://schema.org/ItemListOrderAscending",
@@ -41,7 +41,7 @@ export default function Rankings() {
     })),
   };
   const breadcrumbSchema = createBreadcrumbList([
-    { name: "Home", item: SITE_URL },
+    { name: "Inicio", item: SITE_URL },
     { name: "Rankings", item: `${SITE_URL}/rankings` },
   ]);
 
@@ -115,7 +115,7 @@ export default function Rankings() {
 
                   <div className="w-full md:w-64 flex flex-col gap-4">
                     <div className="flex justify-between items-end">
-                      <span className="text-xs font-bold uppercase tracking-widest text-rp-text-muted">ReelScore</span>
+                      <span className="text-xs font-bold uppercase tracking-widest text-rp-text-muted">Puntaje NF</span>
                       <span className="font-display font-black text-4xl text-rp-coral leading-none">{platform.score.toFixed(1)}</span>
                     </div>
                     <div className="score-bar w-full">

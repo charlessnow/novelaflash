@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Mejores Apps para Ver Miniseries Gratis — NovelaFlash",
   description: "No todas las apps requieren suscripción. Clasificamos las plataformas que ofrecen la mayor cantidad de contenido gratuito mediante anuncios.",
-  alternates: { canonical: "/guides/apps-miniseries-gratis" },
+  alternates: {
+    canonical: "/guides/apps-miniseries-gratis",
+    languages: {
+      "en": "https://reelpulse.net/guides/free-short-drama-apps",
+      "es-419": "https://novelaflash.com/guides/apps-miniseries-gratis",
+    },
+  },
   openGraph: {
     title: "Mejores Apps para Ver Miniseries Gratis",
     description: "No todas las apps requieren suscripción. Clasificamos las plataformas que ofrecen la mayor cantidad de contenido gratuito mediante anuncios.",
@@ -26,34 +32,37 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "No Todos los Niveles Gratuitos Son Iguales",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
-      ],
-      bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "No todas las apps de miniseries ofrecen lo mismo de forma gratuita: algunas dan episodios diarios ilimitados a cambio de ver anuncios, mientras que otras limitan tu acceso a solo 2 o 3 episodios por día. Esta guía clasifica las mejores apps gratuitas según qué tan generoso es su nivel sin costo, la calidad del contenido y la experiencia general de uso."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "Apps con los Mejores Niveles Gratuitos",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "MoboReels suele ofrecer uno de los niveles gratuitos más generosos, con episodios diarios prácticamente ilimitados a cambio de anuncios, además de recompensas por inicio de sesión diario.",
+        "DramaBox combina un buen nivel gratuito (varios episodios diarios) con una biblioteca diversa de dramas chinos, tailandeses y coreanos, más recompensas como la ruleta diaria y bonos por invitar amigos.",
+        "ReelShort tiene la biblioteca más grande en general, aunque su nivel gratuito es algo más limitado en cantidad de episodios diarios que el de MoboReels.",
+        "GoodShort también destaca por permitir episodios diarios ilimitados con anuncios, siendo una opción sólida para quienes priorizan no pagar nada."
+      ],
+      bullets: [
+        "Todas estas apps son gratuitas para descargar y usar; las suscripciones premium son opcionales.",
+        "El nivel gratuito casi siempre incluye anuncios entre episodios.",
+        "Las recompensas por inicio de sesión diario y por ver anuncios adicionales son la forma más común de conseguir episodios extra sin pagar.",
+        "Usar dos o tres apps a la vez es una estrategia común para maximizar el contenido gratuito disponible cada día."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Cuál app tiene el mejor nivel gratuito?", answer: "MoboReels y GoodShort suelen destacar por ofrecer episodios diarios prácticamente ilimitados a cambio de anuncios. Si buscas la biblioteca más grande, ReelShort es superior aunque con más límites diarios." },
+    { question: "¿Puedo ver series sin anuncios?", answer: "Los niveles gratuitos casi siempre incluyen anuncios. Para ver sin publicidad necesitas una suscripción premium en la mayoría de estas apps." },
+    { question: "¿Tengo que pagar en algún momento?", answer: "No. Todas estas apps se pueden usar de forma completamente gratuita. Las suscripciones premium son opcionales y solo desbloquean episodios ilimitados sin publicidad." },
+    { question: "¿Cuál app recomiendan para empezar?", answer: "MoboReels o DramaBox son buenas opciones para empezar por su interfaz sencilla, nivel gratuito generoso y catálogo amplio para explorar distintos géneros." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/como-ver-dramabox-gratis", label: "Cómo Ver DramaBox Gratis", description: "Trucos específicos para conseguir monedas gratis en DramaBox." },
+    { href: "/guides/alternativas-a-dramabox", label: "Alternativas a DramaBox", description: "Compara las mejores apps frente a DramaBox." },
+    { href: "/guides/conseguir-monedas-reelshort", label: "Monedas Gratis en ReelShort", description: "Cómo desbloquear más episodios sin pagar en ReelShort." }
   ]
 };
 

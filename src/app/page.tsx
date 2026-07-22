@@ -16,6 +16,12 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "NovelaFlash — El portal N°1 de Microdramas",
   description: "Tu pulso en la revolución del microdrama. Rankings de plataformas, reseñas y las mejores recomendaciones para ver series gratis como DramaBox, ReelShort y más.",
+  alternates: {
+    languages: {
+      "en": "https://reelpulse.net/",
+      "es-419": "https://novelaflash.com/",
+    },
+  },
 };
 
 export default function Home() {

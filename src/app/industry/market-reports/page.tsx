@@ -9,48 +9,48 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Market Reports — NovelaFlash",
-  description: "Quarterly market reports on the short drama industry. Revenue data, user metrics, and growth projections for the $26B micro-drama market.",
+  title: "Informes de Mercado de Miniseries — NovelaFlash",
+  description: "Informes trimestrales de mercado sobre la industria de las miniseries. Datos de ingresos, métricas de usuarios y proyecciones de crecimiento para el mercado de microdramas de $26B.",
 };
 
 export default function MarketReportsPage() {
   const collectionPageSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Short Drama Market Reports — NovelaFlash",
+    name: "Informes de Mercado de Miniseries — NovelaFlash",
     description:
-      "Quarterly market reports on the short drama industry. Revenue data, user metrics, and growth projections for the $26B micro-drama market.",
+      "Informes trimestrales de mercado sobre la industria de las miniseries. Datos de ingresos, métricas de usuarios y proyecciones de crecimiento para el mercado de microdramas de $26B.",
     url: `${SITE_URL}/industry/market-reports`,
   };
 
   const reports = [
     {
-      slug: "q1-2026-revenue",
-      title: "Q1 2026 Short Drama Revenue Report",
-      date: "April 2026",
-      stat: "$700M quarterly revenue",
-      summary: "A record-breaking quarter for the industry, driven by massive expansion in North American and Southeast Asian markets.",
+      slug: "ingresos-q1-2026",
+      title: "Informe de Ingresos de Miniseries T1 2026",
+      date: "Abril 2026",
+      stat: "$700M en ingresos trimestrales",
+      summary: "Un trimestre récord para la industria, impulsado por la expansión masiva en los mercados de Norteamérica y el sudeste asiático.",
     },
     {
-      slug: "global-market-size-2025",
-      title: "Global Market Size Analysis 2025",
-      date: "January 2026",
-      stat: "$26B total market",
-      summary: "Comprehensive analysis of the vertical video economy, tracking growth from 2022 to the 2025 peak.",
+      slug: "tamano-mercado-global-2025",
+      title: "Análisis del Tamaño del Mercado Global 2025",
+      date: "Enero 2026",
+      stat: "$26B en mercado total",
+      summary: "Análisis integral de la economía del video vertical, con seguimiento del crecimiento desde 2022 hasta el pico de 2025.",
     },
     {
-      slug: "china-overseas-revenue-2024",
-      title: "China Short Drama Overseas Revenue 2024",
-      date: "December 2025",
-      stat: "$4.3B overseas",
-      summary: "Examining the 'Chuhai' wave as Chinese studios dominate the Western micro-drama landscape.",
+      slug: "ingresos-exterior-china-2024",
+      title: "Ingresos de Miniseries Chinas en el Exterior 2024",
+      date: "Diciembre 2025",
+      stat: "$4.3B en el exterior",
+      summary: "Un análisis de la ola 'Chuhai', con los estudios chinos dominando el panorama del microdrama occidental.",
     },
     {
-      slug: "user-acquisition-cost-benchmarks",
-      title: "User Acquisition Cost Benchmarks",
-      date: "March 2026",
+      slug: "costo-adquisicion-usuarios",
+      title: "Referencias de Costo de Adquisición de Usuarios",
+      date: "Marzo 2026",
       stat: "$0.40-0.80 CPI",
-      summary: "A deep dive into marketing efficiency and platform-specific acquisition costs across Meta, TikTok, and Google.",
+      summary: "Un análisis a fondo de la eficiencia de marketing y los costos de adquisición específicos por plataforma en Meta, TikTok y Google.",
     },
   ];
 
@@ -64,10 +64,10 @@ export default function MarketReportsPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20 text-center">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-9xl uppercase tracking-tight text-white mb-6">
-              Market Reports
+              Informes de Mercado
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mx-auto">
-              Data-driven analysis and intelligence from the forefront of the micro-drama industry.
+              Análisis e inteligencia basados en datos desde la vanguardia de la industria del microdrama.
             </p>
           </ScrollReveal>
         </section>
@@ -82,7 +82,7 @@ export default function MarketReportsPage() {
                   
                   <div className="flex justify-between items-start mb-8">
                     <span className="text-[10px] text-rp-text-muted font-black uppercase tracking-[0.2em]">{report.date}</span>
-                    <div className="badge badge-coral">Report</div>
+                    <div className="badge badge-coral">Informe</div>
                   </div>
 
                   <h3 className="text-3xl font-display font-black text-white uppercase tracking-tight mb-4 group-hover:text-rp-coral transition-colors">
@@ -99,7 +99,7 @@ export default function MarketReportsPage() {
 
                   <div className="mt-auto">
                     <span className="inline-flex items-center gap-2 font-display font-bold text-white uppercase tracking-widest text-xs">
-                      Read Report <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-rp-coral group-hover:border-rp-coral transition-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
+                      Leer Informe <span className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-rp-coral group-hover:border-rp-coral transition-all"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg></span>
                     </span>
                   </div>
                 </Link>

@@ -11,22 +11,19 @@ interface ArticlesClientProps {
 }
 
 const CATEGORIES = [
-  "All",
-  "Industry Analysis",
-  "AI & Tech",
-  "Global Markets",
-  "Platform News",
-  "Funding",
-  "Creator Economy",
-  "Guide",
-  "Comparison",
+  "Todos",
+  "Guía",
+  "Recomendaciones",
+  "Comparación",
+  "Resumen",
+  "Seguridad",
 ];
 
 export const ArticlesClient = ({ articles }: ArticlesClientProps) => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Todos");
 
-  const filteredArticles = activeFilter === "All" 
-    ? articles 
+  const filteredArticles = activeFilter === "Todos"
+    ? articles
     : articles.filter(article => article.category === activeFilter);
 
   return (

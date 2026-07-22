@@ -6,13 +6,13 @@ import { featuredArticle, trendingArticles, latestArticles, Article } from "@/li
 import { ArticlesClient } from "./ArticlesClient";
 
 export const metadata: Metadata = {
-  title: "Industry News & Analysis — NovelaFlash",
+  title: "Noticias y Análisis de la Industria — NovelaFlash",
   description:
-    "Read short drama industry news, platform deep dives, and market analysis from NovelaFlash to track trends, growth, and the biggest stories shaping 2026.",
+    "Lee noticias de la industria de las miniseries, análisis a fondo de plataformas y estudios de mercado de NovelaFlash para seguir las tendencias, el crecimiento y las historias más importantes que están definiendo el 2026.",
   openGraph: {
-    title: "Industry News & Analysis — NovelaFlash",
+    title: "Noticias y Análisis de la Industria — NovelaFlash",
     description:
-      "Read short drama industry news, platform deep dives, and market analysis from NovelaFlash to track trends, growth, and the biggest stories shaping 2026.",
+      "Lee noticias de la industria de las miniseries, análisis a fondo de plataformas y estudios de mercado de NovelaFlash para seguir las tendencias, el crecimiento y las historias más importantes que están definiendo el 2026.",
   },
 };
 
@@ -33,10 +33,10 @@ export default function ArticlesPage() {
         <section className="max-w-7xl mx-auto px-6 mb-16">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
-              Articles
+              Artículos
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Deep dives, breaking news, and expert analysis on the micro-drama revolution.
+              Análisis a fondo, noticias de última hora y opinión experta sobre la revolución del microdrama.
             </p>
           </ScrollReveal>
         </section>

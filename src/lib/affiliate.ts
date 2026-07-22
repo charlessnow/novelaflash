@@ -34,7 +34,6 @@ export const AFFILIATE_LINKS: Record<string, string> = {
   topshort: "https://r.reelsgo.tv/RE-OTXKI3yV_",
   footage: "https://r.reelsgo.tv/4KR8bW9SQlFb",
   veloria: "https://r.reelsgo.tv/izKqx8iMdldh",
-  pancake: "https://www.pancake.com",
   stardusttv: "https://r.reelsgo.tv/EmyxsIsT9Yzc",
   playlet: "https://r.reelsgo.tv/nXLu58jr6t_W",
 

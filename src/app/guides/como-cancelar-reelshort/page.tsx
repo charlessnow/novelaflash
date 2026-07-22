@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "¿Cómo Cancelar tu Suscripción a ReelShort? — NovelaFlash",
   description: "Evita cargos no deseados. Aprende a cancelar tu suscripción de ReelShort a través de Apple App Store o Google Play.",
-  alternates: { canonical: "/guides/como-cancelar-reelshort" },
+  alternates: {
+    canonical: "/guides/como-cancelar-reelshort",
+    languages: {
+      "en": "https://reelpulse.net/guides/cancel-reelshort",
+      "es-419": "https://novelaflash.com/guides/como-cancelar-reelshort",
+    },
+  },
   openGraph: {
     title: "¿Cómo Cancelar tu Suscripción a ReelShort?",
     description: "Evita cargos no deseados. Aprende a cancelar tu suscripción de ReelShort a través de Apple App Store o Google Play.",
@@ -26,34 +32,53 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "Cómo Cancelar en iOS",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
+        "Si te suscribiste a ReelShort a través de la App Store de Apple, sigue estos pasos:"
       ],
       bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "Abre la app de Ajustes en tu iPhone o iPad.",
+        "Toca tu nombre en la parte superior para acceder a tu perfil de Apple ID.",
+        "Selecciona \"Suscripciones\" en el menú.",
+        "Busca ReelShort en tu lista de suscripciones activas.",
+        "Toca \"Cancelar suscripción\" y confirma. Conservarás el acceso hasta que termine tu ciclo de facturación actual.",
+        "Tip: también puedes gestionar tu suscripción desde la app App Store, tocando tu ícono de perfil y luego \"Suscripciones\"."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "Cómo Cancelar en Android",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "Si te suscribiste a través de Google Play Store, el proceso es el siguiente:"
+      ],
+      bullets: [
+        "Abre la app de Google Play Store en tu dispositivo Android.",
+        "Toca tu ícono de perfil en la esquina superior derecha y selecciona \"Pagos y suscripciones\".",
+        "Toca \"Suscripciones\" para ver todas tus suscripciones activas.",
+        "Selecciona la suscripción de ReelShort en tu lista.",
+        "Toca \"Cancelar suscripción\" y sigue las instrucciones para confirmar. Tu acceso continúa hasta el final del periodo de facturación actual.",
+        "Nota: si te suscribiste mediante un método de pago de un tercero (por ejemplo, facturación de Samsung), es posible que debas cancelar directamente desde ese servicio."
+      ]
+    },
+    {
+      title: "Qué Pasa Después de Cancelar",
+      paragraphs: [
+        "Tus funciones premium (como ver sin anuncios o acceso anticipado a episodios) se desactivan de inmediato al cancelar, pero conservas acceso completo a tu cuenta y tu historial de series vistas.",
+        "Puedes seguir usando los beneficios de tu suscripción hasta que termine tu periodo de facturación actual: por ejemplo, si cancelas el día 15 pero tu fecha de cobro es el 30, tendrás acceso hasta el 30.",
+        "Una vez que termina el periodo, ReelShort no te volverá a cobrar automáticamente. Puedes volver a suscribirte en cualquier momento; tu lista de series y tu progreso se guardan en tu cuenta."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Por qué ReelShort me está cobrando?", answer: "ReelShort cobra por suscripciones premium que desbloquean episodios ilimitados, visualización sin anuncios y acceso anticipado a contenido nuevo. Si te cobraron sin esperarlo, revisa el estado de tu suscripción en la configuración de tu cuenta; es posible que hayas activado la renovación automática o comprado un nivel VIP sin darte cuenta." },
+    { question: "¿Puedo pedir un reembolso?", answer: "Depende de tu método de pago. Apple ofrece una ventana de reembolso de 14 días y Google Play de 48 horas desde la compra; ReelShort como tal generalmente no emite reembolsos por servicios ya usados. Para reembolsos de tienda, contacta directamente a Apple o Google." },
+    { question: "¿Pierdo mi lista de series si cancelo?", answer: "No. Tu lista de reproducción, historial de visualización y datos de cuenta se guardan de forma permanente. Cuando vuelvas a suscribirte o inicies sesión, toda tu información seguirá ahí." },
+    { question: "¿Cuántos episodios gratis puedo ver después de cancelar?", answer: "Después de cancelar vuelves al nivel gratuito, que suele permitir un par de episodios diarios con anuncios. La cantidad exacta puede variar según tu región y las promociones vigentes de ReelShort." },
+    { question: "¿Puedo cancelar a la mitad del ciclo de facturación?", answer: "Sí, puedes cancelar en cualquier momento. Tu suscripción sigue activa hasta el final del ciclo de facturación en curso, sin importar el día en que canceles." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/precios-de-reelshort", label: "Precios de ReelShort", description: "Compara los planes VIP antes de decidir si cancelar." },
+    { href: "/guides/conseguir-monedas-reelshort", label: "Monedas Gratis en ReelShort", description: "Sigue disfrutando contenido sin pagar suscripción." },
+    { href: "/guides/es-seguro-reelshort", label: "¿Es Seguro ReelShort?", description: "Todo sobre privacidad y seguridad de pagos en la app." }
   ]
 };
 

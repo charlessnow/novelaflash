@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Proyecciones de Ingresos del Mercado de Miniseries 2026 — NovelaFlash",
   description: "Análisis financiero detallado de cómo el formato vertical alcanzará los $26 mil millones a nivel global.",
-  alternates: { canonical: "/guides/ingresos-mercado-miniseries-2026" },
+  alternates: {
+    canonical: "/guides/ingresos-mercado-miniseries-2026",
+    languages: {
+      "en": "https://reelpulse.net/guides/short-drama-market-revenue-2026",
+      "es-419": "https://novelaflash.com/guides/ingresos-mercado-miniseries-2026",
+    },
+  },
   openGraph: {
     title: "Proyecciones de Ingresos del Mercado de Miniseries 2026",
     description: "Análisis financiero detallado de cómo el formato vertical alcanzará los $26 mil millones a nivel global.",
@@ -26,34 +32,41 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "Ingresos del Primer Trimestre de 2026 por Plataforma",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
+        "El mercado global de miniseries verticales sigue expandiéndose con fuerza. Estos son los ingresos del primer trimestre de 2026 reportados por las principales plataformas, junto con su crecimiento trimestral y participación estimada de mercado.",
       ],
       bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "ReelShort: $80 millones en el Q1 2026, un crecimiento del +40% trimestral, con ~35% de participación de mercado.",
+        "DramaBox: $35 millones en el Q1 2026, un crecimiento del +25% trimestral, con ~15% de participación de mercado.",
+        "ShortMax: $22 millones en el Q1 2026, un crecimiento del +18% trimestral, con ~10% de participación de mercado.",
+        "FlexTV: $8 millones en el Q1 2026, un crecimiento del +12% trimestral, con ~4% de participación de mercado."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "Qué Explica el Liderazgo de ReelShort",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "ReelShort mantiene una ventaja clara sobre el resto del mercado, con casi el doble de ingresos que DramaBox, su competidor más cercano. Esa ventaja viene de una base de usuarios más grande y de mejores métricas de conversión a suscripciones pagas.",
+        "DramaBox, aun con una escala menor, mantiene un crecimiento sólido, lo que sugiere que el mercado es lo bastante grande para sostener a varios competidores exitosos al mismo tiempo."
+      ]
+    },
+    {
+      title: "Qué Significa Esto para los Espectadores",
+      paragraphs: [
+        "Un mercado en crecimiento generalmente se traduce en más inversión en contenido original, más promociones para atraer nuevos usuarios, y más competencia en precios entre plataformas. Es un buen momento para comparar planes VIP y aprovechar las promociones de bienvenida antes de comprometerte con una sola app."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Cuál es la plataforma de miniseries con más ingresos?", answer: "ReelShort lidera el mercado con $80 millones en ingresos durante el Q1 2026, muy por delante de DramaBox ($35M) y ShortMax ($22M)." },
+    { question: "¿Por qué está creciendo tanto este mercado?", answer: "El formato vertical de episodios cortos se adapta perfectamente al consumo desde el celular, y las plataformas han invertido fuertemente en producción original y en sistemas de monetización por monedas y suscripciones VIP." },
+    { question: "¿Estos números incluyen a todas las plataformas del mercado?", answer: "No. Estos datos cubren a las principales plataformas premium (ReelShort, DramaBox, ShortMax y FlexTV) y no representan el mercado completo, que incluye decenas de apps más pequeñas." },
+    { question: "¿Estas cifras se actualizan?", answer: "Sí, actualizamos esta guía cada trimestre a medida que las plataformas reportan nuevos datos financieros." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/precios-de-reelshort", label: "Precios de ReelShort", description: "Conoce el modelo de monedas y VIP del líder del mercado." },
+    { href: "/guides/precios-de-dramabox", label: "Precios de DramaBox", description: "Compara el segundo jugador más grande del mercado." },
+    { href: "/guides/guia-de-precios-shortmax", label: "Precios de ShortMax", description: "Revisa los precios del tercer competidor más grande." }
   ]
 };
 

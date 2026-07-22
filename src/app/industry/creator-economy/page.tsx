@@ -8,58 +8,58 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Creator Economy — NovelaFlash",
-  description: "How to earn money in the short drama industry. Script writing, directing, voice acting — earning potential and how to get started.",
+  title: "Economía de Creadores de Miniseries — NovelaFlash",
+  description: "Cómo ganar dinero en la industria de las miniseries. Guionismo, dirección, actuación de voz — potencial de ingresos y cómo empezar.",
 };
 
 export default function CreatorEconomyPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Short Drama Creator Economy — NovelaFlash",
+    name: "Economía de Creadores de Miniseries — NovelaFlash",
     description:
-      "How to earn money in the short drama industry. Script writing, directing, voice acting — earning potential and how to get started.",
+      "Cómo ganar dinero en la industria de las miniseries. Guionismo, dirección, actuación de voz — potencial de ingresos y cómo empezar.",
     url: `${SITE_URL}/industry/creator-economy`,
   };
 
   const roles = [
     {
-      role: "Script Writers",
-      income: "$500-$5,000 per script",
-      description: "Writing 1-2 minute cliffhanger-driven episodes. High demand for romance and revenge plots.",
+      role: "Guionistas",
+      income: "$500-$5,000 por guion",
+      description: "Escribir episodios de 1-2 minutos impulsados por cliffhangers. Alta demanda de tramas de romance y venganza.",
     },
     {
-      role: "Directors",
-      income: "$2,000-$15,000 per project",
-      description: "Managing tight 7-10 day production schedules for a full 60-100 episode series.",
+      role: "Directores",
+      income: "$2,000-$15,000 por proyecto",
+      description: "Gestionar cronogramas de producción ajustados de 7-10 días para una serie completa de 60-100 episodios.",
     },
     {
-      role: "Voice Actors",
-      income: "$100-$1,000 per episode",
-      description: "Dubbing content for global audiences. AI tools are increasing speed, but emotional performance remains human-led.",
+      role: "Actores de Voz",
+      income: "$100-$1,000 por episodio",
+      description: "Doblar contenido para audiencias globales. Las herramientas de IA aumentan la velocidad, pero la interpretación emocional sigue liderada por humanos.",
     },
   ];
 
   const steps = [
     {
       step: 1,
-      title: "Choose your role",
-      description: "Identify where your skills fit in the production pipeline — writing, acting, or directing.",
+      title: "Elige tu rol",
+      description: "Identifica dónde encajan tus habilidades en el proceso de producción: escritura, actuación o dirección.",
     },
     {
       step: 2,
-      title: "Study top-performing content",
-      description: "Analyze the first 10 episodes of trending dramas. Understand the 'hook' and 'cliffhanger' structure.",
+      title: "Estudia el contenido de mayor éxito",
+      description: "Analiza los primeros 10 episodios de las miniseries en tendencia. Entiende la estructura del 'gancho' y el 'cliffhanger'.",
     },
     {
       step: 3,
-      title: "Submit to platforms",
-      description: "Reach out to studio partners for major apps like ReelShort and DramaBox with your portfolio.",
+      title: "Postúlate a las plataformas",
+      description: "Contacta a los estudios socios de las principales apps como ReelShort y DramaBox con tu portafolio.",
     },
     {
       step: 4,
-      title: "Scale with AI tools",
-      description: "Use productivity-enhancing AI tools for script brainstorming, storyboarding, and rapid editing.",
+      title: "Escala con herramientas de IA",
+      description: "Usa herramientas de IA que aumentan la productividad para lluvia de ideas de guiones, storyboarding y edición rápida.",
     },
   ];
 
@@ -72,10 +72,10 @@ export default function CreatorEconomyPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20 text-center">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-9xl uppercase tracking-tight text-white mb-6">
-              Creator Economy
+              Economía de Creadores
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mx-auto">
-              How a new generation of artists is monetizing the vertical screen.
+              Cómo una nueva generación de artistas está monetizando la pantalla vertical.
             </p>
           </ScrollReveal>
         </section>
@@ -83,7 +83,7 @@ export default function CreatorEconomyPage() {
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-12 italic">
-              Earning Potential
+              Potencial de Ingresos
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {roles.map((role, i) => (
@@ -102,7 +102,7 @@ export default function CreatorEconomyPage() {
         <section className="max-w-4xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-12 italic text-center">
-              How to Get Started
+              Cómo Empezar
             </h2>
             <div className="space-y-6">
               {steps.map((step, i) => (

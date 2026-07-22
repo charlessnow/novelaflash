@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Tu pulso en la revolución del microdrama de $26B. Reseñas, rankings y noticias de última hora de la industria.",
     type: "website",
-    locale: "es_ES",
+    locale: "es_419",
     images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'NovelaFlash — Tu Pulso en la Revolución del Microdrama' }],
   },
   twitter: {
@@ -66,6 +66,7 @@ export default function RootLayout({
         "@type": "WebSite",
         name: "NovelaFlash",
         url: SITE_URL,
+        inLanguage: "es-419",
       },
     ],
   };

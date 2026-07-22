@@ -7,59 +7,59 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "AI in Short Dramas — Technology Trends — NovelaFlash",
-  description: "How AI is transforming short drama production. From AI-generated scripts to automated video, explore the technology reshaping micro-entertainment.",
+  title: "IA en las Miniseries — Tendencias Tecnológicas — NovelaFlash",
+  description: "Cómo la IA está transformando la producción de miniseries. Desde guiones generados por IA hasta video automatizado, explora la tecnología que redefine el micro-entretenimiento.",
 };
 
 export default function TechAIPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "AI in Short Dramas — Technology Trends — NovelaFlash",
+    name: "IA en las Miniseries — Tendencias Tecnológicas — NovelaFlash",
     description:
-      "How AI is transforming short drama production. From AI-generated scripts to automated video, explore the technology reshaping micro-entertainment.",
+      "Cómo la IA está transformando la producción de miniseries. Desde guiones generados por IA hasta video automatizado, explora la tecnología que redefine el micro-entretenimiento.",
     url: `${SITE_URL}/industry/tech-ai`,
   };
 
   const timeline = [
     {
       year: "2024",
-      milestone: "First AI micro-drama 'Chopping Waves' on Kuaishou",
-      description: "A pivotal moment where AI-generated content proved viable for mass consumption in the vertical format.",
+      milestone: "Primer microdrama con IA 'Chopping Waves' en Kuaishou",
+      description: "Un momento decisivo en el que el contenido generado por IA demostró ser viable para el consumo masivo en formato vertical.",
     },
     {
       year: "2025",
-      milestone: "China releases first AI sci-fi series",
-      description: "State-backed media enterprises pivot toward AI to reduce cost and increase production speed for high-concept sci-fi.",
+      milestone: "China lanza su primera serie de ciencia ficción con IA",
+      description: "Empresas de medios respaldadas por el Estado apuestan por la IA para reducir costos y aumentar la velocidad de producción en ciencia ficción de alto concepto.",
     },
     {
       year: "2026",
-      milestone: "StoReel raises $34M for AI-native production",
-      description: "Venture capital floods into platforms that prioritize AI scripts, voice cloning, and automated scene generation.",
+      milestone: "StoReel recauda $34M para producción nativa de IA",
+      description: "El capital de riesgo fluye hacia plataformas que priorizan guiones generados por IA, clonación de voz y generación automática de escenas.",
     },
     {
       year: "2026",
-      milestone: "AI tools reduce production costs by 30-50%",
-      description: "The economic reality of AI: faster turnarounds and significantly lower overhead for independent studios.",
+      milestone: "Las herramientas de IA reducen los costos de producción entre un 30-50%",
+      description: "La realidad económica de la IA: tiempos de entrega más rápidos y costos operativos mucho menores para estudios independientes.",
     },
   ];
 
   const technologies = [
     {
-      name: "AI Script Generation",
-      description: "Training LLMs on top-performing short drama tropes to generate high-engagement scripts in seconds.",
+      name: "Generación de Guiones con IA",
+      description: "Entrenar modelos de lenguaje con los tropos de miniseries más exitosos para generar guiones de alto engagement en segundos.",
     },
     {
-      name: "AI Video Generation",
-      description: "Using diffusion models to generate background plates and VFX, reducing the need for expensive location shoots.",
+      name: "Generación de Video con IA",
+      description: "Uso de modelos de difusión para generar fondos y efectos visuales, reduciendo la necesidad de costosas grabaciones en locación.",
     },
     {
-      name: "TTS/Voice Cloning",
-      description: "Translating content across languages while maintaining the original actor's emotional tone and voice identity.",
+      name: "TTS/Clonación de Voz",
+      description: "Traducir contenido entre idiomas manteniendo el tono emocional y la identidad vocal del actor original.",
     },
     {
-      name: "Automated Editing",
-      description: "AI tools that automatically identify 'cliffhanger' moments and optimize pacing for maximum retention.",
+      name: "Edición Automatizada",
+      description: "Herramientas de IA que identifican automáticamente los momentos 'cliffhanger' y optimizan el ritmo para maximizar la retención.",
     },
   ];
 
@@ -72,10 +72,10 @@ export default function TechAIPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-9xl uppercase tracking-tight text-white mb-6">
-              Tech & AI
+              Tecnología e IA
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              The silicon engine powering the next generation of vertical cinema.
+              El motor de silicio que impulsa la próxima generación del cine vertical.
             </p>
           </ScrollReveal>
         </section>
@@ -83,7 +83,7 @@ export default function TechAIPage() {
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-12 italic">
-              AI Timeline
+              Cronología de la IA
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {timeline.map((item, i) => (
@@ -106,7 +106,7 @@ export default function TechAIPage() {
         <section className="max-w-7xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-12 italic text-right">
-              Key Technologies
+              Tecnologías Clave
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {technologies.map((tech, i) => (

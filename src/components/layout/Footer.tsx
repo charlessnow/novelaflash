@@ -59,7 +59,7 @@ export const Footer = () => {
               <li><Link href="/contact" className="hover:text-rp-coral transition-colors">Contacto</Link></li>
               <li><Link href="/privacy" className="hover:text-rp-coral transition-colors">Privacidad</Link></li>
               <li><a href="https://duanjuhao.com" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">中文 · 短剧好</a></li>
-              <li><a href="https://reelpulse.com" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">English · ReelPulse</a></li>
+              <li><a href="https://reelpulse.net" target="_blank" rel="noopener" className="hover:text-rp-coral transition-colors">English · ReelPulse</a></li>
             </ul>
           </div>
         </div>

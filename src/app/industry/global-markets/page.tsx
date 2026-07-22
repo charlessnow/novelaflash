@@ -7,52 +7,52 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Global Short Drama Markets — NovelaFlash",
-  description: "Geographic analysis of the short drama market. North America, Southeast Asia, India, and Japan — where micro-dramas are growing fastest.",
+  title: "Mercados Globales de Miniseries — NovelaFlash",
+  description: "Análisis geográfico del mercado de miniseries. Norteamérica, sudeste asiático, India y Japón: dónde crecen más rápido los microdramas.",
 };
 
 export default function GlobalMarketsPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Global Short Drama Markets — NovelaFlash",
+    name: "Mercados Globales de Miniseries — NovelaFlash",
     description:
-      "Geographic analysis of the short drama market. North America, Southeast Asia, India, and Japan — where micro-dramas are growing fastest.",
+      "Análisis geográfico del mercado de miniseries. Norteamérica, sudeste asiático, India y Japón: dónde crecen más rápido los microdramas.",
     url: `${SITE_URL}/industry/global-markets`,
   };
 
   const regions = [
     {
-      name: "North America",
-      stat: ">50% of overseas revenue",
-      market: "$2B+ market",
-      description: "High ARPU and demand for localized content with Western archetypes.",
+      name: "Norteamérica",
+      stat: ">50% de los ingresos en el exterior",
+      market: "Mercado de $2B+",
+      description: "Alto ARPU y demanda de contenido localizado con arquetipos occidentales.",
     },
     {
-      name: "Southeast Asia",
-      stat: "Fastest growing region",
-      market: "Mobile-first audience",
-      description: "Massive scale and adoption, particularly in Indonesia, Thailand, and Vietnam.",
+      name: "Sudeste Asiático",
+      stat: "Región de mayor crecimiento",
+      market: "Audiencia mobile-first",
+      description: "Escala y adopción masivas, particularmente en Indonesia, Tailandia y Vietnam.",
     },
     {
       name: "India",
-      stat: "$50M+ in funding",
-      market: "Chai Shots/Flick TV leading",
-      description: "Local studios raising significant capital to adapt the format for Indian languages and culture.",
+      stat: "$50M+ en financiamiento",
+      market: "Chai Shots/Flick TV a la cabeza",
+      description: "Estudios locales recaudando capital significativo para adaptar el formato a los idiomas y la cultura de India.",
     },
     {
-      name: "Japan",
-      stat: "THINGMEDIA ¥200M funded",
-      market: "Unique content preferences",
-      description: "Highly sophisticated market with a strong appetite for premium production values.",
+      name: "Japón",
+      stat: "THINGMEDIA financiada con ¥200M",
+      market: "Preferencias de contenido únicas",
+      description: "Mercado altamente sofisticado con un fuerte apetito por valores de producción premium.",
     },
   ];
 
   const shares = [
-    { region: "North America", value: 55 },
-    { region: "Southeast Asia", value: 25 },
-    { region: "China (Overseas)", value: 15 },
-    { region: "Other", value: 5 },
+    { region: "Norteamérica", value: 55 },
+    { region: "Sudeste Asiático", value: 25 },
+    { region: "China (Exterior)", value: 15 },
+    { region: "Otros", value: 5 },
   ];
 
   return (
@@ -64,10 +64,10 @@ export default function GlobalMarketsPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-9xl uppercase tracking-tight text-white mb-6">
-              Global Markets
+              Mercados Globales
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Mapping the geographic expansion of the world&apos;s most viral entertainment format.
+              Mapeando la expansión geográfica del formato de entretenimiento más viral del mundo.
             </p>
           </ScrollReveal>
         </section>
@@ -100,7 +100,7 @@ export default function GlobalMarketsPage() {
         <section className="max-w-4xl mx-auto px-6 mb-32">
           <ScrollReveal direction="up">
             <h2 className="font-display font-black text-3xl text-white uppercase tracking-wider mb-12 italic text-center">
-              Market Share (Revenue)
+              Cuota de Mercado (Ingresos)
             </h2>
             <div className="space-y-10 bg-rp-bg-card/50 p-12 rounded-3xl border border-white/5 backdrop-blur-sm">
               {shares.map((share, i) => (

@@ -7,8 +7,8 @@ import { platforms } from "@/lib/data";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Platforms Directory 2026 — NovelaFlash",
-  description: "Every major short drama app reviewed and ranked. Compare ReelShort, DramaBox, ShortMax, FlexTV, and MoboReels with expert editorial scores.",
+  title: "Directorio de Plataformas de Miniseries 2026 — NovelaFlash",
+  description: "Todas las apps de miniseries principales, reseñadas y rankeadas. Compara ReelShort, DramaBox, ShortMax, FlexTV y MoboReels con calificaciones editoriales expertas.",
 };
 
 export default function PlatformsPage() {
@@ -20,7 +20,7 @@ export default function PlatformsPage() {
         <section className="max-w-7xl mx-auto px-6 mb-20">
           <ScrollReveal direction="up">
             <h1 className="font-display font-black text-6xl md:text-8xl uppercase tracking-tight text-white mb-6">
-              Platforms
+              Plataformas
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl mb-16">
               Todas las principales apps de miniseries, analizadas y clasificadas por nuestro equipo editorial.
@@ -60,7 +60,7 @@ export default function PlatformsPage() {
 
                   <div className="w-full lg:w-80 flex flex-col gap-6 relative z-10 p-8 glass rounded-2xl border-white/5">
                     <div className="flex justify-between items-end">
-                      <span className="text-xs font-black uppercase tracking-[0.2em] text-rp-text-muted">ReelScore</span>
+                      <span className="text-xs font-black uppercase tracking-[0.2em] text-rp-text-muted">Puntaje NF</span>
                       <span className="font-display font-black text-5xl text-rp-coral leading-none">{platform.score.toFixed(1)}</span>
                     </div>
                     <div className="score-bar w-full h-2">

@@ -3,20 +3,48 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { platforms } from "@/lib/data";
+import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Top 100 Short Drama Apps 2026 — NovelaFlash",
-  description: "The most comprehensive ranking of short drama apps worldwide. Discover the best platforms for micro-dramas, scored across content, UX, and value.",
+  title: "Top 100 Apps de Miniseries 2026 — NovelaFlash",
+  description: "El ranking más completo de apps de miniseries del mundo. Descubre las mejores plataformas de microdramas, calificadas por contenido, UX y valor.",
 };
 
 export default function Top100Apps() {
+  const top100Schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Top 100 Apps de Miniseries 2026",
+    description: metadata.description,
+    url: `${SITE_URL}/rankings/top-100`,
+    inLanguage: "es-419",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: platforms.length,
+    itemListElement: platforms.map((platform, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${SITE_URL}/platforms/${platform.slug}`,
+      item: {
+        "@type": "SoftwareApplication",
+        name: platform.name,
+        description: platform.description,
+      },
+    })),
+  };
+  const breadcrumbSchema = createBreadcrumbList([
+    { name: "Inicio", item: SITE_URL },
+    { name: "Rankings", item: `${SITE_URL}/rankings` },
+    { name: "Top 100", item: `${SITE_URL}/rankings/top-100` },
+  ]);
+
   const morePlatforms = [
-    { name: "GoodShort", icon: "/platforms/goodshort.png", score: 7.2, desc: "Curated short drama hub with consistently strong App Store ratings. Known for cinematic quality, established industry talent, and balanced storytelling across romance, suspense, and fantasy genres.", category: "Growth" },
-    { name: "ShortMax", icon: "/platforms/shortmax.png", score: 7.0, desc: "High-quality visual production with polished content. Popular for werewolf and billionaire romance genres. App Store rated 4.5+ stars with growing global user base.", category: "Growth" },
-    { name: "DramaWave", icon: "/platforms/dramawave.png", score: 6.8, desc: "Library of 30,000+ dramas across 17 languages. Features on-screen comments and offline viewing. Identified by Sensor Tower as one of the fastest-growing newcomers in 2025.", category: "Emerging" },
-    { name: "PineDrama", icon: "/platforms/pinedrama.png", score: 6.5, desc: "TikTok's microdrama app launched in the US and Brazil. Fully ad-free with no paywall — one of the few completely free short drama platforms. HD full-screen format with crisp audio.", category: "Emerging" },
-    { name: "DreameShort", icon: "/platforms/dreameshort.png", score: 6.3, desc: "Next-gen mini-drama streaming platform by Dreame (Bytedance ecosystem). Specializes in forbidden love, supernatural romances, arranged marriages, and secret heiress storylines.", category: "Emerging" },
+    { name: "GoodShort", icon: "/platforms/goodshort.png", score: 7.2, desc: "Hub curado de miniseries con calificaciones consistentemente altas en la App Store. Conocida por su calidad cinematográfica, talento reconocido de la industria y narrativa equilibrada en géneros de romance, suspenso y fantasía.", category: "Crecimiento" },
+    { name: "ShortMax", icon: "/platforms/shortmax.png", score: 7.0, desc: "Producción visual de alta calidad con contenido pulido. Popular por sus géneros de hombres lobo y romance con multimillonarios. Calificada con más de 4.5 estrellas en la App Store, con una base de usuarios global en crecimiento.", category: "Crecimiento" },
+    { name: "DramaWave", icon: "/platforms/dramawave.png", score: 6.8, desc: "Biblioteca de más de 30,000 dramas en 17 idiomas. Incluye comentarios en pantalla y visualización sin conexión. Identificada por Sensor Tower como una de las apps de más rápido crecimiento en 2025.", category: "Emergente" },
+    { name: "PineDrama", icon: "/platforms/pinedrama.png", score: 6.5, desc: "App de microdramas de TikTok lanzada en Estados Unidos y Brasil. Totalmente libre de anuncios y sin muro de pago: una de las pocas plataformas de miniseries completamente gratis. Formato HD en pantalla completa con audio nítido.", category: "Emergente" },
+    { name: "DreameShort", icon: "/platforms/dreameshort.png", score: 6.3, desc: "Plataforma de streaming de miniseries de nueva generación de Dreame (ecosistema de Bytedance). Se especializa en amores prohibidos, romances sobrenaturales, matrimonios arreglados e historias de herederas secretas.", category: "Emergente" },
   ];
 
   const allApps = [
@@ -34,6 +62,8 @@ export default function Top100Apps() {
 
   return (
     <div className="flex flex-col min-h-screen bg-rp-bg-primary">
+      <JsonLd data={top100Schema} />
+      <JsonLd data={breadcrumbSchema} />
       <Nav />
 
       <main className="flex-grow pt-32 pb-20">
@@ -43,7 +73,7 @@ export default function Top100Apps() {
               TOP 100 APPS
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              The definitive power ranking of short drama platforms based on downloads, retention, and content quality.
+              El ranking definitivo de plataformas de miniseries basado en descargas, retención y calidad de contenido.
             </p>
           </ScrollReveal>
 
@@ -83,7 +113,7 @@ export default function Top100Apps() {
 
                   <div className="w-full md:w-64 flex flex-col gap-2">
                     <div className="flex justify-between items-end">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-rp-text-muted">Score</span>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-rp-text-muted">Puntaje</span>
                       <span className="font-display font-black text-2xl text-rp-coral leading-none">{app.score.toFixed(1)}</span>
                     </div>
                     <div className="score-bar w-full">

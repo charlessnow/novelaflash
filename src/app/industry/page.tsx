@@ -9,8 +9,8 @@ import { stats, latestArticles, trendingArticles, industrySpotlights } from "@/l
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
-  title: "Short Drama Industry Analysis — NovelaFlash",
-  description: "Data-driven analysis of the global micro-drama market. Market reports, AI trends, global expansion, and creator economy insights.",
+  title: "Análisis de la Industria de Miniseries — NovelaFlash",
+  description: "Análisis basado en datos del mercado global de microdramas. Informes de mercado, tendencias de IA, expansión global y economía de creadores.",
 };
 
 const getSpotlightLink = (slug: string) => {

@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Cómo Conseguir Monedas Gratis en DramaBox — NovelaFlash",
   description: "Todos los trucos legales, tareas diarias y códigos promocionales para ver series en DramaBox sin gastar dinero real.",
-  alternates: { canonical: "/guides/conseguir-monedas-dramabox" },
+  alternates: {
+    canonical: "/guides/conseguir-monedas-dramabox",
+    languages: {
+      "en": "https://reelpulse.net/guides/dramabox-coins",
+      "es-419": "https://novelaflash.com/guides/conseguir-monedas-dramabox",
+    },
+  },
   openGraph: {
     title: "Cómo Conseguir Monedas Gratis en DramaBox",
     description: "Todos los trucos legales, tareas diarias y códigos promocionales para ver series en DramaBox sin gastar dinero real.",
@@ -26,34 +32,51 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "Qué Son las Monedas de DramaBox",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
-      ],
-      bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "Las monedas son la moneda virtual de DramaBox: sirven para desbloquear episodios, comprar contenido premium y acceder a funciones exclusivas. A diferencia de otras apps, DramaBox ofrece varias formas legítimas de conseguir monedas sin gastar dinero real.",
+        "Cada episodio cuesta entre 10 y 50 monedas, según la serie y la duración del capítulo. Los usuarios VIP reciben descuentos en el costo de los episodios, y las monedas ganadas normalmente no caducan (aunque conviene revisar los términos de las promociones puntuales, que sí pueden tener vencimiento)."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "7 Formas Gratuitas de Conseguir Monedas",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "La manera más efectiva de acumular monedas es la constancia diaria. Estos son los métodos que funcionan de verdad:"
+      ],
+      bullets: [
+        "Recompensa de inicio de sesión diario: entrar cada día suma monedas, y la racha aumenta la recompensa (por ejemplo, el día 1 puede dar pocas monedas y el día 30 mucho más). Faltar un día reinicia la racha.",
+        "Ver anuncios cortos a cambio de monedas: cada anuncio suele dar entre 5 y 10 monedas, y se pueden ver varios al día.",
+        "Códigos de regalo y promociones: DramaBox publica códigos en sus redes sociales y eventos especiales, canjeables por monedas extra.",
+        "Eventos de temporada (aniversarios, festividades): suelen incluir desafíos con recompensas más grandes que las diarias.",
+        "Programa de referidos: invitar amigos que se registren y hagan su primera compra suele dar monedas de bono.",
+        "Ruleta o sorteo diario: muchas versiones de la app incluyen giros gratuitos con premios en monedas.",
+        "Logros y metas de visualización: completar cierto número de episodios o terminar una serie desbloquea recompensas adicionales."
+      ]
+    },
+    {
+      title: "Cómo Estirar Tus Monedas al Máximo",
+      paragraphs: [
+        "Ganar monedas es solo la mitad del trabajo; gastarlas bien es lo que realmente te ahorra dinero.",
+      ],
+      bullets: [
+        "Espera los descuentos: DramaBox suele ofrecer promociones que reducen el costo de los episodios durante ciertos períodos.",
+        "Prioriza series con buena relación episodios/moneda antes de gastar tus monedas en una nueva serie.",
+        "Evalúa si la suscripción VIP te conviene: si ves contenido con frecuencia, el descuento por episodio suele compensar el costo mensual.",
+        "Acumula antes de gastar: tener un colchón de monedas te da flexibilidad para aprovechar ofertas cuando aparezcan."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Cuántas monedas puedo ganar por día?", answer: "Un usuario activo puede ganar entre 50 y 200+ monedas diarias combinando el inicio de sesión, anuncios y eventos. Todo depende de tu nivel de participación y de las promociones activas en ese momento." },
+    { question: "¿Las monedas de DramaBox caducan?", answer: "Las monedas ganadas normalmente no caducan, pero las monedas de eventos o promociones puntuales sí pueden tener fecha límite. Revisa siempre los términos al recibirlas." },
+    { question: "¿Puedo transferir monedas entre cuentas?", answer: "No. Las monedas de DramaBox están vinculadas a la cuenta donde se generaron y no se pueden transferir." },
+    { question: "¿Hay un límite diario para ganar monedas?", answer: "No hay un tope total, pero actividades como ver anuncios suelen tener un límite diario que se reinicia cada 24 horas." },
+    { question: "¿Vale la pena comprar monedas si ya las gano gratis?", answer: "Si ves contenido ocasionalmente, las monedas gratuitas suelen ser suficientes. Si tu consumo es alto, comparar el costo de comprar monedas contra una suscripción VIP casi siempre conviene más." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/como-ver-dramabox-gratis", label: "Ver DramaBox Gratis", description: "Combina monedas, ensayos gratuitos y otras tácticas para maratonear sin pagar." },
+    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el costo real de monedas contra las suscripciones VIP." },
+    { href: "/guides/es-seguro-dramabox", label: "¿Es Seguro DramaBox?", description: "Qué datos recopila la app y cómo evitar cargos sorpresa." }
   ]
 };
 

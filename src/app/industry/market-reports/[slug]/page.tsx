@@ -24,113 +24,113 @@ interface ReportContent {
 
 const REPORTS: Report[] = [
   {
-    slug: "q1-2026-revenue",
-    title: "Q1 2026 Short Drama Revenue Report",
-    date: "April 2026",
-    stat: "$700M quarterly revenue",
+    slug: "ingresos-q1-2026",
+    title: "Informe de Ingresos de Miniseries T1 2026",
+    date: "Abril 2026",
+    stat: "$700M en ingresos trimestrales",
     summary:
-      "A record-breaking quarter for the industry, driven by massive expansion in North American and Southeast Asian markets.",
+      "Un trimestre récord para la industria, impulsado por la expansión masiva en los mercados de Norteamérica y el sudeste asiático.",
   },
   {
-    slug: "global-market-size-2025",
-    title: "Global Market Size Analysis 2025",
-    date: "January 2026",
-    stat: "$26B total market",
+    slug: "tamano-mercado-global-2025",
+    title: "Análisis del Tamaño del Mercado Global 2025",
+    date: "Enero 2026",
+    stat: "$26B en mercado total",
     summary:
-      "Comprehensive analysis of the vertical video economy, tracking growth from 2022 to the 2025 peak.",
+      "Análisis integral de la economía del video vertical, con seguimiento del crecimiento desde 2022 hasta el pico de 2025.",
   },
   {
-    slug: "china-overseas-revenue-2024",
-    title: "China Short Drama Overseas Revenue 2024",
-    date: "December 2025",
-    stat: "$4.3B overseas",
+    slug: "ingresos-exterior-china-2024",
+    title: "Ingresos de Miniseries Chinas en el Exterior 2024",
+    date: "Diciembre 2025",
+    stat: "$4.3B en el exterior",
     summary:
-      "Examining the 'Chuhai' wave as Chinese studios dominate the Western micro-drama landscape.",
+      "Un análisis de la ola 'Chuhai', con los estudios chinos dominando el panorama del microdrama occidental.",
   },
   {
-    slug: "user-acquisition-cost-benchmarks",
-    title: "User Acquisition Cost Benchmarks",
-    date: "March 2026",
+    slug: "costo-adquisicion-usuarios",
+    title: "Referencias de Costo de Adquisición de Usuarios",
+    date: "Marzo 2026",
     stat: "$0.40-0.80 CPI",
     summary:
-      "A deep dive into marketing efficiency and platform-specific acquisition costs across Meta, TikTok, and Google.",
+      "Un análisis a fondo de la eficiencia de marketing y los costos de adquisición específicos por plataforma en Meta, TikTok y Google.",
   },
 ];
 
 const REPORT_CONTENT: Record<string, ReportContent> = {
-  "q1-2026-revenue": {
+  "ingresos-q1-2026": {
     sections: [
       {
-        heading: "Q1 2026: A Record-Breaking Quarter",
+        heading: "T1 2026: Un Trimestre Récord",
         body:
-          "Q1 2026 marked the strongest quarter in short drama history. ReelShort alone posted $80 million in global in-app purchase revenue — a 40% quarter-over-quarter increase from Q4 2025 — while DramaBox recorded approximately $35 million. Combined with revenue from ShortMax, FlexTV, MoboReels, and a growing tier of regional platforms, total category in-app purchase revenue for the quarter is estimated at roughly $700 million globally. That represents approximately three times the level recorded in Q1 2025, confirming that micro-drama has entered a phase of compounding scale rather than linear growth.\n\nThe strongest contribution continued to come from North America, where English-language adaptation, aggressive creative testing, and refined monetization funnels lifted average revenue per paying user across leading apps. ReelShort's 55 million downloads and 2.7 million daily active users — up 125% year-over-year — set a new benchmark for engagement in the category.",
+          "El primer trimestre de 2026 marcó el trimestre más fuerte en la historia de las miniseries. Solo ReelShort registró $80 millones de dólares en ingresos globales por compras dentro de la app —un aumento del 40% respecto al T4 2025— mientras que DramaBox registró aproximadamente $35 millones. Sumando los ingresos de ShortMax, FlexTV, MoboReels y un nivel creciente de plataformas regionales, los ingresos totales de la categoría por compras dentro de la app para el trimestre se estiman en unos $700 millones a nivel global. Eso representa aproximadamente el triple del nivel registrado en el T1 2025, confirmando que el microdrama ha entrado en una fase de crecimiento acumulativo en lugar de lineal.\n\nEl aporte más fuerte siguió proviniendo de Norteamérica, donde la adaptación al inglés, las pruebas creativas agresivas y los embudos de monetización refinados elevaron el ingreso promedio por usuario pagador en las principales apps. Los 55 millones de descargas de ReelShort y sus 2.7 millones de usuarios activos diarios —un aumento del 125% interanual— establecieron un nuevo referente de engagement en la categoría.",
       },
       {
-        heading: "Leaders Consolidated Their Position",
+        heading: "Los Líderes Consolidaron su Posición",
         body:
-          "ReelShort and DramaBox retained their positions as the clear category leaders entering 2026, together holding roughly 70%+ of premium short drama app revenue. ReelShort's $80M Q1 2026 performance confirmed its dominance in Western markets, where its premium content strategy and vertical-cinema production values have driven industry-leading conversion from free viewers to paid subscribers.\n\nBehind the top two, a second wave of competitors continued to scale rapidly. ShortMax, FlexTV, and MoboReels were among the fastest-growing newcomers, benefiting from lower content costs, localized genre packaging, and more flexible free-tier models. Their rise confirmed that the market remained open to new entrants capable of combining strong retention with disciplined user acquisition. DramaBox's 40 million downloads and aggressive catalog expansion in Southeast Asia and Latin America positioned it as the primary challenger to ReelShort's global dominance.",
+          "ReelShort y DramaBox mantuvieron su posición como los líderes claros de la categoría al entrar a 2026, controlando juntos aproximadamente el 70%+ de los ingresos de las apps premium de miniseries. El desempeño de $80M de ReelShort en el T1 2026 confirmó su dominio en los mercados occidentales, donde su estrategia de contenido premium y sus valores de producción de cine vertical han impulsado una conversión líder en la industria de espectadores gratuitos a suscriptores pagos.\n\nDetrás de los dos líderes, una segunda ola de competidores continuó escalando rápidamente. ShortMax, FlexTV y MoboReels estuvieron entre los recién llegados de más rápido crecimiento, beneficiándose de menores costos de contenido, empaquetado de género localizado y modelos de nivel gratuito más flexibles. Su ascenso confirmó que el mercado seguía abierto a nuevos participantes capaces de combinar buena retención con una adquisición de usuarios disciplinada. Las 40 millones de descargas de DramaBox y su agresiva expansión de catálogo en el sudeste asiático y América Latina lo posicionaron como el principal retador al dominio global de ReelShort.",
       },
       {
-        heading: "What Q1 2026 Signals for the Rest of the Year",
+        heading: "Qué Anticipa el T1 2026 para el Resto del Año",
         body:
-          "Q1 2026 established three clear signals for the remainder of the year. First, short drama is no longer a download race — the real competitive advantage now comes from monetization depth: coin systems, VIP subscriptions, and cliffhanger-driven episode unlocks that convert casual viewers into paying subscribers. Second, international diversification is accelerating; North America remains the top revenue market, but Southeast Asia, Japan, and India are compounding quickly.\n\nThird, AI-assisted production is reducing content costs significantly, enabling platforms to increase release cadence without proportional cost growth. Studios that can pair breakout creative with localized production pipelines and data-driven cliffhanger placement will dominate H2 2026. The category's $700M Q1 2026 quarter is not a ceiling — it is evidence that the underlying demand for serialized mobile-native storytelling has become structurally durable.",
+          "El T1 2026 estableció tres señales claras para el resto del año. Primero, las miniseries ya no son una carrera de descargas: la verdadera ventaja competitiva ahora viene de la profundidad de la monetización: sistemas de monedas, suscripciones VIP y desbloqueos de episodios basados en cliffhangers que convierten a espectadores casuales en suscriptores pagos. Segundo, la diversificación internacional se está acelerando; Norteamérica sigue siendo el mercado de mayores ingresos, pero el sudeste asiático, Japón e India están creciendo rápidamente.\n\nTercero, la producción asistida por IA está reduciendo significativamente los costos de contenido, permitiendo a las plataformas aumentar su ritmo de lanzamientos sin un crecimiento proporcional de costos. Los estudios que logren combinar contenido viral con cadenas de producción localizadas y colocación de cliffhangers basada en datos dominarán el segundo semestre de 2026. El trimestre de $700M del T1 2026 no es un techo: es evidencia de que la demanda subyacente por narrativas seriadas nativas para móviles se ha vuelto estructuralmente duradera.",
       },
     ],
   },
-  "global-market-size-2025": {
+  "tamano-mercado-global-2025": {
     sections: [
       {
-        heading: "How Large the Market Became",
+        heading: "Qué Tan Grande se Volvió el Mercado",
         body:
-          "By 2025, the short drama economy had become large enough to be measured as a global media segment rather than a niche mobile app trend. Industry reporting from Chinese trade outlets, platform disclosures, and Sensor Tower app-revenue tracking all pointed in the same direction: micro-drama had become a multi-billion-dollar category with China still the biggest production base and overseas markets supplying the fastest incremental growth. Much of the industry's most-cited value creation came from paid episodic unlocks and subscription revenue rather than advertising alone.\n\nThe frequently cited $26 billion figure reflects the broad vertical-video and micro-drama opportunity discussed across the industry, especially when combining domestic Chinese activity with adjacent monetization in overseas apps, production services, and distribution. What matters strategically is less the exact top-line estimate than the trajectory: from a marginal format in the early 2020s to a category commanding mainstream studio attention by 2025.",
+          "Para 2025, la economía de las miniseries se había vuelto lo suficientemente grande como para medirse como un segmento mediático global y no como una tendencia nicho de apps móviles. Los reportes de la industria de medios comerciales chinos, las declaraciones de las plataformas y el seguimiento de ingresos de apps de Sensor Tower apuntaban todos en la misma dirección: el microdrama se había convertido en una categoría de miles de millones de dólares, con China aún como la mayor base de producción y los mercados en el exterior aportando el crecimiento incremental más rápido. Buena parte de la creación de valor más citada de la industria provino de los desbloqueos de episodios pagados y los ingresos por suscripción, más que solo de la publicidad.\n\nLa cifra de $26 mil millones citada con frecuencia refleja la amplia oportunidad del video vertical y el microdrama que se discute en toda la industria, especialmente al combinar la actividad doméstica china con la monetización adyacente en apps en el exterior, servicios de producción y distribución. Lo que importa estratégicamente es menos la estimación exacta que la trayectoria: de un formato marginal a inicios de la década de 2020 a una categoría que capta la atención de los grandes estudios para 2025.",
       },
       {
-        heading: "Why 2025 Was a Breakout Year",
+        heading: "Por Qué 2025 Fue un Año Decisivo",
         body:
-          "Several structural forces aligned in 2025. Short drama apps had learned how to convert social-video habits into paid entertainment behavior, especially through cliffhanger-heavy narratives and frictionless unlock systems. At the same time, publishers refined localization: they moved beyond simply dubbing Chinese-origin stories and began producing English-language, Southeast Asian, and Latin American variants tailored to local tastes. That lifted both retention and willingness to spend.\n\nSensor Tower's 2025 commentary also showed that category concentration remained high at the top, with ReelShort and DramaBox leading revenue, but the market was broadening underneath them. A growing number of apps could buy traffic efficiently, test creatives rapidly, and recycle proven plot structures into new genres. That combination of repeatable storytelling formats and app-store distribution gave the category unusual scalability for an entertainment business.",
+          "Varias fuerzas estructurales se alinearon en 2025. Las apps de miniseries habían aprendido a convertir los hábitos de video social en comportamiento de entretenimiento pagado, especialmente mediante narrativas cargadas de cliffhangers y sistemas de desbloqueo sin fricción. Al mismo tiempo, las editoriales refinaron la localización: pasaron de simplemente doblar historias de origen chino a producir variantes en inglés, del sudeste asiático y de América Latina adaptadas a los gustos locales. Eso elevó tanto la retención como la disposición a gastar.\n\nLos comentarios de Sensor Tower en 2025 también mostraron que la concentración de la categoría seguía siendo alta en la cima, con ReelShort y DramaBox liderando los ingresos, pero el mercado se estaba ampliando por debajo de ellos. Un número creciente de apps podía comprar tráfico de forma eficiente, probar creativos rápidamente y reciclar estructuras de trama comprobadas en nuevos géneros. Esa combinación de formatos narrativos repetibles y distribución vía tiendas de apps le dio a la categoría una escalabilidad inusual para un negocio de entretenimiento.",
       },
       {
-        heading: "Implications for the Competitive Landscape",
+        heading: "Implicaciones para el Panorama Competitivo",
         body:
-          "The 2025 market size story was ultimately a story about industrialization. Short drama stopped looking like a collection of viral hits and started looking like an operating model: fast production, high-volume testing, aggressive paid acquisition, and lifetime value optimization. That favored companies with cross-border production networks, strong analytics, and the ability to release at pace without collapsing quality.\n\nThe result was a market in which incumbents had meaningful advantages but new entrants still had room if they specialized. Companies focused on romance, revenge, family melodrama, and localized premium fiction could still find distribution because demand was expanding faster than any one catalog could satisfy it. In that sense, 2025 was the year the market proved both its scale and its depth.",
+          "La historia del tamaño del mercado en 2025 fue, en última instancia, una historia de industrialización. Las miniseries dejaron de parecer una colección de éxitos virales y empezaron a parecer un modelo operativo: producción rápida, pruebas de alto volumen, adquisición pagada agresiva y optimización del valor de vida del usuario. Eso favoreció a las empresas con redes de producción transfronterizas, analítica sólida y capacidad de lanzar contenido al ritmo necesario sin sacrificar calidad.\n\nEl resultado fue un mercado en el que los líderes establecidos tenían ventajas significativas, pero los nuevos participantes aún tenían espacio si se especializaban. Las empresas enfocadas en romance, venganza, melodrama familiar y ficción premium localizada todavía podían encontrar distribución porque la demanda crecía más rápido de lo que cualquier catálogo podía satisfacer. En ese sentido, 2025 fue el año en que el mercado demostró tanto su escala como su profundidad.",
       },
     ],
   },
-  "china-overseas-revenue-2024": {
+  "ingresos-exterior-china-2024": {
     sections: [
       {
-        heading: "The $4.3 Billion Overseas Breakthrough",
+        heading: "El Avance de $4,300 Millones en el Exterior",
         body:
-          "Chinese media and market reporting in 2025 put overseas revenue from China's short drama industry at about $4.3 billion for 2024. That number became one of the clearest markers of the sector's international expansion. It reflected not only revenue from consumer-facing apps abroad, but also the growing export capacity of Chinese studios, production teams, and story frameworks that had already been proven domestically before being adapted for foreign audiences.\n\nThe significance of the $4.3 billion figure is that it reframed 'going overseas' from an experimental strategy into a central growth engine. Chinese companies had already built the production muscle memory for high-volume, low-turnaround serialized storytelling. Once those capabilities were paired with overseas ad buying and localization, they produced a business that could scale rapidly outside the mainland market.",
+          "Los medios y reportes de mercado chinos en 2025 situaron los ingresos en el exterior de la industria china de miniseries en unos $4,300 millones de dólares para 2024. Esa cifra se convirtió en uno de los indicadores más claros de la expansión internacional del sector. Reflejó no solo los ingresos de apps orientadas al consumidor en el extranjero, sino también la creciente capacidad de exportación de los estudios, equipos de producción y estructuras narrativas chinas que ya habían sido probadas a nivel doméstico antes de adaptarse a audiencias extranjeras.\n\nLa importancia de la cifra de $4,300 millones es que redefinió 'salir al exterior' de una estrategia experimental a un motor de crecimiento central. Las empresas chinas ya habían desarrollado la memoria muscular de producción para narrativas seriadas de alto volumen y rápido recambio. Una vez que esas capacidades se combinaron con la compra de publicidad y la localización en el exterior, produjeron un negocio capaz de escalar rápidamente fuera del mercado continental.",
       },
       {
-        heading: "How Chinese Publishers Won Abroad",
+        heading: "Cómo Ganaron las Editoriales Chinas en el Extranjero",
         body:
-          "The overseas playbook relied on three advantages. First, Chinese studios had deep experience producing micro-dramas at industrial speed, giving them a cost and iteration advantage over Western teams still learning the format. Second, they understood the pacing mechanics that convert viewers into payers: immediate stakes, frequent reversals, and aggressive episode gating. Third, they treated distribution scientifically, testing large numbers of ad creatives across Meta, TikTok, and other channels until unit economics worked.\n\nApps like ReelShort and DramaBox became the most visible expressions of that model in English-speaking markets, but the deeper story was the ecosystem behind them. Script adaptation, post-production, casting workflows, and performance marketing were increasingly coordinated across borders. That let publishers bring Chinese-origin story DNA into overseas markets while still packaging content in a way that felt native enough for local audiences.",
+          "La estrategia en el exterior se apoyó en tres ventajas. Primero, los estudios chinos tenían amplia experiencia produciendo microdramas a velocidad industrial, dándoles una ventaja de costo e iteración sobre los equipos occidentales que todavía aprendían el formato. Segundo, entendían la mecánica de ritmo que convierte espectadores en pagadores: riesgos inmediatos, giros frecuentes y un cierre de episodios agresivo. Tercero, trataban la distribución de forma científica, probando grandes cantidades de creativos publicitarios en Meta, TikTok y otros canales hasta que la economía unitaria funcionara.\n\nApps como ReelShort y DramaBox se convirtieron en las expresiones más visibles de ese modelo en los mercados de habla inglesa, pero la historia más profunda era el ecosistema detrás de ellas. La adaptación de guiones, la posproducción, los procesos de casting y el marketing de rendimiento se coordinaban cada vez más a través de fronteras. Eso permitió a las editoriales llevar el ADN narrativo de origen chino a mercados en el exterior mientras empaquetaban el contenido de una forma que se sentía suficientemente local para las audiencias de cada región.",
       },
       {
-        heading: "What the Chuhai Wave Means Next",
+        heading: "Qué Sigue Después de la Ola Chuhai",
         body:
-          "The 2024 overseas revenue milestone showed that Chinese companies were exporting not just content but operational know-how. By 2025, their challenge was no longer proving demand existed abroad; it was defending margin as competition intensified and customer acquisition costs rose. The publishers that sustained growth were the ones investing in local production, stronger brand identities, and catalog depth rather than relying only on translated imports.\n\nFor the broader media market, China's $4.3 billion overseas result demonstrated that micro-drama had become one of the most successful recent examples of Chinese digital entertainment globalization. It also suggested that the next phase of competition would be less about first-mover advantage and more about who could blend Chinese production efficiency with genuinely local creative execution.",
+          "El hito de ingresos en el exterior de 2024 mostró que las empresas chinas estaban exportando no solo contenido, sino know-how operativo. Para 2025, su reto ya no era demostrar que existía demanda en el extranjero, sino defender el margen a medida que la competencia se intensificaba y subían los costos de adquisición de clientes. Las editoriales que sostuvieron el crecimiento fueron las que invirtieron en producción local, identidades de marca más fuertes y profundidad de catálogo, en lugar de depender solo de importaciones traducidas.\n\nPara el mercado de medios en general, el resultado de $4,300 millones en el exterior de China demostró que el microdrama se había convertido en uno de los ejemplos recientes más exitosos de globalización del entretenimiento digital chino. También sugirió que la siguiente fase de competencia dependería menos de la ventaja de ser el primero en moverse y más de quién pudiera combinar la eficiencia de producción china con una ejecución creativa genuinamente local.",
       },
     ],
   },
-  "user-acquisition-cost-benchmarks": {
+  "costo-adquisicion-usuarios": {
     sections: [
       {
-        heading: "The CPI Range That Defined 2025",
+        heading: "El Rango de CPI que Definió 2025",
         body:
-          "A practical benchmark used across the short drama sector in 2025 was a roughly $0.40 to $0.80 cost per install for scaled performance campaigns, especially when publishers were buying broad reach on Meta, TikTok, and Google inventory. Actual costs moved by market, creative quality, and campaign objective, but this band captured the level at which many publishers could still acquire enough users to feed monetization funnels without destroying payback periods.\n\nThe reason CPI mattered so much in short drama was that the format depends on heavy top-of-funnel replenishment. These apps can monetize power users very well, but they also face significant churn because viewers often arrive through a single plot hook or ad concept. That makes acquisition efficiency inseparable from content strategy: the best-performing apps were usually the ones able to launch new creatives as quickly as they launched new episodes.",
+          "Una referencia práctica usada en todo el sector de miniseries en 2025 fue un costo por instalación de aproximadamente $0.40 a $0.80 dólares para campañas de rendimiento a gran escala, especialmente cuando las editoriales compraban alcance amplio en el inventario de Meta, TikTok y Google. Los costos reales variaban según el mercado, la calidad del creativo y el objetivo de la campaña, pero este rango capturaba el nivel en el que muchas editoriales todavía podían adquirir suficientes usuarios para alimentar sus embudos de monetización sin destruir los periodos de recuperación.\n\nLa razón por la que el CPI importaba tanto en las miniseries es que el formato depende de una reposición intensa en la parte alta del embudo. Estas apps pueden monetizar muy bien a los usuarios más comprometidos, pero también enfrentan una fuga significativa porque los espectadores suelen llegar por un solo gancho argumental o concepto publicitario. Eso hace que la eficiencia de adquisición sea inseparable de la estrategia de contenido: las apps con mejor desempeño solían ser las que podían lanzar nuevos creativos con la misma rapidez con la que lanzaban nuevos episodios.",
       },
       {
-        heading: "Platform Differences Across Meta, TikTok, and Google",
+        heading: "Diferencias entre Plataformas: Meta, TikTok y Google",
         body:
-          "Meta remained central because it offered mature conversion optimization and a wide audience base for serialized romance, revenge, and family-drama creatives. TikTok was especially effective at seeding demand through hook-heavy video concepts that resembled native feed content, though campaign volatility could be higher as creative fatigue set in. Google helped capture intent and broader app-discovery traffic, often complementing social channels rather than replacing them.\n\nIn practice, the most sophisticated publishers did not treat these channels as interchangeable. They built creative systems around each one. TikTok creative often emphasized the most shocking turning point in the first seconds, while Meta ads leaned harder into relationship conflict and cliffhanger copy. The benchmark CPI range only held when channel strategy, content packaging, and landing flow were aligned.",
+          "Meta siguió siendo central porque ofrecía una optimización de conversión madura y una base de audiencia amplia para creativos seriados de romance, venganza y drama familiar. TikTok fue especialmente efectivo para sembrar demanda mediante conceptos de video cargados de ganchos que se parecían al contenido nativo del feed, aunque la volatilidad de las campañas podía ser mayor a medida que se agotaba la fatiga creativa. Google ayudó a capturar intención y tráfico más amplio de descubrimiento de apps, a menudo complementando los canales sociales en lugar de reemplazarlos.\n\nEn la práctica, las editoriales más sofisticadas no trataban estos canales como intercambiables. Construían sistemas creativos específicos para cada uno. El creativo de TikTok solía enfatizar el giro más impactante en los primeros segundos, mientras que los anuncios de Meta se apoyaban más en el conflicto de pareja y el texto tipo cliffhanger. El rango de CPI de referencia solo se mantenía cuando la estrategia de canal, el empaquetado de contenido y el flujo de aterrizaje estaban alineados.",
       },
       {
-        heading: "Why Benchmarks Alone Are Not Enough",
+        heading: "Por Qué las Referencias Solas No Bastan",
         body:
-          "The headline CPI range is useful, but it can be misleading without revenue context. Sensor Tower's 2025 market data showed how quickly category revenue was scaling, yet that revenue was concentrated among apps that converted acquired users into repeat spenders. A cheap install is not valuable if the user never reaches the first paid unlock or abandons after one storyline. The strongest operators measured cost against downstream behavior such as tutorial completion, first purchase conversion, and seven-day payback.\n\nThat is why the category's top publishers kept reinvesting in narrative testing, paywall pacing, and store-page optimization rather than looking at acquisition as a separate function. In short drama, efficient growth comes from making the ad promise and the in-app story experience feel like one continuous funnel. The 2025 benchmark of $0.40 to $0.80 CPI is best understood as the entry ticket to compete, not the full formula for profitable scale.",
+          "El rango de CPI titular es útil, pero puede ser engañoso sin contexto de ingresos. Los datos de mercado de Sensor Tower de 2025 mostraron qué tan rápido escalaban los ingresos de la categoría, pero esos ingresos estaban concentrados en las apps que lograban convertir a los usuarios adquiridos en compradores recurrentes. Una instalación barata no vale nada si el usuario nunca llega al primer desbloqueo pagado o abandona después de una sola historia. Los operadores más sólidos medían el costo contra el comportamiento posterior, como la finalización del tutorial, la conversión de la primera compra y la recuperación a siete días.\n\nPor eso las principales editoriales de la categoría seguían reinvirtiendo en pruebas narrativas, ritmo del muro de pago y optimización de la página de la tienda, en lugar de tratar la adquisición como una función aparte. En las miniseries, el crecimiento eficiente viene de lograr que la promesa del anuncio y la experiencia narrativa dentro de la app se sientan como un solo embudo continuo. La referencia de 2025 de $0.40 a $0.80 de CPI se entiende mejor como el boleto de entrada para competir, no como la fórmula completa para una escala rentable.",
       },
     ],
   },
@@ -165,6 +165,7 @@ export async function generateMetadata({
       description: report.summary,
       url: canonical,
       type: "article",
+      locale: "es_419",
     },
   };
 }
@@ -211,11 +212,11 @@ export default async function MarketReportPage({
                     d="M15 19l-7-7 7-7"
                   />
                 </svg>
-                Back to Market Reports
+                Volver a Informes de Mercado
               </Link>
 
               <div className="flex flex-wrap items-center gap-3 mb-6">
-                <div className="badge badge-coral">Report</div>
+                <div className="badge badge-coral">Informe</div>
                 <div className="badge badge-violet">{report.stat}</div>
               </div>
 

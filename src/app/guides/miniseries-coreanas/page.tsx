@@ -5,7 +5,13 @@ import { SITE_URL } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Las Mejores Miniseries Coreanas Verticales — NovelaFlash",
   description: "K-Dramas adaptados para la pantalla móvil. Descubre la calidad cinematográfica y el romance de combustión lenta de Corea.",
-  alternates: { canonical: "/guides/miniseries-coreanas" },
+  alternates: {
+    canonical: "/guides/miniseries-coreanas",
+    languages: {
+      "en": "https://reelpulse.net/guides/short-korean-dramas",
+      "es-419": "https://novelaflash.com/guides/miniseries-coreanas",
+    },
+  },
   openGraph: {
     title: "Las Mejores Miniseries Coreanas Verticales",
     description: "K-Dramas adaptados para la pantalla móvil. Descubre la calidad cinematográfica y el romance de combustión lenta de Corea.",
@@ -26,34 +32,36 @@ const guide: ConversionGuide = {
   ],
   sections: [
     {
-      title: "Visión General",
+      title: "Nuestro Top 5 de Miniseries Coreanas",
       paragraphs: [
-        "En esta guía exhaustiva, analizamos todo lo que necesitas saber sobre el tema. La popularidad de las miniseries ha crecido exponencialmente en América Latina, haciendo indispensable conocer a fondo las plataformas.",
-        "Nuestra misión es ofrecerte la información más transparente y actualizada posible para que disfrutes de tus series favoritas sin sorpresas."
+        "Los estudios coreanos han adoptado el formato vertical sin perder su sello característico: profundidad emocional y producción cuidada. Estos son los K-dramas cortos mejor calificados de 2026."
       ],
       bullets: [
-        "Verifica siempre tus suscripciones activas.",
-        "No compartas tus datos de pago en aplicaciones no oficiales.",
-        "Aprovecha los eventos de recompensas y check-in diario."
+        "First Marriage Then Love (Romance) — 4.8/5. Un matrimonio de conveniencia que se convierte en amor genuino, con diálogos ingeniosos y química auténtica.",
+        "Hometown's Embrace (Drama) — 4.7/5. Una historia sobre volver a casa y reconectar con el pasado, con una fotografía especialmente cuidada.",
+        "Midnight Confessions (Romance) — 4.6/5. Secretos revelados de noche; combina misterio y romance con gran manejo de la tensión.",
+        "Seoul Nights (Suspenso) — 4.6/5. Thriller urbano ambientado en las calles de Seúl, de ritmo más rápido que el K-drama tradicional.",
+        "Love in the Workplace (Romance) — 4.5/5. Romance de oficina sobre los límites entre lo profesional y lo personal."
       ]
     },
     {
-      title: "Análisis Detallado",
+      title: "K-Drama vs. C-Drama: Diferencias Clave",
       paragraphs: [
-        "Al probar exhaustivamente estas funcionalidades, descubrimos que los usuarios a menudo pasan por alto las opciones gratuitas ocultas en la aplicación. Explorar los menús de recompensas puede ahorrarte mucho dinero.",
-        "Recuerda que la mayoría de estas aplicaciones operan mediante microtransacciones. Si planeas hacer maratones de contenido, las opciones VIP mensuales casi siempre resultan más rentables a largo plazo."
+        "Si vienes del mundo de las miniseries chinas (C-drama), notarás varias diferencias. Los K-dramas priorizan el desarrollo de personajes y el romance de combustión lenta, mientras que los C-dramas suelen ser más rápidos en los giros de trama y las escaladas emocionales.",
+        "En cuanto a producción, los estudios coreanos mantienen un estándar cinematográfico muy consistente, aunque los estudios chinos están cerrando esa brecha rápidamente. Si te gusta el romance con más tensión y menos prisa, empieza por First Marriage Then Love; si prefieres más drama y giros constantes, nuestras guías de ReelShort y DramaBox tienen mejores opciones."
       ]
     }
   ],
   faqs: [
-    { question: "¿Es esta plataforma legítima?", answer: "Sí, todas las plataformas destacadas en NovelaFlash son aplicaciones verificadas disponibles en App Store y Google Play." },
-    { question: "¿Cómo puedo evitar cargos adicionales?", answer: "Asegúrate de cancelar las pruebas gratuitas desde la configuración de tu cuenta de Apple o Google al menos 24 horas antes de que terminen." },
-    { question: "¿Existen versiones modificadas gratuitas (APKs)?", answer: "Recomendamos fuertemente no usar APKs de terceros debido a los altos riesgos de malware y robo de datos." }
+    { question: "¿Cuál es la mejor miniserie coreana para empezar?", answer: "First Marriage Then Love es la mejor introducción al género: combina el romance de combustión lenta típico del K-drama con episodios cortos fáciles de maratonear." },
+    { question: "¿En qué se diferencian los K-dramas de los C-dramas verticales?", answer: "Los K-dramas se enfocan más en el desarrollo emocional de los personajes y un ritmo más pausado, mientras que los C-dramas priorizan giros de trama rápidos y conflictos externos intensos." },
+    { question: "¿Dónde puedo ver estas miniseries coreanas?", answer: "Estas series están disponibles principalmente en las apps de miniseries verticales que reseñamos en NovelaFlash, la mayoría con subtítulos en español." },
+    { question: "¿Los K-dramas cortos tienen la misma calidad que los K-dramas tradicionales?", answer: "Sí, los estudios coreanos mantienen el mismo estándar de producción que en sus series largas, solo que condensado en episodios de formato vertical." }
   ],
   relatedGuides: [
-    { href: "/guides/como-ver-dramabox-gratis", label: "Series Gratis", description: "Aprende a obtener monedas gratis." },
-    { href: "/guides/precios-de-dramabox", label: "Guía de Precios", description: "Compara el valor de las suscripciones VIP." },
-    { href: "/guides/alternativas-a-dramabox", label: "Alternativas", description: "Descubre otras plataformas excelentes." }
+    { href: "/guides/mejores-miniseries-chinas", label: "Top C-Dramas", description: "Las mejores miniseries chinas para comparar estilos." },
+    { href: "/guides/mejores-novelas-hombres-lobo", label: "Hombres Lobo", description: "El género de fantasía más popular del momento." },
+    { href: "/guides/apps-miniseries-gratis", label: "Apps Gratuitas", description: "Dónde ver miniseries sin pagar suscripción." }
   ]
 };
 

@@ -3,41 +3,50 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Short Drama Growth Metrics 2026 — NovelaFlash",
-  description: "Key growth metrics for the $26B short drama industry. Market size, revenue trends, user growth, and funding data updated quarterly.",
+  title: "Métricas de Crecimiento de Miniseries 2026 — NovelaFlash",
+  description: "Métricas clave de crecimiento de la industria de miniseries de $26 mil millones. Tamaño de mercado, tendencias de ingresos, crecimiento de usuarios y datos de financiamiento actualizados trimestralmente.",
 };
 
 export default function GrowthMetrics() {
+  const breadcrumbSchema = createBreadcrumbList([
+    { name: "Inicio", item: SITE_URL },
+    { name: "Rankings", item: `${SITE_URL}/rankings` },
+    { name: "Crecimiento", item: `${SITE_URL}/rankings/growth` },
+  ]);
+
   const metrics = [
-    { value: "~4x", label: "Q1 2025 vs Q1 2024 Revenue", context: "Q1 2025 global in-app revenue reached ~$700M, nearly 4x higher than Q1 2024 (Sensor Tower)." },
-    { value: "$26B", label: "Global Market Size 2025", context: "Projected market capitalization of the short drama industry." },
-    { value: "2.7M", label: "ReelShort DAU", context: "Leading active user base in the Western market." },
-    { value: "$3M+", label: "Daily Spending (Top 3)", context: "Combined daily revenue of the top three global platforms." },
-    { value: "156%", label: "ReelShort 2024 Revenue Growth", context: "Year-over-year revenue expansion for the market leader." },
-    { value: "$4.3B", label: "Overseas Revenue 2024", context: "Revenue generated from Chinese short dramas in Western markets." }
+    { value: "~4x", label: "Ingresos Q1 2025 vs Q1 2024", context: "Los ingresos globales dentro de apps en el Q1 2025 alcanzaron ~$700M, casi 4 veces más que en el Q1 2024 (Sensor Tower)." },
+    { value: "$26B", label: "Tamaño del Mercado Global 2025", context: "Capitalización de mercado proyectada de la industria de miniseries." },
+    { value: "2.7M", label: "Usuarios Activos Diarios de ReelShort", context: "La base de usuarios activos más grande en el mercado occidental." },
+    { value: "$3M+", label: "Gasto Diario (Top 3)", context: "Ingresos diarios combinados de las tres plataformas globales líderes." },
+    { value: "156%", label: "Crecimiento de Ingresos de ReelShort en 2024", context: "Expansión de ingresos interanual del líder del mercado." },
+    { value: "$4.3B", label: "Ingresos en el Extranjero 2024", context: "Ingresos generados por miniseries chinas en mercados occidentales." }
   ];
 
   const milestones = [
-    { year: "2022", event: "ReelShort launches", desc: "First dedicated vertical drama platform hits Western markets." },
-    { year: "2023", event: "First $1M day", desc: "Single-day revenue across platforms crosses $1M milestone." },
-    { year: "2024", event: "TIME 100", desc: "Short drama industry recognized by TIME 100 Most Influential Companies." },
-    { year: "2025", event: "$26B market", desc: "Global industry reaches multi-billion dollar scale." }
+    { year: "2022", event: "Se lanza ReelShort", desc: "La primera plataforma dedicada de drama vertical llega a los mercados occidentales." },
+    { year: "2023", event: "Primer día con $1M", desc: "Los ingresos combinados de un solo día en todas las plataformas superan el hito de $1M." },
+    { year: "2024", event: "TIME 100", desc: "La industria de miniseries es reconocida por el TIME 100 Most Influential Companies." },
+    { year: "2025", event: "Mercado de $26B", desc: "La industria global alcanza una escala de miles de millones de dólares." }
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-rp-bg-primary">
+      <JsonLd data={breadcrumbSchema} />
       <Nav />
 
       <main className="flex-grow pt-32 pb-20">
         <section className="max-w-7xl mx-auto px-6">
           <ScrollReveal direction="up" className="mb-20">
             <h1 className="font-display font-black text-6xl md:text-9xl uppercase tracking-tight text-white mb-4">
-              GROWTH METRICS
+              MÉTRICAS DE CRECIMIENTO
             </h1>
             <p className="text-rp-text-secondary text-xl font-medium max-w-2xl">
-              Tracking the exponential rise of short-form entertainment through data.
+              Siguiendo con datos el ascenso exponencial del entretenimiento de formato corto.
             </p>
           </ScrollReveal>
 
@@ -56,7 +65,7 @@ export default function GrowthMetrics() {
           </div>
 
           <ScrollReveal direction="up">
-            <h2 className="font-display font-black text-4xl text-white uppercase tracking-tight mb-16 text-center">Market Timeline</h2>
+            <h2 className="font-display font-black text-4xl text-white uppercase tracking-tight mb-16 text-center">Línea de Tiempo del Mercado</h2>
             <div className="relative">
               <div className="absolute top-0 bottom-0 left-1/2 w-px bg-white/10 hidden md:block" />
               <div className="space-y-12">

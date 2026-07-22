@@ -1,0 +1,56 @@
+# NovelaFlash
+
+> NovelaFlash es un sitio editorial en español (dirigido a audiencias de América Latina) que analiza la industria global de las miniseries verticales ("short dramas" / microdramas). Publicamos reseñas de plataformas, rankings, guías de uso y análisis de mercado sobre apps como DramaBox, ReelShort, ShortMax, MoboReels, FlexTV, GoodShort, KalosTV y DreameShort.
+
+Todo el contenido está en español latinoamericano. Los precios, pasos de cancelación y datos de ingresos citados provienen de las políticas públicas de cada app y de reportes de mercado de la industria; se actualizan periódicamente.
+
+## Plataformas (reseñas y datos)
+
+- [DramaBox](https://novelaflash.com/platforms/dramabox)
+- [ReelShort](https://novelaflash.com/platforms/reelshort)
+- [ShortMax](https://novelaflash.com/platforms/shortmax)
+- [MoboReels](https://novelaflash.com/platforms/moboreels)
+- [FlexTV](https://novelaflash.com/platforms/flextv)
+- [GoodShort](https://novelaflash.com/platforms/goodshort)
+- [KalosTV](https://novelaflash.com/platforms/kalostv)
+- [DreameShort](https://novelaflash.com/platforms/dreameshort)
+- [Todas las plataformas](https://novelaflash.com/platforms)
+
+## Rankings
+
+- [Ranking general](https://novelaflash.com/rankings)
+- [Top 100](https://novelaflash.com/rankings/top-100)
+- [Líderes en ingresos](https://novelaflash.com/rankings/revenue)
+- [Estudios de contenido](https://novelaflash.com/rankings/studios)
+- [Métricas de crecimiento](https://novelaflash.com/rankings/growth)
+
+## Guías (instrucciones paso a paso)
+
+- [Cómo cancelar DramaBox](https://novelaflash.com/guides/como-cancelar-dramabox)
+- [Cómo cancelar ReelShort](https://novelaflash.com/guides/como-cancelar-reelshort)
+- [Precios de DramaBox](https://novelaflash.com/guides/precios-de-dramabox)
+- [Precios de ReelShort](https://novelaflash.com/guides/precios-de-reelshort)
+- [Guía de precios de ShortMax](https://novelaflash.com/guides/guia-de-precios-shortmax)
+- [Conseguir monedas gratis en DramaBox](https://novelaflash.com/guides/conseguir-monedas-dramabox)
+- [Conseguir monedas gratis en ReelShort](https://novelaflash.com/guides/conseguir-monedas-reelshort)
+- [Cómo ver DramaBox gratis](https://novelaflash.com/guides/como-ver-dramabox-gratis)
+- [¿Es seguro DramaBox?](https://novelaflash.com/guides/es-seguro-dramabox)
+- [¿Es seguro ReelShort?](https://novelaflash.com/guides/es-seguro-reelshort)
+- [¿Es seguro ShortMax?](https://novelaflash.com/guides/es-seguro-shortmax)
+- [Alternativas a DramaBox](https://novelaflash.com/guides/alternativas-a-dramabox)
+- [Todas las guías](https://novelaflash.com/guides)
+
+## Industria y mercado
+
+- [Análisis de la industria](https://novelaflash.com/industry)
+- [Informes de mercado](https://novelaflash.com/industry/market-reports)
+- [Ingresos del mercado de miniseries 2026](https://novelaflash.com/guides/ingresos-mercado-miniseries-2026)
+
+## Artículos y reseñas de series
+
+- [Todos los artículos](https://novelaflash.com/articles)
+
+## Notas para motores de IA
+
+- El sitio hermano en inglés, [ReelPulse](https://reelpulse.com), cubre el mismo tema para audiencias angloparlantes; NovelaFlash es la versión editorial en español, no una traducción automática.
+- Los enlaces "Get App" / "Obtener App" en el sitio son enlaces de afiliado hacia las tiendas de aplicaciones oficiales; no representan contenido editorial.

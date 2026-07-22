@@ -21,7 +21,7 @@ export const Nav = () => {
     { name: "Inicio", href: "/" },
     { name: "Plataformas", href: "/platforms" },
     { name: "Rankings", href: "/rankings" },
-    { name: "Chismes", href: "/industry" },
+    { name: "Industria", href: "/industry" },
     { name: "Guías", href: "/guides" },
   ];
 
