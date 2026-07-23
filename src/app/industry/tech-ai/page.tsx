@@ -109,7 +109,7 @@ export default function TechAIPage() {
               Tecnologías Clave
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {technologies.map((tech, i) => (
+              {technologies.map((tech) => (
                 <div key={tech.name} className="group p-1 bg-gradient-to-br from-white/5 to-transparent rounded-3xl transition-all hover:from-rp-coral/20">
                   <div className="bg-rp-bg-card p-10 rounded-[22px] h-full">
                     <h3 className="text-2xl font-display font-black text-white uppercase tracking-tight mb-4 group-hover:text-rp-coral transition-colors">

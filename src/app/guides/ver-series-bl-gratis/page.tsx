@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ConversionGuidePage, type ConversionGuide } from "../ConversionGuidePage";
-import { SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Cómo Ver Series BL Gratis — NovelaFlash",

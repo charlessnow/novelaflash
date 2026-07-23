@@ -27,6 +27,7 @@ export default function Rankings() {
     name: "Mejores Apps de Miniseries 2026",
     description: metadata.description,
     url: `${SITE_URL}/rankings`,
+    inLanguage: "es-419",
     itemListOrder: "https://schema.org/ItemListOrderAscending",
     numberOfItems: platforms.length,
     itemListElement: platforms.map((platform, index) => ({

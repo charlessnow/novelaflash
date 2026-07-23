@@ -49,7 +49,7 @@ export default function IndustryPage() {
               Resumen del Mercado
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {stats.map((stat, i) => (
+              {stats.map((stat) => (
                 <div key={stat.label} className="card p-8 flex flex-col gap-4 border-white/5 bg-rp-bg-card/50 backdrop-blur-sm">
                   <span className="text-[10px] text-rp-text-muted uppercase font-black tracking-widest">{stat.label}</span>
                   <div className="flex items-end justify-between">

@@ -3,7 +3,9 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
 import { NewsletterCTA } from "@/components/home/NewsletterCTA";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { platforms } from "@/lib/data";
+import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 import Link from "@/components/ui/InternalLink";
 
 export const metadata: Metadata = {
@@ -12,8 +14,34 @@ export const metadata: Metadata = {
 };
 
 export default function PlatformsPage() {
+  const platformsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Directorio de Plataformas de Miniseries 2026",
+    description: metadata.description,
+    url: `${SITE_URL}/platforms`,
+    inLanguage: "es-419",
+    numberOfItems: platforms.length,
+    itemListElement: platforms.map((platform, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${SITE_URL}/platforms/${platform.slug}`,
+      item: {
+        "@type": "SoftwareApplication",
+        name: platform.name,
+        description: platform.description,
+      },
+    })),
+  };
+  const breadcrumbSchema = createBreadcrumbList([
+    { name: "Inicio", item: SITE_URL },
+    { name: "Plataformas", item: `${SITE_URL}/platforms` },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen bg-rp-bg-primary">
+      <JsonLd data={platformsSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Nav />
 
       <main className="flex-grow pt-32">

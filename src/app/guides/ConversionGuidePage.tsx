@@ -49,6 +49,7 @@ export function ConversionGuidePage({ guide }: { guide: ConversionGuide }) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    inLanguage: "es-419",
     mainEntity: guide.faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,

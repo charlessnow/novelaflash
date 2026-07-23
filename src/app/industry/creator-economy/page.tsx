@@ -86,7 +86,7 @@ export default function CreatorEconomyPage() {
               Potencial de Ingresos
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {roles.map((role, i) => (
+              {roles.map((role) => (
                 <div key={role.role} className="card p-10 flex flex-col h-full border-white/5 bg-rp-bg-card relative group overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-rp-coral/5 blur-3xl group-hover:bg-rp-coral/10 transition-colors" />
                   

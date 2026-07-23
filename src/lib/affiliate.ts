@@ -6,28 +6,28 @@ export interface AffiliateLink {
 
 export const AFFILIATE_LINKS: Record<string, string> = {
   // DramaBox CPS tracking link
-  dramabox: "https://r.reelsgo.tv/VNDhcgPUDGE6",
+  dramabox: "https://r.reelsgo.tv/K5xrp16CotAf",
 
   // ReelShort CPS tracking link (Homepage link)
-  reelshort: "https://r.reelsgo.tv/hC2wg5fyQh49",
+  reelshort: "https://r.reelsgo.tv/Uv8ccoLDvU16",
 
   // ShortMax CPS tracking link
-  shortmax: "https://r.reelsgo.tv/pjgTB29D4TZY",
+  shortmax: "https://r.reelsgo.tv/3ML04mnWiOwe",
 
   // KalosTV CPS tracking link
-  kalostv: "https://r.reelsgo.tv/6Rc95E7rK98T",
+  kalostv: "https://r.reelsgo.tv/Y8191huWQrqz",
 
   // GoodShort CPS tracking link
-  goodshort: "https://r.reelsgo.tv/vTdBwkgSWdxz",
+  goodshort: "https://r.reelsgo.tv/TZRaNvRJTpEs",
 
   // DreameShort CPS tracking link
-  dreameshort: "https://r.reelsgo.tv/w1XPf2tgOo_X",
+  dreameshort: "https://r.reelsgo.tv/y1V3F5563Ffr",
 
   // Placeholders for additional platforms
 
   flextv: "https://www.flextv.cc",
-  moboreels: "https://r.reelsgo.tv/pEtS61RUds_2",
-  flickreels: "https://r.reelsgo.tv/j3kcBl_YGBC0",
+  moboreels: "https://r.reelsgo.tv/kxVy9yDis38P",
+  flickreels: "https://r.reelsgo.tv/1V6HxVFh1xoW",
   snackshort: "https://r.reelsgo.tv/YX4KmWj9EX1E",
   starshort: "https://www.starshort.com",
   honeyreels: "https://r.reelsgo.tv/l7Z40t399u8W",
@@ -35,7 +35,7 @@ export const AFFILIATE_LINKS: Record<string, string> = {
   footage: "https://r.reelsgo.tv/4KR8bW9SQlFb",
   veloria: "https://r.reelsgo.tv/izKqx8iMdldh",
   stardusttv: "https://r.reelsgo.tv/EmyxsIsT9Yzc",
-  playlet: "https://r.reelsgo.tv/nXLu58jr6t_W",
+  playlet: "https://r.reelsgo.tv/4aS9fbcpmkzz",
 
 };
 

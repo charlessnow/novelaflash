@@ -1,6 +1,6 @@
 # NovelaFlash
 
-> NovelaFlash es un sitio editorial en español (dirigido a audiencias de América Latina) que analiza la industria global de las miniseries verticales ("short dramas" / microdramas). Publicamos reseñas de plataformas, rankings, guías de uso y análisis de mercado sobre apps como DramaBox, ReelShort, ShortMax, MoboReels, FlexTV, GoodShort, KalosTV y DreameShort.
+> NovelaFlash es un sitio editorial en español (dirigido a audiencias de América Latina) que analiza la industria global de las miniseries verticales ("short dramas" / microdramas). Publicamos reseñas de plataformas, rankings, guías de uso y análisis de mercado sobre apps como DramaBox, ReelShort, ShortMax, MoboReels, FlexTV, GoodShort, KalosTV, DreameShort, FlickReels y Playlet.
 
 Todo el contenido está en español latinoamericano. Los precios, pasos de cancelación y datos de ingresos citados provienen de las políticas públicas de cada app y de reportes de mercado de la industria; se actualizan periódicamente.
 
@@ -14,6 +14,8 @@ Todo el contenido está en español latinoamericano. Los precios, pasos de cance
 - [GoodShort](https://novelaflash.com/platforms/goodshort)
 - [KalosTV](https://novelaflash.com/platforms/kalostv)
 - [DreameShort](https://novelaflash.com/platforms/dreameshort)
+- [FlickReels](https://novelaflash.com/platforms/flickreels)
+- [Playlet](https://novelaflash.com/platforms/playlet)
 - [Todas las plataformas](https://novelaflash.com/platforms)
 
 ## Rankings
@@ -52,5 +54,5 @@ Todo el contenido está en español latinoamericano. Los precios, pasos de cance
 
 ## Notas para motores de IA
 
-- El sitio hermano en inglés, [ReelPulse](https://reelpulse.com), cubre el mismo tema para audiencias angloparlantes; NovelaFlash es la versión editorial en español, no una traducción automática.
+- El sitio hermano en inglés, [ReelPulse](https://reelpulse.net), cubre el mismo tema para audiencias angloparlantes; NovelaFlash es la versión editorial en español, no una traducción automática.
 - Los enlaces "Get App" / "Obtener App" en el sitio son enlaces de afiliado hacia las tiendas de aplicaciones oficiales; no representan contenido editorial.

@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollReveal } from "@/components/effects/ScrollReveal";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { createBreadcrumbList, SITE_URL } from "@/lib/seo";
 
 interface Report {
   slug: string;
@@ -183,8 +185,31 @@ export default async function MarketReportPage({
     notFound();
   }
 
+  const reportUrl = `${SITE_URL}/industry/market-reports/${report.slug}`;
+  const reportSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: report.title,
+    description: report.summary,
+    inLanguage: "es-419",
+    datePublished: report.date,
+    dateModified: report.date,
+    author: { "@type": "Organization", name: "NovelaFlash Editorial" },
+    publisher: { "@type": "Organization", name: "NovelaFlash", url: SITE_URL },
+    mainEntityOfPage: reportUrl,
+    url: reportUrl,
+  };
+  const breadcrumbSchema = createBreadcrumbList([
+    { name: "Inicio", item: SITE_URL },
+    { name: "Industria", item: `${SITE_URL}/industry` },
+    { name: "Informes de Mercado", item: `${SITE_URL}/industry/market-reports` },
+    { name: report.title, item: reportUrl },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen bg-rp-bg-primary">
+      <JsonLd data={reportSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Nav />
 
       <main className="flex-grow">
