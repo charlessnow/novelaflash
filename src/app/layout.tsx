@@ -79,7 +79,7 @@ export default function RootLayout({
       <body className="noise min-h-full flex flex-col">
         <JsonLd data={organizationAndWebsiteSchema} />
         {children}
-        <GoogleAnalytics gaId="G-46W8F8HNHY" />
+        <GoogleAnalytics gaId="G-C2BSZ29TEH" />
       </body>
     </html>
   );

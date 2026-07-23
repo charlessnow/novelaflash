@@ -7,5 +7,9 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
-  }
+  },
+  "routes": [
+    { "pattern": "novelaflash.com", "custom_domain": true },
+    { "pattern": "www.novelaflash.com", "custom_domain": true }
+  ]
 }
