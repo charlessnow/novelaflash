@@ -1,4 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { render } from "@react-email/components";
+import { createElement } from "react";
+import { getResend } from "@/lib/resend";
+import WelcomeEmail from "@emails/WelcomeEmail";
 
 export async function POST(req: NextRequest) {
   const { email } = await req.json();
@@ -10,47 +14,48 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const API_KEY = process.env.BEEHIIV_API_KEY;
-  const PUB_ID = process.env.BEEHIIV_PUBLICATION_ID;
+  const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
-  if (!API_KEY || !PUB_ID) {
+  if (!process.env.RESEND_API_KEY || !AUDIENCE_ID) {
     return NextResponse.json(
       { error: "Newsletter service is not configured." },
       { status: 500 }
     );
   }
 
-  try {
-    const res = await fetch(
-      `https://api.beehiiv.com/v2/publications/${PUB_ID}/subscriptions`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${API_KEY}`,
-        },
-        body: JSON.stringify({
-          email,
-          reactivate_existing: true,
-          send_welcome_email: true,
-          utm_source: "novelaflash.com",
-        }),
-      }
-    );
+  const resend = getResend();
 
-    if (!res.ok) {
-      const data = await res.json().catch(() => ({}));
-      return NextResponse.json(
-        { error: data.message || "Subscription failed. Please try again." },
-        { status: res.status }
-      );
-    }
+  const { error: contactError } = await resend.contacts.create({
+    email,
+    audienceId: AUDIENCE_ID,
+    unsubscribed: false,
+  });
 
-    return NextResponse.json({ success: true });
-  } catch {
+  if (contactError) {
     return NextResponse.json(
-      { error: "Something went wrong. Please try again." },
-      { status: 500 }
+      { error: contactError.message || "Subscription failed. Please try again." },
+      { status: 400 }
     );
   }
+
+  const html = await render(createElement(WelcomeEmail, { recipientEmail: email }));
+  const unsubscribeUrl = `https://novelaflash.com/api/unsubscribe?email=${encodeURIComponent(email)}`;
+
+  const { error: sendError } = await resend.emails.send({
+    from: "NovelaFlash <newsletter@novelaflash.com>",
+    to: email,
+    subject: "Bienvenido a NovelaFlash — empieza por aquí",
+    html,
+    headers: {
+      "List-Unsubscribe": `<${unsubscribeUrl}>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
+  });
+
+  if (sendError) {
+    // Contact was added successfully; the welcome email failing shouldn't block signup.
+    console.error("Welcome email failed to send:", sendError);
+  }
+
+  return NextResponse.json({ success: true });
 }
